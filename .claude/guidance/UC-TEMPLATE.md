@@ -11,15 +11,15 @@
 - **Supporting actors:** {Agents, tools, and services involved}
 - **Trigger:** {What prompts the actor to pursue this goal}
 
-## Agent responsibilities
+## Actor responsibilities
 
-{Which agent owns each concern. Writers write. Explorers explore. Reviewers review. Orchestrators coordinate. No agent holds two roles.}
+{Which actor owns each concern. Creators write. Researchers explore. Proofreaders review. Orchestrators coordinate. No actor holds two roles.}
 
-- **{agent-name}** — {what it owns: analysis, mutation, judgment, coordination}
+- **{actor-name}** — {what it owns: analysis, mutation, judgment, coordination}
 
 ## Invariants
 
-{Domain rules that must hold continuously — before, during, and after this use case. Not entry gates checked once. An agent that violates an invariant mid-scenario has failed, even if the final output looks correct.}
+{Domain rules that must hold continuously — before, during, and after this use case. Not entry gates checked once. An actor that violates an invariant mid-scenario has failed, even if the final output looks correct.}
 
 - {invariant}
 
@@ -37,7 +37,7 @@
 
 ## Scenario
 
-{Steps express intent and outcomes, not mechanics. "Wiki content is verified against current source" gives an agent room to find the best path. "Run grep on lines 1-50" does not. Domain events (marked with -->) signal meaningful state transitions — these are the published language between bounded contexts.}
+{Steps express intent and outcomes, not mechanics. "Wiki content is verified against current source" gives an actor room to find the best path. "Run grep on lines 1-50" does not. Domain events (marked with -->) signal meaningful state transitions — these are the published language between bounded contexts.}
 
 1. **{Actor}** — {Intent / outcome}
    --> {DomainEvent}
@@ -61,9 +61,9 @@
 
 ## Protocols
 
-{Agent boundary contracts. Every crossing point between agents or between an agent and an external system has a protocol. Define the input, the output, and who owns each side.}
+{Actor boundary contracts. Every crossing point between actors or between an actor and a sub-system has a protocol. Define the input, the output, and who owns each side.}
 
-- **{protocol-name.md}** — step {number}, {input to / output from agent}
+- **{protocol-name.md}** — step {number}, {input to / output from actor}
 
 ## Notes
 
