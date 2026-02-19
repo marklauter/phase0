@@ -8,6 +8,16 @@ You describe your system. A Socratic agent asks questions — one phase at a tim
 
 Built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Grounded in Alan Cooper's goal-oriented design and Eric Evans' domain-driven design.
 
+## Why agentic systems need this
+
+Every multi-agent system faces the same design questions: how many agents, what does each one care about, how do they communicate, and what keeps them honest. Phase0 answers all four — and the answers map directly to implementation.
+
+An actor's drive becomes its system prompt — not a job description, but a behavioral orientation that makes the agent *want* what the drive demands. Tool restrictions enforce single responsibility: a researcher that can't write stays focused on research; a creator that can't judge stays focused on production. Invariants become hooks and guardrails enforced outside the LLM's reasoning loop — hard rules the model cannot override, negotiate with, or forget. Domain events become the structured messages agents exchange across bounded context boundaries. The orchestrator holds the primary actor's goal and dispatches supporting agents whose drives, taken together, satisfy the goal's value conditions.
+
+Traditional design produces specs that developers interpret. Phase0 produces a model that *is* the agent architecture — the actors are the agents, the drives are the prompts, the events are the wire protocol. No translation step.
+
+See [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/guidance/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) for the full mapping from domain model to agent system.
+
 ## How it works
 
 The agent conducts a phased interview for each use case:
