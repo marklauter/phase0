@@ -140,7 +140,7 @@ Test each with: "What tension demands this actor, and what drive resolves it?"
 ### Further reading
 
 - UC-PHILOSOPHY.md, "Primary actors have goals; supporting actors have drives" through "Goal conflicts spawn actors" — the full theoretical treatment.
-- VISION.md, "The elevator example — the full derivation" — the complete derivation table and chain.
+- VISION.md, "The Entry Point: Actors and Goals, From First Principles" — includes the complete elevator derivation table and chain.
 
 ---
 
@@ -162,7 +162,9 @@ Discovery follows a natural pattern — the same pattern a facilitator uses at a
 
 **Round 1: "What is this thing?"**
 
-Ask: "What problem are you trying to solve?" Not "what system do you want" — what *problem*. The answers are messy, overlapping, contradictory. That is expected. The facilitator keeps asking *why* until the group converges on something like a system boundary.
+Ask: "What problem are you trying to solve?" Not "what system do you want" — what *problem*. The answers are messy, overlapping, contradictory. That is expected.
+
+The facilitator keeps asking *why* until the group converges on something like a system boundary.
 
 **Round 2: "Who touches this?"**
 
@@ -190,7 +192,9 @@ The refinement cycle: qualify → refine → separate.
 2. **Refine:** The qualifier tells you the distinction. "Customer who sends things" becomes Sender.
 3. **Separate:** Now Sender and Recipient are standalone nouns with singular goals. The qualifier vanished because the noun absorbed it.
 
-Another example: "passenger" in the elevator system. A driver is technically a passenger — the operator passenger. Qualify: "operator passenger." Refine: Driver. Now Driver and Passenger are standalone nouns with distinct goals. The Driver wants to be at the destination via a route they control. The Passenger wants to be there without having to operate the vehicle.
+Another example: "passenger" in the elevator system. A driver is technically a passenger — the operator passenger. Qualify: "operator passenger." Refine: Driver.
+
+Now Driver and Passenger are standalone nouns with distinct goals. The Driver wants to be at the destination via a route they control. The Passenger wants to be there without having to operate the vehicle.
 
 This is how ubiquitous language emerges naturally. You do not design it. You extract it through dialogue until every name carries its own meaning.
 

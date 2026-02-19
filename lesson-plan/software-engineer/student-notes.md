@@ -6,6 +6,10 @@ Self-contained reading material for SWE01--SWE03. You have completed the foundat
 
 ## SWE01: Domain-driven design foundations
 
+### The core idea
+
+A domain model has boundaries, events, and rules that hold continuously. You discover these by finding contradictions in how different parts of the domain use the same words.
+
 ### Bounded contexts: own language, own rules, own truth
 
 A bounded context is a region of the domain with its own language. The same word can mean different things in different contexts. That is not a defect. It is a signal.
@@ -33,7 +37,9 @@ Each context defines its own ubiquitous language. DC-01 talks about "exploration
 
 Actors communicate through meaningful state transitions, not function returns. A domain event is the fact that something happened. It has a name, a payload, and consumers.
 
-Name events as past-tense nouns: WikiPopulated, FindingFiled, WikiSynced. These are facts. WikiPopulated means the wiki went from empty to populated. FindingFiled means a documentation problem was recorded as a GitHub issue. These are not commands ("PopulateWiki") or descriptions ("WikiPopulation"). They are statements of what occurred.
+Name events as past-tense nouns: WikiPopulated, FindingFiled, WikiSynced. These are facts. WikiPopulated means the wiki went from empty to populated. FindingFiled means a documentation problem was recorded as a GitHub issue.
+
+These are not commands ("PopulateWiki") or descriptions ("WikiPopulation"). They are statements of what occurred.
 
 Domain events are the published language between bounded contexts. FindingFiled crosses from Editorial Review (DC-02) to Wiki Revision (DC-03). The event is the integration contract. No internal state is shared across the boundary.
 
@@ -82,7 +88,7 @@ Identify 3 bounded context candidates in the elevator system from the foundation
 
 Remember: look for contradictions in language. What word means different things to different actors? Where does the same concept have different rules? Those contradictions are your boundaries.
 
-### For deeper reading
+### Further reading
 
 - `UC-PHILOSOPHY.md` -- the full treatment of invariants, events, bounded contexts, and intent over mechanics
 - `DOMAIN-MODEL-ARTIFACTS.md` -- what artifacts to produce and when they emerge
@@ -93,6 +99,10 @@ Remember: look for contradictions in language. What word means different things 
 
 ## SWE02: From model to agentic system
 
+### The core idea
+
+Domain models map directly to agentic systems. Actor drives become system prompts, tool restrictions enforce single responsibility, and hooks enforce invariants.
+
 ### Drives become system prompts
 
 In the foundation lessons you learned that supporting actors have drives -- behavioral tendencies that determine what they optimize for. When you implement an agentic system, those drives become system prompts.
@@ -102,7 +112,9 @@ But the way you express the drive matters.
 **Task-oriented prompt:** "Review this page for errors."
 **Drive-oriented prompt:** "Your job is to find what's wrong. Every claim is suspect until verified against source code."
 
-The first produces compliance. The agent will scan the page, perhaps find some errors, and report. The second produces vigilance. The agent identifies as a critic. It approaches every claim with suspicion. Same model, same tools, same data -- different behavior.
+The first produces compliance. The agent will scan the page, perhaps find some errors, and report.
+
+The second produces vigilance. The agent identifies as a critic. It approaches every claim with suspicion. Same model, same tools, same data -- different behavior.
 
 Every subagent's drive traces back to a tension involving the primary actor's goal. The proofreader's critique drive exists because the creator's production drive alone will not protect accuracy -- and accuracy is a value condition on the user's goal. If a subagent's drive cannot trace that genealogy back to a primary actor's goal, the agent should not exist.
 
@@ -122,7 +134,9 @@ In the wiki-agent system:
 | Correctors | Remediation | Write, Edit | Must apply corrections. Targeted edits only. |
 | Fact-checkers | Verification | Read, Grep, Glob | Read-only. Determines what is true, does not fix anything. |
 
-Notice that researchers and proofreaders have the same tools. The tools do not define the actor. The drive does. A researcher with Read/Grep comprehends. A proofreader with Read/Grep critiques. Same tools, different system prompt, different behavior.
+Notice that researchers and proofreaders have the same tools. The tools do not define the actor. The drive does.
+
+A researcher with Read/Grep comprehends. A proofreader with Read/Grep critiques. Same tools, different system prompt, different behavior.
 
 If you give the proofreader Write access, it will start silently fixing issues instead of reporting them. It compromises between its critique drive and the newly available mutation capability. Removing the tool is not a limitation. It is focus.
 
@@ -130,7 +144,9 @@ If you give the proofreader Write access, it will start silently fixing issues i
 
 Orchestrators are not subagents. They hold the primary actor's goal. They coordinate, delegate, and synthesize.
 
-The commissioning orchestrator in UC-01 dispatches researchers, feeds their reports to the developmental editor, presents the plan for user approval, and dispatches creators. It does not comprehend source code (that is the researcher's drive). It does not synthesize structure (that is the developmental editor's drive). It does not write pages (that is the creator's drive). The orchestrator ensures the drives, taken together, satisfy the user's goal.
+The commissioning orchestrator in UC-01 dispatches researchers, feeds their reports to the developmental editor, presents the plan for user approval, and dispatches creators. It does not comprehend source code (that is the researcher's drive). It does not synthesize structure (that is the developmental editor's drive). It does not write pages (that is the creator's drive).
+
+The orchestrator ensures the drives, taken together, satisfy the user's goal.
 
 ### Hooks enforce invariants, prompts carry advice
 
@@ -168,9 +184,13 @@ When in doubt, use Opus. A cheaper model that produces wrong output costs more i
 
 Subagents do not share context with each other. A creator cannot see the proofreader's findings while writing. A researcher cannot see what another researcher found.
 
-This is correct. Isolation prevents drives from contaminating each other. If the creator could see the proofreader's critique drive at work, it might self-censor. If the proofreader could see the creator's production context, it might soften its critique. Separation produces better outcomes.
+This is correct. Isolation prevents drives from contaminating each other.
 
-Communication happens through the orchestrator. Researchers return reports. The orchestrator extracts relevant content and passes it to the next agent. The orchestrator is the relay. Agents never talk to each other directly.
+If the creator could see the proofreader's critique drive at work, it might self-censor. If the proofreader could see the creator's production context, it might soften its critique. Separation produces better outcomes.
+
+Communication happens through the orchestrator. Researchers return reports. The orchestrator extracts relevant content and passes it to the next agent.
+
+The orchestrator is the relay. Agents never talk to each other directly.
 
 ### Try it
 
@@ -180,7 +200,7 @@ Take the elevator actor catalog from the foundation lessons. For the Owner, Insp
 3. Which invariants belong in hooks (hard enforcement) vs. prompts (advisory).
 4. A model tier: Haiku, Sonnet, or Opus.
 
-### For deeper reading
+### Further reading
 
 - `DOMAIN-IMPLEMENTATION-PRINCIPLES.md` -- all implementation principles with rationale
 - `samples/wiki-agent/ACTOR-CATALOG.md` -- full actor definitions showing how drives map to agent types
@@ -188,6 +208,10 @@ Take the elevator actor catalog from the foundation lessons. For the Owner, Insp
 ---
 
 ## SWE03: The complete model
+
+### The core idea
+
+A use case model is an ecosystem of cross-referenced artifacts, discovered through iteration. The model is never constructed top-down -- it emerges from bottom-up Socratic interviews and continuous consolidation.
 
 ### The artifact ecosystem
 
@@ -246,7 +270,9 @@ The model emerges through five phases. They are numbered for exposition, not for
 
 ### Backtracking is correct
 
-Phase 2 will send you back to phase 1 repeatedly. The philosophy is not complete until the model is complete. Phase 3 will send you back to phase 2 to reconcile use cases that consolidated poorly. Phase 4 will send you back to phase 3 when bounded contexts reveal that shared invariants were scoped wrong. Phase 5 will send you back anywhere.
+Phase 2 will send you back to phase 1 repeatedly. The philosophy is not complete until the model is complete.
+
+Phase 3 will send you back to phase 2 to reconcile use cases that consolidated poorly. Phase 4 will send you back to phase 3 when bounded contexts reveal that shared invariants were scoped wrong. Phase 5 will send you back anywhere.
 
 This is the process. A use case model is discovered, not constructed. Each phase deepens understanding. Deeper understanding revises earlier assumptions.
 
@@ -291,7 +317,7 @@ Design a USE-CASE-CATALOG.md for the elevator system. Include:
 
 Use the wiki-agent USE-CASE-CATALOG.md as a structural reference.
 
-### For deeper reading
+### Further reading
 
 - `DOMAIN-MODEL-ARTIFACTS.md` -- full descriptions of every artifact type and when each emerges
 - `SYSTEM-DESIGN-PHASES.md` -- the five phases in detail, including what triggers backtracking at each phase

@@ -8,9 +8,11 @@ These lessons follow the 4 shared foundation lessons. You already know condition
 
 ## SE01: System boundaries and integration
 
-### The key idea
+### The core idea
 
-A bounded context is a region of the domain where a word has a specific meaning. It is not a module. It is not a service. It is not an organizational unit. Two bounded contexts exist when the same term means different things in different areas of the domain.
+A bounded context is a region of the domain where a word has a specific meaning. It is not a module. It is not a service. It is not an organizational unit.
+
+Two bounded contexts exist when the same term means different things in different areas of the domain.
 
 This is the contradiction test: if you find the same word carrying different meaning in two places, you have found a boundary.
 
@@ -29,9 +31,13 @@ The wiki-agent model has 6 bounded contexts. Here is how they connect.
 3. Each filed issue is a FindingFiled event -- a durable fact stored in GitHub.
 4. UC-03 (Revise Wiki) reads those GitHub issues. The fulfillment orchestrator parses each issue body against the same schema, groups actionable issues by page, and dispatches correctors.
 
-The GitHub issue body is the published language between DC-02 and DC-03. It is the protocol at the crossing point. DC-02 writes issues in this format. DC-03 reads issues in this format. Neither context knows the other's internal state. They share only the protocol.
+The GitHub issue body is the published language between DC-02 and DC-03. It is the protocol at the crossing point. DC-02 writes issues in this format. DC-03 reads issues in this format.
 
-**DC-03 and DC-04 share a corrector protocol.** The corrector in DC-03 (Wiki Revision) receives a correction assignment: page, finding, recommendation, source reference. The corrector in DC-04 (Drift Detection) receives the same structure -- but the finding comes from a fact-checker assessment, not a GitHub issue. The protocol is structurally compatible. The corrector is reusable. The contexts are separate.
+Neither context knows the other's internal state. They share only the protocol.
+
+**DC-03 and DC-04 share a corrector protocol.** The corrector in DC-03 (Wiki Revision) receives a correction assignment: page, finding, recommendation, source reference. The corrector in DC-04 (Drift Detection) receives the same structure -- but the finding comes from a fact-checker assessment, not a GitHub issue.
+
+The protocol is structurally compatible. The corrector is reusable. The contexts are separate.
 
 This is where the contradiction test matters. A "correction" in DC-03 means applying a fix from a proofreader's finding via a GitHub issue. A "correction" in DC-04 means applying a fix from a fact-checker's assessment of source code drift. Same word. Different meaning. Different context.
 
@@ -55,7 +61,7 @@ Draw the integration map for the elevator system.
 
 Ask yourself: which crossing points have no protocol defined yet? That is where the model is incomplete.
 
-### References
+### Further reading
 
 - `.claude/guidance/UC-PHILOSOPHY.md` -- sections on bounded contexts, domain events, and protocols
 - `samples/wiki-agent/domains/` -- DC-01 through DC-06
@@ -66,13 +72,17 @@ Ask yourself: which crossing points have no protocol defined yet? That is where 
 
 ## SE02: Invariants and resilience
 
-### The key idea
+### The core idea
 
-Value conditions on the primary actor's goal predict failure modes. You do not need to look at the implementation. If the Passenger values safety, you can derive what threatens safety. If the Passenger values promptness, you can derive what threatens promptness. The goal tells you what can go wrong.
+Value conditions on the primary actor's goal predict failure modes. You do not need to look at the implementation.
+
+If the Passenger values safety, you can derive what threatens safety. If the Passenger values promptness, you can derive what threatens promptness. The goal tells you what can go wrong.
 
 Three concepts make this work:
 
-**Invariants** are domain rules that hold continuously. They are not entry gates you check once. "Source repo is readonly" is not checked at the start and forgotten. It must hold throughout the entire operation. An actor that violates an invariant mid-scenario has failed, even if the final output looks correct.
+**Invariants** are domain rules that hold continuously. They are not entry gates you check once. "Source repo is readonly" is not checked at the start and forgotten.
+
+It must hold throughout the entire operation. An actor that violates an invariant mid-scenario has failed, even if the final output looks correct.
 
 **Obstacles** are threats to the goal, described in domain language. "Source code is unreachable" tells you what is at risk. "Exit code 128" tells you nothing useful. An obstacle names the value it threatens and describes what happens to the actor's goal.
 
@@ -84,15 +94,25 @@ The Passenger's conditional goal is: be on a different floor -- safely, promptly
 
 Each value condition predicts a category of threat:
 
-- **Safely** predicts threats to physical safety: mechanical failure, cable stress, brake failure, free-fall. The recovery must preserve safety above all else. Emergency brakes engage. The car stops at the nearest floor. The system does not try to complete the trip if safety is in question.
+- **Safely** predicts threats to physical safety: mechanical failure, cable stress, brake failure, free-fall. The recovery must preserve safety above all else.
 
-- **Promptly** predicts threats to timeliness: peak demand, mechanical delays, long queues. The recovery preserves timeliness where possible. The scheduler adjusts priority. The system communicates expected wait times. But promptness never overrides safety.
+  Emergency brakes engage. The car stops at the nearest floor. The system does not try to complete the trip if safety is in question.
 
-- **Without trauma** predicts threats to psychological comfort: power failure during transit (trapped in the dark), sudden stops, lack of information. The recovery preserves comfort. Emergency lighting activates. Communication opens to building staff. The system explains what is happening.
+- **Promptly** predicts threats to timeliness: peak demand, mechanical delays, long queues. The recovery preserves timeliness where possible.
 
-- **Intact** predicts threats to physical integrity: door malfunctions during boarding, entrapment. The recovery preserves integrity. Sensors detect obstruction. Doors reopen. The car does not move until doors are fully closed and clear.
+  The scheduler adjusts priority. The system communicates expected wait times. But promptness never overrides safety.
 
-Notice: you derived all of this from the goal, not from the implementation. A spec says "elevator must not free-fall." A value says "I want to be safe." The spec is one implementation of the value. The value predicts entire categories of failure that no single spec can cover.
+- **Without trauma** predicts threats to psychological comfort: power failure during transit (trapped in the dark), sudden stops, lack of information. The recovery preserves comfort.
+
+  Emergency lighting activates. Communication opens to building staff. The system explains what is happening.
+
+- **Intact** predicts threats to physical integrity: door malfunctions during boarding, entrapment. The recovery preserves integrity.
+
+  Sensors detect obstruction. Doors reopen. The car does not move until doors are fully closed and clear.
+
+Notice: you derived all of this from the goal, not from the implementation. A spec says "elevator must not free-fall." A value says "I want to be safe."
+
+The spec is one implementation of the value. The value predicts entire categories of failure that no single spec can cover.
 
 ### UC-04: failure handling in practice
 
@@ -106,9 +126,13 @@ UC-04 (Sync Wiki with Source Changes) shows these principles in a real use case.
 
 **Fact-checker cannot reach an external source.** The fact-checker skips that verification and records the claim as unverifiable. The sync report's errata section surfaces the gap. The recovery preserves accuracy: it is better to leave an unverified claim in place than to guess wrong.
 
-**One fact-checker crashes.** The pages it was responsible for are not checked. But assessments from successful fact-checkers proceed normally. Pages with drift are sent to correctors. The report notes unchecked pages. The recovery is partial completion: everything that succeeded is preserved. Everything that failed is recorded.
+**One fact-checker crashes.** The pages it was responsible for are not checked. But assessments from successful fact-checkers proceed normally. Pages with drift are sent to correctors.
 
-**One corrector crashes.** Successfully applied corrections from other correctors remain on disk. The failed corrections are noted in the report. The user retries to pick up uncorrected drift. Again, partial completion. The system does not roll back successful corrections to maintain an all-or-nothing illusion.
+The report notes unchecked pages. The recovery is partial completion: everything that succeeded is preserved. Everything that failed is recorded.
+
+**One corrector crashes.** Successfully applied corrections from other correctors remain on disk. The failed corrections are noted in the report.
+
+The user retries to pick up uncorrected drift. Again, partial completion. The system does not roll back successful corrections to maintain an all-or-nothing illusion.
 
 **The sync report as durable record.** The report captures everything: corrections applied, pages verified, claims skipped, failures encountered. Reports accumulate across runs. The user can track accuracy trends. This preserves the User's value of confidence: you may not have full coverage, but you know exactly what you have and what you do not.
 
@@ -127,7 +151,7 @@ For each obstacle:
 3. Design a recovery strategy that preserves the threatened value.
 4. Note any trade-offs: does the recovery sacrifice one value to preserve another?
 
-### References
+### Further reading
 
 - `.claude/guidance/UC-PHILOSOPHY.md` -- sections on invariants over preconditions, obstacles over exceptions, value conditions drive system design
 - `samples/wiki-agent/UC-04-sync-wiki-with-source-changes.md` -- invariants, goal obstacles, failure and success outcomes
@@ -136,7 +160,7 @@ For each obstacle:
 
 ## SE03: The complete domain model
 
-### The key idea
+### The core idea
 
 A use case model is not a pile of documents. It is a connected graph of artifacts, each with a purpose, a relationship to the others, and a point in the process where it emerges. The model is discovered, not constructed. And when it is complete, a newcomer can understand the whole system by starting at one document and following references.
 
@@ -148,7 +172,9 @@ Here are the artifacts that constitute a viable use case model, in rough order o
 
 2. **Template** (`TEMPLATE.md`). The structural contract for individual use cases. Encodes philosophy into structure. Emerges early.
 
-3. **Individual use cases** (`UC-{id}-{slug}.md`). The core of the model. Each describes one goal pursued by one primary actor. Designed one at a time through Socratic interviews. The first takes the longest because it establishes vocabulary. By the third, the domain language is settling.
+3. **Individual use cases** (`UC-{id}-{slug}.md`). The core of the model. Each describes one goal pursued by one primary actor. Designed one at a time through Socratic interviews.
+
+   The first takes the longest because it establishes vocabulary. By the third, the domain language is settling.
 
 4. **Actor catalog** (`ACTOR-CATALOG.md`). Consolidates every actor -- who they are, what drives them, where they appear. Includes the appearance matrix. Emerges after 2--3 use cases when actors start repeating.
 
@@ -220,7 +246,7 @@ Consolidation is how the model goes from a collection of individual use cases to
 - The first time an actor appears under different names in different use cases, you settle the name in ACTOR-CATALOG.md.
 - The first time you notice natural clustering (these 2 use cases share vocabulary and domain rules, those 3 share different vocabulary), you have bounded contexts waiting to be formalized.
 
-The wiki-agent model consolidated actors from 4 editorial use cases into an actor catalog with 3 abstract families (orchestrators, assessors, content mutators) and 10 concrete actors. The appearance matrix shows at a glance which actors participate in which use cases. You can spot coverage gaps (is any use case missing an orchestrator?) and reuse opportunities (the corrector appears in both UC-03 and UC-04).
+The wiki-agent model consolidated actors from 4 editorial use cases into an actor catalog with 3 abstract families (orchestrators, assessors, content mutators) and 11 concrete actors. The appearance matrix shows at a glance which actors participate in which use cases. You can spot coverage gaps (is any use case missing an orchestrator?) and reuse opportunities (the corrector appears in both UC-03 and UC-04).
 
 ### The model is discovered, not constructed
 
@@ -234,7 +260,9 @@ Primary actor
         -> system design (invariants, use cases, bounded contexts)
 ```
 
-You do not design 6 bounded contexts and then fill them with use cases. You design use cases one at a time. Boundaries emerge from contradictions. Actors emerge from tensions. Invariants emerge from repetition. The artifacts formalize what was already implicit.
+You do not design 6 bounded contexts and then fill them with use cases. You design use cases one at a time.
+
+Boundaries emerge from contradictions. Actors emerge from tensions. Invariants emerge from repetition. The artifacts formalize what was already implicit.
 
 This means the model is never wrong in a permanent way. When consolidation reveals an inconsistency -- two use cases describe the same actor with different drives, or a shared invariant contradicts a local one -- the inconsistency is a discovery opportunity. Fix it, update the dependents, and the model becomes more coherent.
 
@@ -250,7 +278,7 @@ Include:
 
 Check your work: does every actor referenced in your SE01 integration map and SE02 obstacle list appear in the catalog? Does every row in the matrix correspond to a defined actor? If not, you have found a gap.
 
-### References
+### Further reading
 
 - `.claude/guidance/DOMAIN-MODEL-ARTIFACTS.md` -- artifact definitions, relationship map, emergence timing
 - `.claude/guidance/SYSTEM-DESIGN-PHASES.md` -- the 5 phases of model design

@@ -25,6 +25,8 @@ Four lessons shared across all tracks. These build the conceptual vocabulary tha
 3. **Exercise** (20 min) — students rewrite 5 task statements as goals and identify value conditions for each. See student notes for the exercise prompts.
 4. **Debrief** (15 min) — review rewrites as a group. Apply the gift test to each. Discuss which value conditions emerged.
 
+**Total: 70 min**
+
 ### Source material
 
 - UC-PHILOSOPHY.md, "Goals are conditional" section
@@ -56,10 +58,12 @@ Four lessons shared across all tracks. These build the conceptual vocabulary tha
 3. **Exercise** (20 min) — given the elevator Passenger's value conditions (safely, promptly, without trauma, intact), derive the full actor network. For each supporting actor: name them, state their drive, and trace which value condition spawned them.
 4. **Debrief** (10 min) — review actor networks. Test each with the genealogy question: "What tension demands this actor, and what drive resolves it?"
 
+**Total: 70 min**
+
 ### Source material
 
 - UC-PHILOSOPHY.md, "Primary actors have goals; supporting actors have drives" through "Goal conflicts spawn actors"
-- VISION.md, "The Entry Point: Actors and Goals, From First Principles" and "The elevator example — the full derivation"
+- VISION.md, "The Entry Point: Actors and Goals, From First Principles" (includes the full elevator derivation table)
 
 ---
 
@@ -85,6 +89,8 @@ Four lessons shared across all tracks. These build the conceptual vocabulary tha
 2. **Demonstrate** (15 min) — live noun-refinement. Start with "passenger" in the elevator system. A driver is technically a passenger — the operator passenger. Qualify, refine, separate: "operator passenger" → Driver. Now you have a standalone noun with a clear goal. The qualifier vanished because the noun absorbed it.
 3. **Exercise** (25 min) — pair up. One person describes a system they know well. The other conducts a 15-minute Socratic interview following the four rounds. The interviewer's job: discover at least 2 primary actors with conditional goals and 1 supporting actor with a traceable drive. Switch roles if time permits.
 4. **Debrief** (10 min) — pairs report what they discovered. Discuss: what surprised you? Where did contradictions appear? What was hardest — asking or answering?
+
+**Total: 70 min**
 
 ### Source material
 
@@ -116,6 +122,8 @@ Four lessons shared across all tracks. These build the conceptual vocabulary tha
 2. **Demonstrate** (25 min) — walk through UC-01 Populate New Wiki from the wiki-agent sample. Show how each template section looks when filled in. Point out: the goal is a desired state ("empty wiki → complete documentation"), scenario steps express intent ("commissioning orchestrator collects all exploration reports"), obstacles are threats to the goal ("developmental editor fails — synthesis cannot be completed"), domain events name what was produced ("WikiPopulated").
 3. **Exercise** (20 min) — map the elevator system's "transport passenger" use case to the template. Write: goal statement with value conditions, 2-3 invariants, 3 scenario steps (intent, not mechanics), 2 obstacles with recovery strategies.
 4. **Debrief** (10 min) — review use cases. Check: does the goal pass the gift test? Do scenario steps express intent? Are obstacles framed as threats to the goal?
+
+**Total: 75 min**
 
 ### Source material
 

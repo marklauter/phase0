@@ -23,12 +23,12 @@ Running example: an elevator system. Case study: the wiki-agent model at `sample
 
 ### Activity sequence
 
-| Phase | Duration | Activity |
-|-------|----------|----------|
-| Teach | 15 min | Values vs. specs. Walk through the elevator example: "safely" is a value; "must not free-fall" is a spec that implements it. Show how the value admits solutions the spec never imagined. Introduce the derivation chain. |
-| Demonstrate | 15 min | Wiki-agent case study. Show the User's goal hierarchy from the actor catalog: life goals (effectiveness, autonomy), experience goals (feeling in control, feeling confident), end goals (wiki is accurate, is current, reflects the source). Walk through how each experience goal shaped a design decision -- plan approval before content is written (UC-01), post-hoc review via git diff (UC-04), type-to-confirm before destructive actions (UC-06). |
-| Exercise | 20 min | Pick a product you use daily. List 5 value conditions you hold about using it. For each value condition, describe one design decision in the product that traces back to that value. Then: identify one value condition the product violates, and describe a design change that would honor it. |
-| Debrief | 10 min | Share examples. Test each value condition: is it a value or a disguised spec? Apply the gift test -- if a shortcut satisfies it, you wrote a task. Highlight the best examples of values that open design space vs. specs that close it. |
+| Phase | Activity | Time |
+|-------|----------|------|
+| Teach | Values vs. specs. Walk through the elevator example: "safely" is a value; "must not free-fall" is a spec that implements it. Show how the value admits solutions the spec never imagined. Introduce the derivation chain. | 15 min |
+| Demonstrate | Wiki-agent case study. Show the User's goal hierarchy from the actor catalog: life goals (effectiveness, autonomy), experience goals (feeling in control, feeling confident), end goals (wiki is accurate, is current, reflects the source). Walk through how each experience goal shaped a design decision -- plan approval before content is written (UC-01), post-hoc review via git diff (UC-04), type-to-confirm before destructive actions (UC-06). | 15 min |
+| Exercise | Pick a product you use daily. List 5 value conditions you hold about using it. For each value condition, describe one design decision in the product that traces back to that value. Then: identify one value condition the product violates, and describe a design change that would honor it. | 20 min |
+| Debrief | Share examples. Test each value condition: is it a value or a disguised spec? Apply the gift test -- if a shortcut satisfies it, you wrote a task. Highlight the best examples of values that open design space vs. specs that close it. | 10 min |
 
 **Total: 60 min**
 
@@ -58,19 +58,19 @@ Running example: an elevator system. Case study: the wiki-agent model at `sample
 
 ### Activity sequence
 
-| Phase | Duration | Activity |
-|-------|----------|----------|
-| Teach | 15 min | Tensions as generative forces. Walk through Round 3 of the natural group process: "What keeps you up at night?" Show how each answer maps to a value condition under threat. Introduce actor genealogy -- every supporting actor has a birth certificate traceable to a value condition. |
-| Demonstrate | 20 min | Two case studies side by side. **Elevator:** Passenger's "safely" value + Owner's cost-minimization drive = tension -> Inspector (drive: public safety). Passenger's "promptly" value + building capacity = tension -> Scheduler (drive: efficiency). **Wiki-agent:** User's accuracy value + Creator's production drive = tension -> Proofreader (drive: critique). Show that four proofreading lenses exist because no single lens catches everything -- structure, line editing, copy editing, accuracy. Each lens is a separate application of the critique drive to a different concern. |
-| Exercise | 20 min | Return to the elevator system. Start from the Passenger's four value conditions (safely, promptly, without trauma, intact). For each value condition: name the force of reality it collides with, describe the tension, name the supporting actor it spawns, and state that actor's drive. Present your tension map as a table. |
-| Debrief | 15 min | Compare tension maps. Look for: actors spawned by multiple tensions (legitimate -- some actors resolve more than one). Actors with no traceable genealogy (cut them). Tensions with no actor (either the tension is resolved by an existing actor's drive, or you have found a gap). Discuss: what happens to a system that has no tensions? |
+| Phase | Activity | Time |
+|-------|----------|------|
+| Teach | Tensions as generative forces. Walk through Round 3 of the natural group process: "What keeps you up at night?" Show how each answer maps to a value condition under threat. Introduce actor genealogy -- every supporting actor has a birth certificate traceable to a value condition. | 15 min |
+| Demonstrate | Two case studies side by side. **Elevator:** Passenger's "safely" value + Owner's cost-minimization drive = tension -> Inspector (drive: public safety). Passenger's "promptly" value + building capacity = tension -> Scheduler (drive: efficiency). **Wiki-agent:** User's accuracy value + Creator's production drive = tension -> Proofreader (drive: critique). Show that four proofreading lenses exist because no single lens catches everything -- structure, line editing, copy editing, accuracy. Each lens is a separate application of the critique drive to a different concern. | 20 min |
+| Exercise | Return to the elevator system. Start from the Passenger's four value conditions (safely, promptly, without trauma, intact). For each value condition: name the force of reality it collides with, describe the tension, name the supporting actor it spawns, and state that actor's drive. Present your tension map as a table. | 20 min |
+| Debrief | Compare tension maps. Look for: actors spawned by multiple tensions (legitimate -- some actors resolve more than one). Actors with no traceable genealogy (cut them). Tensions with no actor (either the tension is resolved by an existing actor's drive, or you have found a gap). Discuss: what happens to a system that has no tensions? | 15 min |
 
 **Total: 70 min**
 
 ### Source material
 
 - `UC-PHILOSOPHY.md` -- "Goal conditions create tensions; tensions spawn supporting actors," "Goal conflicts spawn actors"
-- `phase0/VISION.md` -- "Round 3: What goes wrong?", the full elevator derivation table, the derivation chain
+- `phase0/VISION.md` -- "Round 3: What goes wrong?", "The Entry Point: Actors and Goals, From First Principles" (includes the elevator derivation table and chain)
 - `samples/wiki-agent/ACTOR-CATALOG.md` -- Proofreaders section (four editorial lenses), separation rationale for Content Mutators
 - `samples/wiki-agent/USE-CASE-CATALOG.md` -- domain description, actor drives paragraph
 
@@ -95,17 +95,17 @@ Running example: an elevator system. Case study: the wiki-agent model at `sample
 
 ### Activity sequence
 
-| Phase | Duration | Activity |
-|-------|----------|----------|
-| Teach | 15 min | The Phase0 process. Walk through the four rounds using the package delivery example from the vision document. Show how "the customer" became three actors (Sender, Recipient, Complainant) through noun refinement. Show how "packages get lost between warehouse and truck" revealed a bounded context boundary. Introduce the facilitator/historian division of labor. |
-| Demonstrate | 10 min | Show the historian's capture vs. specialist output. Side-by-side comparison: the historian writes "Alice said 'shipment' means what leaves the warehouse; Bob contradicted -- he means what the customer ordered." The specialist later writes the GLOSSARY.md entries. The historian captures the contradiction; the specialist resolves it. Highlight the last row: "Alice's insight: 'we don't track packages, we track promises'" -- raw material that no specialist agent formalizes, but that the historian preserves. |
-| Exercise | 30 min | Groups of 3. One person is the domain expert (pick a domain you know well -- your workplace, a hobby, a system you use daily). One is the facilitator. One is the historian. Conduct a 30-minute Phase0 discovery session. The facilitator runs the four rounds. The historian captures decisions, contradictions, new terms, open questions, and raw insights. At the end, the historian reads back their notes. The group identifies: how many primary actors, how many value conditions, and how many tensions they surfaced. |
-| Debrief | 15 min | Each group shares their historian's notes (not the facilitator's conclusions). Discuss: what did the historian capture that the facilitator missed? Where did backtracking happen (a later round changed what was understood from an earlier round)? Which raw insights feel important but are not yet ready to become artifacts? |
+| Phase | Activity | Time |
+|-------|----------|------|
+| Teach | The Phase0 process. Walk through the four rounds using the package delivery example from the vision document. Show how "the customer" became three actors (Sender, Recipient, Complainant) through noun refinement. Show how "packages get lost between warehouse and truck" revealed a bounded context boundary. Introduce the facilitator/historian division of labor. | 15 min |
+| Demonstrate | Show the historian's capture vs. specialist output. Side-by-side comparison: the historian writes "Alice said 'shipment' means what leaves the warehouse; Bob contradicted -- he means what the customer ordered." The specialist later writes the GLOSSARY.md entries. The historian captures the contradiction; the specialist resolves it. Highlight the last row: "Alice's insight: 'we don't track packages, we track promises'" -- raw material that no specialist agent formalizes, but that the historian preserves. | 10 min |
+| Exercise | Groups of 3. One person is the domain expert (pick a domain you know well -- your workplace, a hobby, a system you use daily). One is the facilitator. One is the historian. Conduct a 30-minute Phase0 discovery session. The facilitator runs the four rounds. The historian captures decisions, contradictions, new terms, open questions, and raw insights. At the end, the historian reads back their notes. The group identifies: how many primary actors, how many value conditions, and how many tensions they surfaced. | 30 min |
+| Debrief | Each group shares their historian's notes (not the facilitator's conclusions). Discuss: what did the historian capture that the facilitator missed? Where did backtracking happen (a later round changed what was understood from an earlier round)? Which raw insights feel important but are not yet ready to become artifacts? | 15 min |
 
 **Total: 70 min**
 
 ### Source material
 
-- `phase0/VISION.md` -- "The Natural Group Process" (all four rounds), "The Historian," "The Agentic Architecture," "Why Socratic Extraction Works"
+- `phase0/VISION.md` -- "The Natural Group Process" (all four rounds), "Who Holds the Threads?" (the historian role), "The Agentic Architecture," "Why Socratic Extraction Works"
 - `UC-PHILOSOPHY.md` -- "Extract, don't invent"
 - `SYSTEM-DESIGN-PHASES.md` -- "On backtracking"

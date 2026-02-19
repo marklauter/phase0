@@ -28,8 +28,8 @@ Case study: the wiki-agent model (6 use cases, 6 bounded contexts, 7 domain even
 
 ### Activity sequence
 
-| Phase | Activity | Minutes |
-|-------|----------|---------|
+| Phase | Activity | Time |
+|-------|----------|------|
 | Teach | Present bounded contexts, domain events, and protocols. Emphasize: contexts are linguistic regions, not architectural boxes. Use the contradiction test to find boundaries. | 15 |
 | Demonstrate | Walk through the wiki-agent integration network. Show DC-05 (Workspace Lifecycle) feeding all operational contexts. Show DC-02 (Editorial Review) publishing FindingFiled, consumed by DC-03 (Wiki Revision) via GitHub Issues. Show the issue body as the published language -- the protocol between these two contexts. Show the correction assignment protocol shared between DC-03 and DC-04. | 15 |
 | Exercise | Draw the integration map for the elevator system. Identify at least 3 bounded contexts. For each context, name the domain events it publishes and consumes. Define the protocol at each crossing point. | 20 |
@@ -66,8 +66,8 @@ Case study: the wiki-agent model (6 use cases, 6 bounded contexts, 7 domain even
 
 ### Activity sequence
 
-| Phase | Activity | Minutes |
-|-------|----------|---------|
+| Phase | Activity | Time |
+|-------|----------|------|
 | Teach | Present invariants vs. preconditions. Show how value conditions predict failure modes. Introduce obstacles as goal threats, not error codes. Introduce recovery strategies that preserve actor values. | 15 |
 | Demonstrate | Walk through UC-04 (Sync Wiki with Source Changes). Show the invariants -- accuracy only, no new pages, targeted edits not rewrites. Show the obstacle handling: fact-checker can't reach external source (skip, don't guess -- invariant: unreachable sources are skipped, not guessed); corrector partially fails (successful corrections remain on disk); sync report as durable record of what happened. Show how each recovery strategy preserves what the User values: confidence in accuracy, no surprises, actionable information. | 15 |
 | Exercise | For the elevator system's "transport passenger" use case, derive 4 obstacles from the Passenger's value conditions (safety, promptness, without trauma, intact). For each obstacle: name the value condition it threatens, describe the threat, and design a recovery strategy that preserves what the Passenger values. | 20 |
@@ -105,8 +105,8 @@ Case study: the wiki-agent model (6 use cases, 6 bounded contexts, 7 domain even
 
 ### Activity sequence
 
-| Phase | Activity | Minutes |
-|-------|----------|---------|
+| Phase | Activity | Time |
+|-------|----------|------|
 | Teach | Present the artifact ecosystem using the relationship map from DOMAIN-MODEL-ARTIFACTS.md. Show emergence timing -- what comes first, what comes late, what triggers each artifact. Emphasize: the model is discovered, not constructed. | 15 |
 | Demonstrate | Full wiki-agent model walkthrough. Start at USE-CASE-CATALOG.md. Follow the bounded contexts table to DC-02 (Editorial Review). From DC-02, follow the FindingFiled event to DOMAIN-EVENTS.md. From the event, follow the consumer reference to DC-03 (Wiki Revision) and UC-03. From UC-03, follow the corrector to ACTOR-CATALOG.md. Show how every reference resolves. Show the appearance matrix. | 15 |
 | Exercise | Given the elevator system's actors, use cases, and contexts from the previous two exercises, write an ACTOR-CATALOG.md. Include: each actor (primary and supporting) with their goal or drive, the use cases they appear in, and an appearance matrix. Verify that every actor referenced in your use cases from SE01 and SE02 appears in the catalog. | 20 |

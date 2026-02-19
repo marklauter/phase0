@@ -6,7 +6,7 @@ Self-contained reading material for each lesson. You can read each section indep
 
 ## UX01: Value conditions and the design space
 
-### The big idea
+### The core idea
 
 Design decisions come from values, not features.
 
@@ -71,13 +71,15 @@ The refinement process: qualify, refine, separate.
 2. **Refine:** the qualifier tells you the noun is too broad. Absorb the qualifier into a new noun.
 3. **Separate:** "Customer who sends things" becomes **Sender**. The qualifier vanished because the noun absorbed it.
 
-Apply the gift test to check your goals. "I want to have a guitar" is a goal. "I want to buy a guitar" is a task disguised as a goal. If someone gifts you the guitar, you do not care that you did not buy it. If your goal statement would be satisfied by a shortcut that skips the described action, you wrote a task, not a goal.
+Apply the gift test to check your goals. "I want to have a guitar" is a goal. "I want to buy a guitar" is a task disguised as a goal.
+
+If someone gifts you the guitar, you do not care that you did not buy it. If your goal statement would be satisfied by a shortcut that skips the described action, you wrote a task, not a goal.
 
 ### Try it
 
 Pick a product you use daily -- a phone app, a tool at work, a household appliance. List 5 value conditions you hold about using it. For each one, describe a design decision in the product that traces back to that value. Then find one value condition the product violates, and describe a design change that would honor it.
 
-### Source material
+### Further reading
 
 - `.claude/guidance/UC-PHILOSOPHY.md` -- "Goals are conditional," "Value conditions drive the entire system design"
 - `phase0/VISION.md` -- "Conditional Goals: The Foundational Concept"
@@ -87,13 +89,15 @@ Pick a product you use daily -- a phone app, a tool at work, a household applian
 
 ## UX02: Tension mapping and actor genealogy
 
-### The big idea
+### The core idea
 
 Tensions are not problems to fix. They are the generative force of system design.
 
 A tension is what happens when a value condition meets reality. The Passenger values safety. The building Owner's drive is to minimize cost. Those two forces collide. That collision is a tension.
 
-The tension is not a sign that something is broken. The Owner is not trying to hurt the Passenger. But a single drive cannot serve competing concerns. The Owner's cost-minimization drive will, left unchecked, underinvest in safety. Not out of malice -- out of optimization. Every actor optimizes for its own drive. That is what makes actors predictable, and it is why you need more than one.
+The tension is not a sign that something is broken. The Owner is not trying to hurt the Passenger. But a single drive cannot serve competing concerns.
+
+The Owner's cost-minimization drive will, left unchecked, underinvest in safety. Not out of malice -- out of optimization. Every actor optimizes for its own drive. That is what makes actors predictable, and it is why you need more than one.
 
 The tension between the Passenger's safety value and the Owner's cost drive demands resolution. That resolution is a new actor: the **Inspector**, whose drive is public safety. The Inspector exists because no existing actor's drive protects the Passenger's safety value. The Inspector's genealogy traces directly to the Passenger's "safely" value condition.
 
@@ -143,7 +147,9 @@ Four proofreading lenses exist because no single pass catches everything:
 | Copy | Grammar, formatting, terminology consistency across pages |
 | Accuracy | Claims verified against source code on each page |
 
-Each lens is the critique drive applied to a different concern. Structure problems require reading the wiki as a whole. Accuracy problems require reading each page against its source. These are different reading strategies. One pass cannot do both well.
+Each lens is the critique drive applied to a different concern.
+
+Structure problems require reading the wiki as a whole. Accuracy problems require reading each page against its source. These are different reading strategies. One pass cannot do both well.
 
 ### Separation of concerns as conflict resolution
 
@@ -166,17 +172,17 @@ Return to the elevator system. Start from the Passenger's four value conditions:
 
 Present your tension map as a table. Then check each actor's genealogy: can you trace it back to a specific value condition?
 
-### Source material
+### Further reading
 
 - `.claude/guidance/UC-PHILOSOPHY.md` -- "Goal conditions create tensions; tensions spawn supporting actors," "Goal conflicts spawn actors," "Single responsibility for actors"
-- `phase0/VISION.md` -- "Round 3: What goes wrong?", the elevator derivation table
+- `phase0/VISION.md` -- "The Entry Point: Actors and Goals, From First Principles" (includes the elevator derivation table), "Round 3: What goes wrong?"
 - `samples/wiki-agent/ACTOR-CATALOG.md` -- Proofreaders (four editorial lenses), Content Mutator separation rationale
 
 ---
 
 ## UX03: From discovery to design
 
-### The big idea
+### The core idea
 
 Phase0 is the zeroth thing before anything else makes sense.
 
@@ -239,7 +245,9 @@ Backtracking is correct. If Round 3 reveals a new actor that changes your unders
 
 Two roles. Two different skills.
 
-**The facilitator** drives the conversation. Asks why. Notices contradictions. Decides what to explore next. The facilitator does not need domain expertise. In fact, domain expertise can be a liability -- an expert facilitator may project their own model instead of extracting the domain expert's. The facilitator's power comes from not knowing the answers. That is what makes the questions genuine.
+**The facilitator** drives the conversation. Asks why. Notices contradictions. Decides what to explore next.
+
+The facilitator does not need domain expertise. In fact, domain expertise can be a liability -- an expert facilitator may project their own model instead of extracting the domain expert's. The facilitator's power comes from not knowing the answers. That is what makes the questions genuine.
 
 **The historian** captures what matters. Silently. Without being prompted. The historian writes down:
 
@@ -249,7 +257,9 @@ Two roles. Two different skills.
 - **Open questions** -- things explicitly deferred
 - **Raw insights** -- things that are not ready to become formal artifacts
 
-The historian's most important captures are the raw insights. "Alice's insight: 'we don't track packages, we track promises.'" That sentence might become a design principle. It might become a domain narrative. It might remain a note forever. But formal processes have no place for it. The historian does.
+The historian's most important captures are the raw insights. "Alice's insight: 'we don't track packages, we track promises.'"
+
+That sentence might become a design principle. It might become a domain narrative. It might remain a note forever. But formal processes have no place for it. The historian does.
 
 Here is what the historian captures vs. what specialist agents later produce:
 
@@ -275,8 +285,8 @@ Conduct a 30-minute Phase0 discovery session:
 
 Count what you surfaced: how many primary actors? How many value conditions? How many tensions? Which historian notes are not yet ready to become anything formal?
 
-### Source material
+### Further reading
 
-- `phase0/VISION.md` -- "The Natural Group Process" (all four rounds), "The Historian," "Why Socratic Extraction Works"
+- `phase0/VISION.md` -- "The Natural Group Process" (all four rounds), "Who Holds the Threads?" (the historian role), "Why Socratic Extraction Works"
 - `.claude/guidance/UC-PHILOSOPHY.md` -- "Extract, don't invent"
 - `.claude/guidance/SYSTEM-DESIGN-PHASES.md` -- "On backtracking"

@@ -2,7 +2,7 @@
 
 A guide to the artifacts that constitute a viable use case model. Each artifact has a purpose, a relationship to other artifacts, and a point in the process where it typically emerges. "Typically" is doing work in that sentence — discovery is non-linear and artifacts evolve as understanding deepens.
 
-This document describes *what* to produce. See [USE-CASE-PHASES.md](USE-CASE-PHASES.md) for *when* and *how*.
+This document describes *what* to produce. See [SYSTEM-DESIGN-PHASES.md](SYSTEM-DESIGN-PHASES.md) for *when* and *how*.
 
 ---
 

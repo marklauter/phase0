@@ -6,7 +6,7 @@ Every actionable documentation problem tracked in GitHub Issues has its recommen
 
 ## Context
 
-- **Bounded context:** [DC-03 Issue Resolution](domains/DC-03-issue-resolution.md)
+- **Bounded context:** [DC-03 Wiki Revision](domains/DC-03-wiki-revision.md)
 - **Primary actor:** User
 - **Supporting actors:** [Orchestrator](ACTOR-CATALOG.md#orchestrator) (`/resolve-issues` command), [Fixer agents](ACTOR-CATALOG.md#fixer-agents-corrector) (one per wiki page with issues)
 - **Trigger:** The user has open documentation issues (typically produced by UC-02) and wants the recommended corrections applied to the wiki.
