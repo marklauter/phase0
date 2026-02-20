@@ -6,6 +6,32 @@ This is not a use case specification. There are no scenarios or step-by-step flo
 
 ---
 
+## Why this system exists
+
+The elevator is not a given. It is derived from a tension.
+
+Manhattan, turn of the 20th century. People want to live and work in New York. That is the primary actor's goal: *be in New York*. But the island is finite — there is not enough horizontal space. Tension: the goal collides with geography. The solution is to build up.
+
+But building up creates a new tension. People cannot comfortably walk more than four flights of stairs. A ten-story building is useless if no one can reach the upper floors. The goal "be on the 68th floor" collides with the limits of the human body. That tension demands a solution. The solution is the elevator.
+
+The derivation chain runs *before* the system exists:
+
+```
+People want to be in New York
+  → not enough horizontal space (tension)
+    → build taller buildings (solution)
+      → people can't walk up more than 4 flights (new tension)
+        → the elevator must be invented (system under design)
+```
+
+This is the same pattern at every scale. A pebble is in your shoe. It hurts. Your goal is to not hurt. Tension: pebble meets foot. Solution: the sock is invented. You want to be on the 68th floor. You will not walk up 68 flights. Tension: goal meets physical limits. Solution: the elevator is invented.
+
+Every system under design is born from a tension on a primary actor's goal. The elevator is no exception. Everything in this case study — every actor, every drive, every genealogy — is downstream of the moment when "be on a higher floor" collided with "cannot walk there."
+
+Be on the lookout for things that suck. Things that suck are where the new products and inventions are hiding. Walking up 68 flights sucks. The elevator was hiding there.
+
+---
+
 ## The system
 
 The system under design is an elevator in a building. The elevator carries people between floors.
@@ -13,6 +39,26 @@ The system under design is an elevator in a building. The elevator carries peopl
 The elevator is not an actor. It is the system under design — the thing being built, not a participant using it. Floors are not actors. They have no goals. These are common mistakes students make when first modeling this domain: they reach for the nouns that are physically prominent rather than the nouns that have goals.
 
 The test for actor-hood: does this entity pursue a goal and make decisions in service of that goal? The elevator does not pursue goals. Floor 12 does not pursue goals. The person standing inside the elevator does.
+
+### System variants
+
+"The elevator" is not one system. The same derivation chain that produces actors also produces system variants — different elevator types spawned by different tensions between different actors' goals.
+
+**Freight elevator.** Spawned by the tension between the Mover's need to monopolize and every other Passenger's need for access. The freight elevator resolves this by giving cargo its own system — wider doors, taller cabin, higher capacity, different controls, no lobby presence. The Delivery Person and the Mover share the freight elevator; the Hotel Guest never sees it. A building with no freight elevator forces the Mover and the VIP into the same cabin. That is a tension the system design should have resolved.
+
+**Service elevator.** Spawned by the Hotel Owner's guest-experience drive. Guests should not share elevators with laundry carts, room service trays, and maintenance equipment. The service elevator is the system variant that keeps the guest experience clean. In hospitals, the service elevator keeps medical supplies, soiled linens, and food service separate from patients and visitors. Different building type, same pattern: the primary Passenger's comfort value demands separation from operational traffic.
+
+**Construction hoist.** A temporary elevator attached to the outside of a building under construction. Spawned by the Construction Worker's need for vertical access *before the permanent system exists*. The construction hoist has different safety standards, different speed, different capacity, and a different lifecycle — it is removed when the building is complete. The Construction Worker is its primary Passenger. The Elevator Installer uses it to bring components up to the floors where they are installing the permanent system. The construction hoist is the elevator that exists so the real elevator can be built.
+
+**Penthouse elevator.** Spawned by the VIP's privacy value. A dedicated car that serves only restricted upper floors, bypassing the lobby and the general population entirely. The penthouse elevator resolves the tension between the VIP's privacy and every other Passenger's promptness — by giving the VIP their own system rather than constraining the shared one.
+
+**Platform lift.** Spawned by the Wheelchair Passenger's access needs in buildings where a full elevator is not feasible. Short travel distance, slow speed, small platform. A different system with a focused actor. The platform lift exists because the State's equity value demands vertical access even where the Architect's design and the Owner's economics cannot justify a full elevator.
+
+**Dumbwaiter.** A small freight elevator that carries objects — food, documents, medical supplies — but no people. The dumbwaiter has no Passenger at all. Its actors are the people who load it and the people who unload it. It exists because moving objects between floors is a goal that does not require moving a person, and a full elevator is overkill for a tray of food.
+
+**Scenic elevator.** Glass-walled, often exterior-mounted, designed for the view. The scenic elevator serves the same Passenger goal but adds an experiential value — the ride itself becomes part of the destination. The Claustrophobic Passenger prefers it. The Architect specifies it for buildings where the journey between floors is meant to impress. The scenic elevator's engineering constraints are different from an interior elevator's: weather exposure, structural mounting, thermal management.
+
+Each variant is a system design decision traceable to a specific tension between specific actors. The freight elevator is not in the model because "buildings have freight elevators." It is in the model because the Mover's goals conflict with the Passenger's goals, and separation is the structural answer.
 
 ---
 
@@ -170,7 +216,7 @@ Value conditions collide with reality. Each collision is a tension. Each tension
 
 **Physical integrity vs. mechanical failure.** The Passenger's "with all my limbs" value demands engineering constraints that prevent catastrophic failure. A spec says "elevator must not free-fall." A value says "I don't want to lose my limbs." The spec is one implementation of the value. You can satisfy the value in ways the spec never imagined. Designing from values keeps the solution space open. Designing from specs closes it prematurely.
 
-**Accessibility vs. security.** The Passenger's base goal is "be on a different floor." But not everyone should be able to reach every floor. Tenants want controlled access to their space. Hospitals need to restrict pharmacy and psychiatric floors. Data centers require biometric authentication. Every security measure is a constraint on someone else's access — a direct tension with the Passenger's transportation goal. This is not one tension but a family of tensions around the question: who should be able to reach which floor, and why? Each answer spawns different actors with different drives.
+**Accessibility vs. security.** The Passenger's base goal is "be on a different floor." But not everyone should be able to reach every floor — because nefarious actors exist. The Thief wants to access floors to steal. The Assassin wants to reach the VIP's floor to harm them. The Hacker wants to breach the elevator's control system. These actors' drives are maliciously unaligned with the system's intent and the primary actors' conditional goals. The entire security infrastructure — key cards, floor restrictions, lobby checkpoints, surveillance cameras — exists because of them. Tenants want controlled access to their space *because* the Thief exists. The Data Center Operator demands biometric authentication *because* the Hacker exists. Every security measure is a constraint on a legitimate Passenger's access, imposed because an illegitimate actor's goals must be blocked. This is not one tension but a family of tensions around the question: who should be able to reach which floor, and why? Each answer spawns different actors with different drives.
 
 ### Tensions from the State's values
 
@@ -181,6 +227,30 @@ The State's conditional goal creates its own set of tensions, independent of the
 **Equity vs. economics.** Accessibility features cost money. Braille panels, low-mounted controls, audio announcements, wider doors — each one adds cost that the Owner would prefer to avoid and the Manufacturer would prefer not to engineer. The State's equity value collides with every economic actor's drive. This tension is what produces accessibility mandates — the State forces the issue because the market will not resolve it voluntarily.
 
 **Accountability vs. autonomy.** Every actor in the elevator chain — the Architect who designs the shaft, the Manufacturer who builds the car, the Installer who puts it in, the Maintainer who keeps it running, the Operator who runs it daily — would prefer to operate without oversight. The State's accountability value collides with this preference. This tension spawns licensing boards, certification requirements, and audit regimes. The State demands that every actor in the chain can be inspected and held answerable.
+
+---
+
+## Nefarious actors
+
+Not every actor's drive is aligned with the system's intent. A nefarious actor — also called an unaligned actor — has a drive that is *maliciously opposed* to the primary actors' conditional goals. Nefarious actors do not participate to serve the system. They participate to subvert it.
+
+This is different from the Owner's economic drive conflicting with the Passenger's safety value. The Owner is not malicious. The Owner's drive is insufficient — it pulls in a direction that leaves the Passenger's safety unprotected, but the Owner is not *trying* to harm anyone. A nefarious actor *is* trying. Their drive is actively hostile.
+
+You only have secure access because nefarious actors exist. Without them, there would be no key cards, no floor restrictions, no Security Guards, no surveillance cameras. Every security actor in the model and every security feature in the system traces back to a nefarious actor whose existence demands countermeasures.
+
+**Thief.** Drive: unauthorized access to steal property. The Thief wants to reach floors where valuables are — offices, residences, storage areas. The Tenant's drive for controlled access, the Security Guard's drive for enforcement, the key card system itself — all exist because the Thief exists. Without the Thief, the elevator would stop at every floor for everyone.
+
+**Hacker.** Drive: unauthorized control of the system. The Hacker targets the elevator's control software, monitoring systems, or integration points. They may want to disable safety interlocks, manipulate floor access, steal surveillance footage, or hold the system hostage. The Firmware Engineer's concern about secure update mechanisms, the Integration Engineer's concern about cross-system boundaries, the Data Center Operator's extreme access controls — all trace to the Hacker's existence.
+
+**Assassin.** Drive: reach a specific person to harm them. The VIP's penthouse elevator, the Prisoner's secured transport, the Police Officer's floor lockdown — these exist because someone might try to reach a person through the elevator system with lethal intent. The Assassin is the extreme case that justifies the most extreme security measures.
+
+**Vandal.** Drive: damage or deface the system. The Vandal does not want to reach a specific floor. They want to break things — scratch panels, jam doors, disable buttons, spray paint walls. The Vandal's existence shapes the Manufacturer's material choices (stainless steel over painted surfaces, recessed buttons over protruding ones) and the Operator's maintenance burden.
+
+**Stalker.** Drive: follow a specific person to their floor. The Residential Tenant's demand for key fob access, the VIP's demand for a private elevator, the Night Passenger's demand for surveillance — these intensify because the Stalker exists. The Stalker is why "who rode the elevator to which floor" becomes a security-relevant question.
+
+**Active Shooter.** Drive: harm people in the building. The Police Officer's floor lockdown exists because of this actor. The ability to prevent the elevator from stopping at certain floors, to recall all cars to the lobby, to override normal scheduling — these are system capabilities that no Passenger ever asked for. They exist because the Active Shooter exists. The Active Shooter is why the Police Officer is a First Responder specialization with control and restriction as value conditions, not just transportation.
+
+Nefarious actors do not have genealogies in the same sense as supporting actors. They are not *spawned* by tensions on primary actor values. They exist independently, and their existence *creates* tensions that spawn the security infrastructure. They are the cause, not the effect.
 
 ---
 
@@ -427,6 +497,7 @@ Looking back, the moves used a small set of repeatable techniques:
 - **Cultural context.** "Do different cultures weight the values differently?" The same value conditions, different priorities, different system designs. A Manufacturer who ignores this has misunderstood the Passenger.
 - **Lifecycle thinking.** "Who touches this system at each phase of its life?" Design → build → install → commission → operate → maintain → modernize → decommission. Each phase has actors with different drives and different affordance needs.
 - **Affordance thinking.** "What does this actor need from the system that other actors do not?" The Construction Worker needs fall protection. The Elevator Installer needs construction mode. The Firmware Engineer needs a safe update mechanism. Norman's affordances applied to actor discovery.
+- **Nefarious actor identification.** "Why does this security measure exist? Who is it defending against?" Every security feature traces back to a nefarious actor whose drive is maliciously unaligned with the system's intent. The key card exists because the Thief exists. The secure firmware update exists because the Hacker exists. The penthouse elevator exists partly because the Assassin exists. Naming the nefarious actor makes the security design traceable rather than assumed.
 
 ---
 
