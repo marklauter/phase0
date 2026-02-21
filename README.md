@@ -20,7 +20,7 @@ An actor's drive becomes its system prompt — not a job description, but a beha
 
 Traditional design produces specs that developers interpret. Phase0 produces a model that *is* the agent architecture — the actors are the agents, the drives are the prompts, the events are the wire protocol. No translation step.
 
-See [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/guidance/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) for the full mapping from domain model to agent system.
+See [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/modeling/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) for the full mapping from domain model to agent system.
 
 ## How it works
 
@@ -50,7 +50,7 @@ A use case model is a set of interconnected artifacts:
 | `domains/DOMAIN-EVENTS.md` | Published events that cross context boundaries |
 | `GLOSSARY.md` | Canonical vocabulary for the model |
 
-See [DOMAIN-MODEL-ARTIFACTS.md](.claude/guidance/DOMAIN-MODEL-ARTIFACTS.md) for full descriptions of each artifact and their relationships.
+See [DOMAIN-MODEL-ARTIFACTS.md](.claude/modeling/DOMAIN-MODEL-ARTIFACTS.md) for full descriptions of each artifact and their relationships.
 
 ## Key ideas
 
@@ -60,7 +60,7 @@ See [DOMAIN-MODEL-ARTIFACTS.md](.claude/guidance/DOMAIN-MODEL-ARTIFACTS.md) for 
 - **Intent over mechanics.** Scenario steps say what is accomplished, not how.
 - **Extract, don't invent.** The user knows the domain. The agent knows how to structure it.
 
-See [usecase-philosophy.md](.claude/guidance/usecase-philosophy.md) for all 12 principles.
+See [usecase-philosophy.md](.claude/modeling/principles/usecase-philosophy.md) for all 12 principles.
 
 ## Prerequisites
 
@@ -83,7 +83,7 @@ See [usecase-philosophy.md](.claude/guidance/usecase-philosophy.md) for all 12 p
 
 3. **Start designing.** Tell the agent about a system you want to model. It will begin the interview process and guide you through each phase.
 
-The agent reads [usecase-philosophy.md](.claude/guidance/usecase-philosophy.md) and [structuring-usecases.md](.claude/forms/structuring-usecases.md) before every session to maintain consistency across use cases.
+The agent reads [usecase-philosophy.md](.claude/modeling/principles/usecase-philosophy.md) and [structuring-usecases.md](.claude/modeling/forms/structuring-usecases.md) before every session to maintain consistency across use cases.
 
 ## Sample model
 
@@ -99,14 +99,14 @@ The model is built in phases — sequential in tendency, not in practice. Discov
 4. **Model the domain** — Formalize bounded contexts and domain events
 5. **Refine** — Remove implementation leaks, verify cross-references, reconcile with reality
 
-See [SYSTEM-DESIGN-PHASES.md](.claude/guidance/SYSTEM-DESIGN-PHASES.md) for the full process guide.
+See [SYSTEM-DESIGN-PHASES.md](.claude/modeling/SYSTEM-DESIGN-PHASES.md) for the full process guide.
 
 ## Guidance documents
 
 | Document | What it covers |
 |----------|---------------|
-| [usecase-philosophy.md](.claude/guidance/usecase-philosophy.md) | Core modeling principles |
-| [structuring-usecases.md](.claude/forms/structuring-usecases.md) | Structural contract for use cases |
-| [DOMAIN-MODEL-ARTIFACTS.md](.claude/guidance/DOMAIN-MODEL-ARTIFACTS.md) | What artifacts to produce and when |
-| [SYSTEM-DESIGN-PHASES.md](.claude/guidance/SYSTEM-DESIGN-PHASES.md) | How the design process unfolds |
-| [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/guidance/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) | How domain models become agentic systems — drives become system prompts, orchestrators serve goals, tool restrictions enforce actor separation |
+| [usecase-philosophy.md](.claude/modeling/principles/usecase-philosophy.md) | Core modeling principles |
+| [structuring-usecases.md](.claude/modeling/forms/structuring-usecases.md) | Structural contract for use cases |
+| [DOMAIN-MODEL-ARTIFACTS.md](.claude/modeling/DOMAIN-MODEL-ARTIFACTS.md) | What artifacts to produce and when |
+| [SYSTEM-DESIGN-PHASES.md](.claude/modeling/SYSTEM-DESIGN-PHASES.md) | How the design process unfolds |
+| [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/modeling/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) | How domain models become agentic systems — drives become system prompts, orchestrators serve goals, tool restrictions enforce actor separation |

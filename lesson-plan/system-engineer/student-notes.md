@@ -63,7 +63,7 @@ Ask yourself: which crossing points have no protocol defined yet? That is where 
 
 ### Further reading
 
-- `.claude/guidance/usecase-philosophy.md` -- sections on bounded contexts, domain events, and protocols
+- `.claude/modeling/principles/usecase-philosophy.md` -- sections on bounded contexts, domain events, and protocols
 - `samples/wiki-agent/domains/` -- DC-01 through DC-06
 - `samples/wiki-agent/domains/DOMAIN-EVENTS.md` -- all 7 published events
 - `samples/wiki-agent/USE-CASE-CATALOG.md` -- the bounded contexts table
@@ -153,7 +153,7 @@ For each obstacle:
 
 ### Further reading
 
-- `.claude/guidance/usecase-philosophy.md` -- sections on invariants over preconditions, obstacles over exceptions, value conditions drive system design
+- `.claude/modeling/principles/usecase-philosophy.md` -- sections on invariants over preconditions, obstacles over exceptions, value conditions drive system design
 - `samples/wiki-agent/UC-04-sync-wiki-with-source-changes.md` -- invariants, goal obstacles, failure and success outcomes
 
 ---
@@ -280,8 +280,8 @@ Check your work: does every actor referenced in your SE01 integration map and SE
 
 ### Further reading
 
-- `.claude/guidance/DOMAIN-MODEL-ARTIFACTS.md` -- artifact definitions, relationship map, emergence timing
-- `.claude/guidance/SYSTEM-DESIGN-PHASES.md` -- the 5 phases of model design
+- `.claude/modeling/DOMAIN-MODEL-ARTIFACTS.md` -- artifact definitions, relationship map, emergence timing
+- `.claude/modeling/SYSTEM-DESIGN-PHASES.md` -- the 5 phases of model design
 - `samples/wiki-agent/USE-CASE-CATALOG.md` -- entry point for navigation
 - `samples/wiki-agent/ACTOR-CATALOG.md` -- actor definitions and appearance matrix
 - `samples/wiki-agent/domains/DOMAIN-EVENTS.md` -- published events

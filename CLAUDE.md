@@ -6,28 +6,29 @@ Use case modeling agent. Designs use case models through goal-directed Socratic 
 
 All durable output requested by the user is written as markdown files unless otherwise specified. Prefer prose, bulleted and numbered lists over tables.
 
-## Forms
+## Modeling
 
-`.claude/forms/` contains structural contracts — the canonical shapes for artifacts that humans and agents produce and consume. Each form defines the sections, ordering, and placeholder guidance for one artifact type.
+`.claude/modeling/` contains the instruction set for domain modeling.
 
-- Read the matching form before writing any artifact. The form is the structural authority — same sections, same ordering.
-- Forms are named after their matching structuring skill (e.g., `structuring-usecases` skill → `structuring-usecases.md` form).
-- When a new artifact type is introduced, create a form for it in `.claude/forms/` and a corresponding structuring skill in `.claude/skills/`.
+- **`principles/`** — core beliefs and philosophical prose that creators follow when producing content
+- **`governance/`** — verification rules that reviewers follow when checking content
+- **`forms/`** — structural contracts for artifacts. Each form defines the sections, ordering, and placeholder guidance for one artifact type. Forms are named after their matching structuring skill (e.g., `structuring-usecases` skill → `structuring-usecases.md` form).
+- Process documents at the root describe the design workflow.
+
+Read the matching form before writing any artifact. The form is the structural authority — same sections, same ordering. When a new artifact type is introduced, create a form in `.claude/modeling/forms/` and a corresponding structuring skill in `.claude/skills/`.
+
+Read before writing reference documentation: `.claude/modeling/principles/editorial-guidance.md`
+
+Read before designing, reading, or writing use cases:
+
+- `.claude/modeling/principles/usecase-philosophy.md` — core modeling principles
+- `.claude/modeling/forms/structuring-usecases.md` — structural contract for use cases
+- `.claude/modeling/DOMAIN-MODEL-ARTIFACTS.md` — what artifacts to produce and when
+- `.claude/modeling/SYSTEM-DESIGN-PHASES.md` — how the design process unfolds
 
 ## Agents
 
 - **`designing-usecases`** at `.claude/agents/designing-usecases.md` — the primary agent. Discovers domain structure through Socratic interview and writes use case artifacts. Preloads philosophy, template, and editorial skills.
-
-## Guidance
-
-Read before writing reference documentation `.claude/guidance/editorial-guidance.md`
-
-Read before designing, reading, or writing use cases:
-
-- `.claude/guidance/usecase-philosophy.md` — core modeling principles
-- `.claude/forms/structuring-usecases.md` — structural contract for use cases
-- `.claude/guidance/DOMAIN-MODEL-ARTIFACTS.md` — what artifacts to produce and when
-- `.claude/guidance/SYSTEM-DESIGN-PHASES.md` — how the design process unfolds
 
 ## Sample model
 
@@ -42,6 +43,10 @@ Read before designing, reading, or writing use cases:
 - Actors: capitalize role names (User, Orchestrator)
 - Every artifact follows its matching form exactly — same sections, same ordering
 - Prefer sections, bullets, numbered lists, or prose over tables.
+
+## Keeping principles and skills in sync
+
+Principle files in `.claude/modeling/principles/` and their corresponding skills in `.claude/skills/` contain the same content. `.claude/modeling/` is the source of truth. Skills are the inline distribution loaded via agent frontmatter. When editing either one, update the other to match. Verify both files before reporting the task complete.
 
 ## Renaming and refactoring
 
