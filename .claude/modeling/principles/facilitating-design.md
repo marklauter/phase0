@@ -14,7 +14,7 @@ The three lenses — actor, use case, bounded context — form a complete graph 
 
 - Use case work reveals a new actor → refocus to actor lens
 - Actor work exposes a context boundary → refocus to bounded context lens
-- Bounded context work surfaces a missing interaction → refocus to use case lens
+- Bounded context work exposes a missing interaction → refocus to use case lens
 
 ## Dispatch to specialists
 
@@ -27,5 +27,4 @@ The facilitator handles fluid, adaptive, backtracking-heavy conversation. When e
 - `.claude/modeling/principles/modeling-usecases.md` — use case lens depth
 - `.claude/modeling/principles/mapping-contexts.md` — bounded context lens depth
 - `.claude/modeling/forms/structuring-usecases.md` — structural contract for use cases
-- `.claude/modeling/DOMAIN-MODEL-ARTIFACTS.md` — what artifacts to produce and when
 - `.claude/modeling/SYSTEM-DESIGN-PHASES.md` — how the design process unfolds

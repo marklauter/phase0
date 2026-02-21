@@ -10,7 +10,7 @@ Express constraints as invariants that hold at every moment of the interaction.
 
 ## Obstacles are threats to the goal
 
-When something goes wrong, describe the threat to goal satisfaction. "Source code is unreachable" tells you what is at risk. Each obstacle includes a recovery strategy: a way to protect the goal or degrade gracefully when it cannot be fully achieved.
+When an obstacle arises, describe the threat to goal satisfaction. "Source code is unreachable" tells you what is at risk. Each obstacle includes a recovery strategy: a way to protect the goal or degrade gracefully.
 
 ## Scenario steps express intent
 

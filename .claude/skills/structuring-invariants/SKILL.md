@@ -22,7 +22,7 @@ Invariant files live at `invariants/{nn}-{slug}.md` within the model directory. 
 
 ## Rationale
 
-{Why this rule exists. What goes wrong if it is violated. One short paragraph.}
+{Why this rule exists. What it protects. One short paragraph.}
 
 ## Scope
 
@@ -50,11 +50,11 @@ A simple invariant states one rule. The statement is one or two sentences.
 
 ## Statement
 
-The `gh` CLI is available on the system. If it is not, the user is notified. Authentication is the concern of `gh` itself.
+The `gh` CLI is available on the system and verified before proceeding. Authentication is the concern of `gh` itself.
 
 ## Rationale
 
-Every workspace operation depends on GitHub API access through `gh`. Without it, no use case can proceed.
+Every workspace operation depends on GitHub API access through `gh`. This invariant is a precondition for every use case.
 
 ## Scope
 
@@ -75,15 +75,15 @@ A complex invariant clusters related sub-rules under a single architectural conc
 
 ## Statement
 
-Each project gets its own isolated workspace. Workspaces are independent -- operations on one workspace never affect another.
+Each project gets its own isolated workspace. Workspaces are independent -- each workspace operates in isolation.
 
 - Each workspace contains a source clone, a wiki clone, and a config file.
 - Workspace identity is defined by the existence of `workspace/artifacts/{owner}/{repo}/workspace.config.md`.
-- One workspace per repository. A workspace for a given `owner/repo` either exists or it does not.
+- One workspace per repository. Each `owner/repo` maps to exactly one workspace.
 
 ## Rationale
 
-Isolation prevents cross-contamination between projects. A failure in one workspace leaves every other workspace unaffected.
+Isolation protects each project. Each workspace maintains its own integrity independently.
 
 ## Scope
 

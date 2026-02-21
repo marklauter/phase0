@@ -79,7 +79,7 @@ The sections below vary by category. Include the sections that match this actor'
 ```markdown
 ## Capabilities
 
-{What this sub-system provides to the system. Not a drive — sub-systems optimize for nothing.}
+{What this sub-system provides to the system. This section replaces Drive — sub-systems have capabilities.}
 
 - {capability}
 ```

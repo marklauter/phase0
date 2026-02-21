@@ -9,18 +9,18 @@ Writing principles, tone, and style guidelines for all project documentation. Lo
 
 ## Writing principles
 
-- Lead with what the reader needs, not background.
+- Lead with what the reader needs.
 - Second person ("you") — direct, conversational, professional.
-- Present tense — "the method returns" not "the method will return".
+- Present tense — "the method returns."
 - Short sentences, short paragraphs — scannable over readable.
-- Sentence-case headings — not Title Case.
+- Sentence-case headings.
 - Numbered steps for tasks, bullets for options.
-- Self-contained pages — link to supporting concepts but include enough context for readers who never follow links.
-- Define by presence — say what something is, let that stand. "The facilitator conducts discovery across all three lenses" is complete on its own; adding "it is not a sub-agent" dilutes the assertion. Reserve negations for governance rules where the boundary matters.
+- Self-contained pages — link to supporting concepts and include enough context for the page to stand alone.
+- Define by presence — say what something is, let that stand. "The facilitator conducts discovery across all three lenses" is a complete assertion. Governance rules own the boundaries.
 
 ## Tone — phase0 vision articles
 
-Authoritative, declarative, polished. The voice of a practitioner who has done this — confident, precise, not hedging.
+Authoritative, declarative, polished. The voice of a practitioner who has done this — confident, precise, decisive.
 
 ## Style guidelines
 

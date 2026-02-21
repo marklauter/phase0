@@ -40,7 +40,7 @@ Use case files live at `use-cases/{nn}-{slug}.md` within the model directory. `{
 
 ## Failure outcome
 
-{Observable state when the goal cannot be satisfied. What is preserved? What is the user told?}
+{Observable state when the goal remains unmet. What is preserved? What is the user told?}
 
 - {outcome}
 
@@ -55,7 +55,7 @@ Use case files live at `use-cases/{nn}-{slug}.md` within the model directory. `{
 
 ## Goal obstacles
 
-{Conditions that threaten goal satisfaction. Keyed to scenario steps. Describe what is at risk — "source code is unreachable." Each obstacle includes a recovery strategy: a way to protect the goal or degrade gracefully when it cannot be fully achieved.}
+{Conditions that threaten goal satisfaction. Keyed to scenario steps. Describe what is at risk — "source code is unreachable." Each obstacle includes a recovery strategy: a way to protect the goal or degrade gracefully.}
 
 ### {Step}a — {What threatens the goal}
 

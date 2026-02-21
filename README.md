@@ -53,7 +53,7 @@ A use case model is a set of interconnected artifacts:
 | `domains/DOMAIN-EVENTS.md` | Published events that cross context boundaries |
 | `GLOSSARY.md` | Canonical vocabulary for the model |
 
-See [DOMAIN-MODEL-ARTIFACTS.md](.claude/modeling/DOMAIN-MODEL-ARTIFACTS.md) for full descriptions of each artifact and their relationships.
+Each artifact type has a structural contract in `.claude/modeling/forms/`.
 
 ## Key ideas
 
@@ -113,6 +113,6 @@ See [SYSTEM-DESIGN-PHASES.md](.claude/modeling/SYSTEM-DESIGN-PHASES.md) for the 
 | [modeling-usecases.md](.claude/modeling/principles/modeling-usecases.md) | Use case lens — invariants, obstacles, scenarios |
 | [mapping-contexts.md](.claude/modeling/principles/mapping-contexts.md) | Bounded context lens — boundaries, protocols |
 | [structuring-usecases.md](.claude/modeling/forms/structuring-usecases.md) | Structural contract for use cases |
-| [DOMAIN-MODEL-ARTIFACTS.md](.claude/modeling/DOMAIN-MODEL-ARTIFACTS.md) | What artifacts to produce and when |
+
 | [SYSTEM-DESIGN-PHASES.md](.claude/modeling/SYSTEM-DESIGN-PHASES.md) | How the design process unfolds |
 | [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/modeling/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) | How domain models become agentic systems — drives become system prompts, orchestrators serve goals, tool restrictions enforce actor separation |

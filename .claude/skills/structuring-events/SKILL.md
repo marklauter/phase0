@@ -27,7 +27,7 @@ Event files live at `events/{nn}-{slug}.md` within the model directory. `{nn}` i
 
 ## Payload
 
-{Data the event carries. Each item is a noun or noun phrase — the fact, not the field name.}
+{Data the event carries. Each item is a noun or noun phrase — the fact the event carries.}
 
 - {datum}
 - {datum}

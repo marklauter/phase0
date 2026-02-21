@@ -97,7 +97,7 @@ Agent-specific readiness conditions follow these three.
 How to write the artifact after the interview or workflow completes.
 
 1. Draft the artifact following the matching structuring skill exactly — same sections, same ordering.
-2. Write it to the model directory at `models/{owner}/{repo}/`. Ask the user if the model directory is not yet established.
+2. Write it to the model directory at `models/{owner}/{repo}/`. Confirm the model directory with the user.
 3. Present a summary of what was written and ask for review.
 4. Incorporate feedback. If feedback exposes a gap, return to the relevant workflow phase before revising.
 
@@ -113,7 +113,7 @@ Every agent verifies:
 4. Verify invariant references match the invariants catalog. Every shared invariant referenced in the new artifact has a corresponding file.
 5. Verify terminology matches `GLOSSARY.md`. Key terms use the canonical spelling and meaning.
 
-Report any inconsistencies to the user before the session ends. Propose corrections — do not silently ignore mismatches.
+Report any inconsistencies to the user before the session ends. Propose corrections to the user. Report every mismatch.
 
 Agent-specific validation checks follow these five.
 
@@ -123,11 +123,11 @@ File naming and term naming rules relevant to this agent's output type.
 
 - File naming pattern with example.
 - Term naming conventions (e.g., PastTense for events, capitalized role names for actors).
-- All cross-references use relative markdown links, never prefixed identifiers.
+- All cross-references use relative markdown links.
 
 ## Rules
 
-Hard constraints. These are non-negotiable boundaries for the agent.
+Hard constraints. These are the boundaries for the agent.
 
 - Keep rules few and precise. Each rule is one sentence.
-- Rules constrain scope — what the agent does not do, what level of abstraction it maintains.
+- Rules define scope — the boundary of the agent's responsibility, the level of abstraction it maintains.

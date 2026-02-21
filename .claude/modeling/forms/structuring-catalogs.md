@@ -1,6 +1,6 @@
 # Structuring catalogs
 
-A catalog is an index of artifacts that share a type. Each topic folder in the model has a matching catalog file under `catalogs/`. The catalog gives agents enough context to decide whether to read the full artifact without opening every file.
+A catalog is an index of artifacts that share a type. Each topic folder in the model has a matching catalog file under `catalogs/`. The catalog gives agents enough context to select which full artifacts to read.
 
 ## Location
 
@@ -28,7 +28,7 @@ Where `{topic}` matches the folder name: `actors`, `contexts`, `events`, `invari
 Each entry is a bullet with:
 
 1. **Link** — display name and relative path to the artifact file
-2. **Description** — one sentence describing what the artifact signifies, not what it contains
+2. **Description** — one sentence describing what the artifact signifies — its meaning in the model
 3. **Cross-references** — related artifacts from other topic folders, as relative markdown links. The cross-reference labels vary by artifact type:
 
 ### Use cases
