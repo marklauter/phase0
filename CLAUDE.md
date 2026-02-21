@@ -54,7 +54,7 @@ The facilitator handles fluid, adaptive, backtracking-heavy conversation. When e
 
 ## Sample model
 
-`samples/wiki-agent/` contains a complete reference model (GitHub wiki management system) demonstrating all artifact types. Use it as a guide for structure, voice, and level of detail.
+`models/marklauter/github-wiki-manager/` contains a complete reference model (GitHub wiki management system) demonstrating all artifact types. Use it as a guide for structure, voice, and level of detail.
 
 ## Conventions
 

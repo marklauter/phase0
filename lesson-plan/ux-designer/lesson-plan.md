@@ -2,7 +2,7 @@
 
 Three lessons (UX01--UX03) for UX design practitioners. This track follows four shared foundation lessons covering conditional goals, actors and drives, Socratic extraction, and use case anatomy. Students already know how to research users. This track teaches Cooper's goal-directed approach -- conditional goals with value conditions, how tensions spawn actors, and how Socratic extraction surfaces domain structure that interviews alone miss.
 
-Running example: an elevator system. Case study: the wiki-agent model at `samples/wiki-agent/`.
+Running example: an elevator system. Case study: the wiki-agent model at `models/marklauter/github-wiki-manager/`.
 
 ---
 
@@ -36,8 +36,8 @@ Running example: an elevator system. Case study: the wiki-agent model at `sample
 
 - `usecase-philosophy.md` -- "Goals are conditional," "Value conditions drive the entire system design," derivation chain diagram
 - `phase0/VISION.md` -- "Conditional Goals: The Foundational Concept," the full elevator derivation table
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- the User's goals section
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- User goals and experience goals, actor appearance matrix
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- the User's goals section
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- User goals and experience goals, actor appearance matrix
 
 ---
 
@@ -71,8 +71,8 @@ Running example: an elevator system. Case study: the wiki-agent model at `sample
 
 - `usecase-philosophy.md` -- "Goal conditions create tensions; tensions spawn supporting actors," "Goal conflicts spawn actors"
 - `phase0/VISION.md` -- "Round 3: What goes wrong?", "The Entry Point: Actors and Goals, From First Principles" (includes the elevator derivation table and chain)
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- Proofreaders section (four editorial lenses), separation rationale for Content Mutators
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- domain description, actor drives paragraph
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- Proofreaders section (four editorial lenses), separation rationale for Content Mutators
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- domain description, actor drives paragraph
 
 ---
 

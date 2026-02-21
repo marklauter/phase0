@@ -40,9 +40,9 @@ Case study: the wiki-agent model (6 use cases, 6 bounded contexts, 7 domain even
 ### Source material
 
 - `.claude/modeling/principles/usecase-philosophy.md` -- bounded contexts over shared models, domain events over return values, protocols at crossing points
-- `samples/wiki-agent/domains/` -- all 6 domain context files (DC-01 through DC-06)
-- `samples/wiki-agent/domains/DOMAIN-EVENTS.md` -- the 7 published events
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- bounded contexts table
+- `models/marklauter/github-wiki-manager/domains/` -- all 6 domain context files (DC-01 through DC-06)
+- `models/marklauter/github-wiki-manager/domains/DOMAIN-EVENTS.md` -- the 7 published events
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- bounded contexts table
 
 ---
 
@@ -78,8 +78,8 @@ Case study: the wiki-agent model (6 use cases, 6 bounded contexts, 7 domain even
 ### Source material
 
 - `.claude/modeling/principles/usecase-philosophy.md` -- invariants over preconditions, obstacles over exceptions, value conditions drive system design
-- `samples/wiki-agent/UC-04-sync-wiki-with-source-changes.md` -- invariants, goal obstacles, failure outcome, recovery strategies
-- `samples/wiki-agent/SHARED-INVARIANTS.md` -- cross-cutting invariants
+- `models/marklauter/github-wiki-manager/UC-04-sync-wiki-with-source-changes.md` -- invariants, goal obstacles, failure outcome, recovery strategies
+- `models/marklauter/github-wiki-manager/SHARED-INVARIANTS.md` -- cross-cutting invariants
 
 ---
 
@@ -118,7 +118,7 @@ Case study: the wiki-agent model (6 use cases, 6 bounded contexts, 7 domain even
 
 - `.claude/modeling/DOMAIN-MODEL-ARTIFACTS.md` -- artifact definitions, relationship map, emergence timing
 - `.claude/modeling/SYSTEM-DESIGN-PHASES.md` -- how the design process unfolds across 5 phases
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- entry point for the walkthrough
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- appearance matrix, actor definitions
-- `samples/wiki-agent/domains/DOMAIN-EVENTS.md` -- published event catalog
-- `samples/wiki-agent/SHARED-INVARIANTS.md` -- cross-cutting invariants
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- entry point for the walkthrough
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- appearance matrix, actor definitions
+- `models/marklauter/github-wiki-manager/domains/DOMAIN-EVENTS.md` -- published event catalog
+- `models/marklauter/github-wiki-manager/SHARED-INVARIANTS.md` -- cross-cutting invariants

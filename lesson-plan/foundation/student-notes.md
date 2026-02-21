@@ -330,5 +330,5 @@ Check your work:
 ### Further reading
 
 - structuring-usecases.md — the complete structural contract.
-- samples/wiki-agent/UC-01-populate-new-wiki.md — a fully designed use case.
+- models/marklauter/github-wiki-manager/UC-01-populate-new-wiki.md — a fully designed use case.
 - usecase-philosophy.md, "Intent over mechanics" and "Obstacles over exceptions" — the principles behind the template.

@@ -87,7 +87,7 @@ The agent reads [usecase-philosophy.md](.claude/modeling/principles/usecase-phil
 
 ## Sample model
 
-A complete reference model is included at [samples/wiki-agent/](samples/wiki-agent/). It models a GitHub wiki management system across 6 designed use cases, 6 bounded contexts, and 7 domain events. Start with [USE-CASE-CATALOG.md](samples/wiki-agent/USE-CASE-CATALOG.md) for an overview.
+A complete reference model is included at [models/marklauter/github-wiki-manager/](models/marklauter/github-wiki-manager/). It models a GitHub wiki management system across 6 designed use cases, 6 bounded contexts, and 7 domain events. Start with [USE-CASE-CATALOG.md](models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md) for an overview.
 
 ## Design process
 

@@ -79,7 +79,7 @@ Two systems thread through the entire curriculum:
 
 - **Elevator system** — the illustrative example. A Passenger wants to be on a different floor — safely, promptly, without trauma, intact. This simple system demonstrates every concept: conditional goals, value conditions, tensions, the derivation chain from values to supporting actors (Owner, Inspector, Scheduler), and how a single goal generates an entire actor network. The elevator appears in every lesson.
 
-- **Wiki-agent sample model** — the concrete case study. A complete domain model for a GitHub wiki management system, included in the repository at `samples/wiki-agent/`. Six designed use cases, six bounded contexts, seven domain events. You examine a finished model to see what the ideas look like in practice.
+- **Wiki-agent sample model** — the concrete case study. A complete domain model for a GitHub wiki management system, included in the repository at `models/marklauter/github-wiki-manager/`. Six designed use cases, six bounded contexts, seven domain events. You examine a finished model to see what the ideas look like in practice.
 
 ---
 
@@ -111,4 +111,4 @@ The curriculum draws from these documents in the repository:
 | [SYSTEM-DESIGN-PHASES.md](../.claude/modeling/SYSTEM-DESIGN-PHASES.md) | How the design process unfolds |
 | [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](../.claude/modeling/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) | How domain models become agentic systems |
 | [VISION.md](../phase0/VISION.md) | Phase0 domain discovery vision |
-| [samples/wiki-agent/](../samples/wiki-agent/) | Complete reference model |
+| [models/marklauter/github-wiki-manager/](../models/marklauter/github-wiki-manager/) | Complete reference model |

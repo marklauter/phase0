@@ -92,8 +92,8 @@ Remember: look for contradictions in language. What word means different things 
 
 - `usecase-philosophy.md` -- the full treatment of invariants, events, bounded contexts, and intent over mechanics
 - `DOMAIN-MODEL-ARTIFACTS.md` -- what artifacts to produce and when they emerge
-- `samples/wiki-agent/domains/` -- all six bounded contexts and the domain events catalog
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- how bounded contexts and events fit into the catalog
+- `models/marklauter/github-wiki-manager/domains/` -- all six bounded contexts and the domain events catalog
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- how bounded contexts and events fit into the catalog
 
 ---
 
@@ -203,7 +203,7 @@ Take the elevator actor catalog from the foundation lessons. For the Owner, Insp
 ### Further reading
 
 - `DOMAIN-IMPLEMENTATION-PRINCIPLES.md` -- all implementation principles with rationale
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- full actor definitions showing how drives map to agent types
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- full actor definitions showing how drives map to agent types
 
 ---
 
@@ -321,6 +321,6 @@ Use the wiki-agent USE-CASE-CATALOG.md as a structural reference.
 
 - `DOMAIN-MODEL-ARTIFACTS.md` -- full descriptions of every artifact type and when each emerges
 - `SYSTEM-DESIGN-PHASES.md` -- the five phases in detail, including what triggers backtracking at each phase
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- the reference catalog to use as a structural model
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- reference actor catalog showing consolidation
-- `samples/wiki-agent/SHARED-INVARIANTS.md` -- reference shared invariants showing extraction
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- the reference catalog to use as a structural model
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- reference actor catalog showing consolidation
+- `models/marklauter/github-wiki-manager/SHARED-INVARIANTS.md` -- reference shared invariants showing extraction

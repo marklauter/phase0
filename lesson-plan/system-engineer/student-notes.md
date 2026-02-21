@@ -64,9 +64,9 @@ Ask yourself: which crossing points have no protocol defined yet? That is where 
 ### Further reading
 
 - `.claude/modeling/principles/usecase-philosophy.md` -- sections on bounded contexts, domain events, and protocols
-- `samples/wiki-agent/domains/` -- DC-01 through DC-06
-- `samples/wiki-agent/domains/DOMAIN-EVENTS.md` -- all 7 published events
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- the bounded contexts table
+- `models/marklauter/github-wiki-manager/domains/` -- DC-01 through DC-06
+- `models/marklauter/github-wiki-manager/domains/DOMAIN-EVENTS.md` -- all 7 published events
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- the bounded contexts table
 
 ---
 
@@ -154,7 +154,7 @@ For each obstacle:
 ### Further reading
 
 - `.claude/modeling/principles/usecase-philosophy.md` -- sections on invariants over preconditions, obstacles over exceptions, value conditions drive system design
-- `samples/wiki-agent/UC-04-sync-wiki-with-source-changes.md` -- invariants, goal obstacles, failure and success outcomes
+- `models/marklauter/github-wiki-manager/UC-04-sync-wiki-with-source-changes.md` -- invariants, goal obstacles, failure and success outcomes
 
 ---
 
@@ -282,7 +282,7 @@ Check your work: does every actor referenced in your SE01 integration map and SE
 
 - `.claude/modeling/DOMAIN-MODEL-ARTIFACTS.md` -- artifact definitions, relationship map, emergence timing
 - `.claude/modeling/SYSTEM-DESIGN-PHASES.md` -- the 5 phases of model design
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- entry point for navigation
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- actor definitions and appearance matrix
-- `samples/wiki-agent/domains/DOMAIN-EVENTS.md` -- published events
-- `samples/wiki-agent/SHARED-INVARIANTS.md` -- cross-cutting invariants
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- entry point for navigation
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- actor definitions and appearance matrix
+- `models/marklauter/github-wiki-manager/domains/DOMAIN-EVENTS.md` -- published events
+- `models/marklauter/github-wiki-manager/SHARED-INVARIANTS.md` -- cross-cutting invariants

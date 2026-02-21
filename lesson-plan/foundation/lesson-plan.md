@@ -128,5 +128,5 @@ Four lessons shared across all tracks. These build the conceptual vocabulary tha
 ### Source material
 
 - structuring-usecases.md (full document)
-- samples/wiki-agent/UC-01-populate-new-wiki.md
+- models/marklauter/github-wiki-manager/UC-01-populate-new-wiki.md
 - usecase-philosophy.md, "Intent over mechanics" and "Obstacles over exceptions"

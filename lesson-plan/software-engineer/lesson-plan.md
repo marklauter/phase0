@@ -38,8 +38,8 @@ Students already know how to build software. This track teaches them domain-driv
 
 - `usecase-philosophy.md` -- invariants, events, bounded contexts, intent over mechanics, markdown as wire format
 - `DOMAIN-MODEL-ARTIFACTS.md` -- artifact types and when they emerge
-- `samples/wiki-agent/domains/` -- DC-01 through DC-06, DOMAIN-EVENTS.md
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- bounded contexts table
+- `models/marklauter/github-wiki-manager/domains/` -- DC-01 through DC-06, DOMAIN-EVENTS.md
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- bounded contexts table
 
 ---
 
@@ -76,7 +76,7 @@ Students already know how to build software. This track teaches them domain-driv
 ### Source material
 
 - `DOMAIN-IMPLEMENTATION-PRINCIPLES.md` -- all implementation principles
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- actor definitions with drives and tool assignments
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- actor definitions with drives and tool assignments
 
 ---
 
@@ -112,6 +112,6 @@ Students already know how to build software. This track teaches them domain-driv
 
 - `DOMAIN-MODEL-ARTIFACTS.md` -- artifact types, relationships, emergence points
 - `SYSTEM-DESIGN-PHASES.md` -- the 5 phases and backtracking
-- `samples/wiki-agent/USE-CASE-CATALOG.md` -- reference catalog
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- reference actor catalog
-- `samples/wiki-agent/SHARED-INVARIANTS.md` -- reference shared invariants
+- `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- reference catalog
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- reference actor catalog
+- `models/marklauter/github-wiki-manager/SHARED-INVARIANTS.md` -- reference shared invariants

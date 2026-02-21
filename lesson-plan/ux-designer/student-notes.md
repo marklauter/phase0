@@ -83,7 +83,7 @@ Pick a product you use daily -- a phone app, a tool at work, a household applian
 
 - `.claude/modeling/principles/usecase-philosophy.md` -- "Goals are conditional," "Value conditions drive the entire system design"
 - `phase0/VISION.md` -- "Conditional Goals: The Foundational Concept"
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- User goals and experience goals
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- User goals and experience goals
 
 ---
 
@@ -176,7 +176,7 @@ Present your tension map as a table. Then check each actor's genealogy: can you 
 
 - `.claude/modeling/principles/usecase-philosophy.md` -- "Goal conditions create tensions; tensions spawn supporting actors," "Goal conflicts spawn actors," "Single responsibility for actors"
 - `phase0/VISION.md` -- "The Entry Point: Actors and Goals, From First Principles" (includes the elevator derivation table), "Round 3: What goes wrong?"
-- `samples/wiki-agent/ACTOR-CATALOG.md` -- Proofreaders (four editorial lenses), Content Mutator separation rationale
+- `models/marklauter/github-wiki-manager/ACTOR-CATALOG.md` -- Proofreaders (four editorial lenses), Content Mutator separation rationale
 
 ---
 
