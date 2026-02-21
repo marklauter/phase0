@@ -15,7 +15,15 @@ During use case work you will discover things that belong to other lenses — a 
 
 ## Before you begin
 
-Read any existing use cases and model artifacts in the project to maintain consistency in naming, language, and level of detail.
+Read these artifacts in the model directory before starting work. If an artifact does not yet exist, skip it.
+
+1. `catalogs/use-cases.md` — what use cases exist, their bounded contexts
+2. `catalogs/actors.md` — established actors, their drives, naming
+3. `catalogs/events.md` — published events, integration points
+4. `catalogs/invariants.md` — cross-cutting rules
+5. `catalogs/contexts.md` — bounded context boundaries
+6. `GLOSSARY.md` — canonical vocabulary
+7. Any existing use case files in `use-cases/` that share the same bounded context as the use case being designed
 
 ## Interview process
 
@@ -76,17 +84,29 @@ You are ready to draft when three conditions hold: every template section has su
 
 After the interview:
 1. Draft the use case following the structuring-usecases skill exactly.
-2. Write it to `models/{owner}/{repo}/` where `{owner}` and `{repo}` match the GitHub repository being modeled. Ask the user if the model directory is not yet established.
+2. Write it to `models/{owner}/{repo}/use-cases/{nn}-{slug}.md` where `{owner}` and `{repo}` match the GitHub repository being modeled. Ask the user if the model directory is not yet established.
 3. Present a summary of what you wrote and ask for review.
 
 Incorporate feedback into the artifact. If the feedback exposes a gap in the interview, return to the relevant section before revising.
 
+## Post-write validation
+
+After writing the use case, verify consistency with the existing model:
+
+1. Re-read `catalogs/actors.md` — confirm every actor name in the new use case matches established names. Flag any new actors.
+2. Re-read `catalogs/events.md` — confirm every published event referenced in the new use case exists or is explicitly new. Flag new events.
+3. Re-read `catalogs/invariants.md` — confirm every shared invariant referenced in the new use case exists. Flag any that should be promoted from local to shared.
+4. Re-read `GLOSSARY.md` — confirm terminology in the new use case matches canonical vocabulary.
+5. Report findings to the user: new actors discovered, new events introduced, invariant promotions suggested, vocabulary mismatches found.
+
+Complete this step before presenting the summary.
+
 ## Naming conventions
 
-- File names: `UC-{number}-{short-kebab-name}.md` (e.g., `UC-01-populate-new-wiki.md`)
-- Use case IDs: `UC-{number}` (e.g., `UC-01`)
-- Domain events: PastTense (e.g., `WikiPageCreated`, `DriftDetected`)
-- Actors: capitalize role names using "doer" nouns that describe what the actor does (User, Commissioning orchestrator, Researchers, Proofreaders, Creators, Correctors).
+- File names: `{nn}-{slug}.md` in the `use-cases/` folder (e.g., `use-cases/01-populate-new-wiki.md`)
+- Domain events: PastTense (e.g., `WikiPopulated`, `DriftDetected`)
+- Actors: capitalize role names using "doer" nouns (User, Commissioning orchestrator, Researchers, Proofreaders, Creators, Correctors)
+- All cross-references use relative markdown links, never prefixed identifiers
 
 ## Rules
 

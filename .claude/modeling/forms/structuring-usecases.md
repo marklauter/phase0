@@ -1,4 +1,13 @@
-# {UC-ID} — {Title}
+# Structuring use cases
+
+Structural contract for use case documents. Defines the artifact shape for both reading and writing use cases. Load when writing or reviewing use case documents.
+
+Use case files live at `use-cases/{nn}-{slug}.md` within the model directory. `{nn}` is a zero-padded number (e.g., `01`, `02`) that provides stable ordering.
+
+## Structure
+
+```markdown
+# {nn} — {Title}
 
 ## Goal
 
@@ -6,16 +15,16 @@
 
 ## Context
 
-- **Bounded context:** {Which domain area this use case lives in — its own language, its own rules}
-- **Primary actor:** {Who pursues the goal}
-- **Supporting actors:** {Agents, tools, and services involved}
+- **Bounded context:** [{context name}](../contexts/{nn}-{slug}.md)
+- **Primary actor:** [{actor name}](../actors/{nn}-{slug}.md)
+- **Supporting actors:** [{actor name}](../actors/{nn}-{slug}.md), [{actor name}](../actors/{nn}-{slug}.md)
 - **Trigger:** {What prompts the actor to pursue this goal}
 
 ## Actor responsibilities
 
-{Which actor owns each concern. Creators write. Researchers explore. Proofreaders review. Orchestrators coordinate. No actor holds two roles.}
+{Which actor owns each concern — what it produces, what it consumes, what judgment it applies. Internal data contracts between actors are defined here.}
 
-- **{actor-name}** — {what it owns: analysis, mutation, judgment, coordination}
+- **{actor-name}** — {what it owns, what it produces, what it consumes}
 
 ## Invariants
 
@@ -37,7 +46,7 @@
 
 ## Scenario
 
-{Steps express intent and outcomes. "Wiki content is verified against current source" gives an actor room to find the best path. Step ordering reflects what the actor values — arrange the interaction so that the actor's values are protected at every point. Domain events (marked with -->) signal meaningful state transitions — these are the published language between bounded contexts.}
+{Steps express intent and outcomes. "Wiki content is verified against current source" gives an actor room to find the best path. Step ordering reflects what the actor values — arrange the interaction so that the actor's values are protected at every point. Domain events (marked with -->) signal meaningful state transitions.}
 
 1. **{Actor}** — {Intent / outcome}
    --> {DomainEvent}
@@ -55,16 +64,17 @@
 
 ## Domain events
 
-{All events this use case can produce. These are the meaningful outputs — the "facts" that other bounded contexts or future use cases may react to. Name them. Define them. They are the integration points.}
+{Events this use case produces. Published events cross bounded context boundaries or are observable to the user — each has its own file in events/. Internal events coordinate within this use case and are defined here only.}
 
-- **{EventName}** — {When it occurs and what it signifies}
+### Published
 
-## Protocols
+- **[{EventName}](../events/{nn}-{slug}.md)** — {when it occurs and what it signifies}
 
-{Actor boundary contracts. Every crossing point between actors or between an actor and a sub-system has a protocol. Define the input, the output, and who owns each side.}
+### Internal
 
-- **{protocol-name.md}** — step {number}, {input to / output from actor}
+- **{EventName}** — {when it occurs and what it signifies}
 
 ## Notes
 
 - {Design decisions, open questions, cross-references to other use cases}
+```
