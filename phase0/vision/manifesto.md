@@ -29,7 +29,7 @@ The use-case-designer agent is excellent at what it does — but it assumes some
 
 In reality, that knowledge does not exist yet. There is no vision. A facilitator stands at a blank whiteboard with domain experts and extracts one through Socratic questioning.
 
-Phase0 is the zeroth thing you need before anything else makes sense. The process is domain discovery. The product is a vision statement.
+Phase0 is the zeroth thing you need before anything else makes sense. Use case modeling is the method by which we discover the domain. The product is a vision statement.
 
 ---
 

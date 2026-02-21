@@ -6,9 +6,10 @@ Use case modeling agent. Designs use case models through goal-directed Socratic 
 
 All durable output requested by the user is written as markdown files unless otherwise specified. Prefer prose, bulleted and numbered lists over tables.
 
-## Agent
+## Agents
 
-The use-case-designer agent at `.claude/agents/use-case-designer.md` is the core tool. It conducts phased interviews (goal → invariants → events → scenario → grounding) and produces structured use case artifacts.
+- **`designing-usecases`** at `.claude/agents/designing-usecases.md` — the primary agent. Discovers domain structure through Socratic interview and writes use case artifacts. Preloads philosophy, template, and editorial skills.
+- **`use-case-designer`** at `.claude/agents/use-case-designer.md` — legacy agent, kept for reference.
 
 ## Guidance
 
@@ -32,7 +33,7 @@ Read before designing use cases:
 - Domain context files: `domains/DC-{id}-{slug}.md`
 - Domain events: PastTense names (e.g., `WikiPopulated`, `FindingFiled`)
 - Actors: capitalize role names (User, Orchestrator)
-- Every use case follows usecase-template.md exactly — same sections, same ordering
+- Every use case follows the structuring-usecases skill exactly — same sections, same ordering
 - Prefer sections, bullets, numbered lists, or prose over tables.
 
 ## Renaming and refactoring
