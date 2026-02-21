@@ -4,36 +4,6 @@ A guide to the artifacts that constitute a viable use case model. Each artifact 
 
 This document describes *what* to produce. See [SYSTEM-DESIGN-PHASES.md](SYSTEM-DESIGN-PHASES.md) for *when* and *how*.
 
----
-
-## Philosophy
-
-**File:** `PHILOSOPHY.md`
-
-The constitution of the model. Guiding principles that every other artifact must reflect. Not project-specific rules — foundational beliefs about how actors, goals, invariants, events, and scenarios should be modeled.
-
-A philosophy document is short, opinionated, and stable. It changes rarely — when a principle is discovered to be wrong or incomplete, not when a new use case is added. If you find yourself wanting to add a principle for every use case, you are writing invariants, not philosophy.
-
-**Emerges:** First. Write it before the first use case, even if it's only two principles. It will grow as the modeling process reveals what you believe.
-
-**Example principles:** "Actors have drives." "Goals over tasks." "Intent over mechanics." "Extract, don't invent."
-
----
-
-## Template
-
-**File:** `TEMPLATE.md`
-
-The structural contract for individual use cases. Every use case follows this template exactly — same sections, same ordering, same voice. Consistency across use cases is what makes the model navigable.
-
-The template encodes the philosophy into structure. If the philosophy says "goals over tasks," the template puts Goal before Scenario. If the philosophy says "obstacles over exceptions," the template has a Goal Obstacles section, not an Error Handling section.
-
-**Emerges:** Early. Draft it before or alongside the first use case. Refine it after the second or third use case reveals what's missing.
-
-**Sections (typical):** Goal, Context, Agent responsibilities, Invariants, Success outcome, Failure outcome, Scenario, Goal obstacles, Domain events, Protocols, Notes.
-
----
-
 ## Individual use cases
 
 **Files:** `UC-{id}-{slug}.md`
