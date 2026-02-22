@@ -27,9 +27,9 @@ The facilitator handles fluid, adaptive, backtracking-heavy conversation. When e
 
 ## Read before modeling work
 
-- `.claude/modeling/principles/grounding-models.md` — shared vocabulary (Cooper + Evans)
-- `.claude/modeling/principles/discovering-actors.md` — actor lens depth
-- `.claude/modeling/principles/modeling-usecases.md` — use case lens depth
-- `.claude/modeling/principles/mapping-contexts.md` — bounded context lens depth
-- `.claude/modeling/forms/structuring-usecases.md` — structural contract for use cases
-- `.claude/modeling/SYSTEM-DESIGN-PHASES.md` — how the design process unfolds
+- `.claude/modeling-contracts/principles/grounding-models.md` — shared vocabulary (Cooper + Evans)
+- `.claude/modeling-contracts/principles/discovering-actors.md` — actor lens depth
+- `.claude/modeling-contracts/principles/modeling-usecases.md` — use case lens depth
+- `.claude/modeling-contracts/principles/mapping-contexts.md` — bounded context lens depth
+- `.claude/modeling-contracts/forms/structuring-usecases.md` — structural contract for use cases
+- `.claude/modeling-contracts/SYSTEM-DESIGN-PHASES.md` — how the design process unfolds
