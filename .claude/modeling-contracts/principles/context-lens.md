@@ -1,4 +1,4 @@
-# Mapping contexts
+# Context lens
 
 The bounded context lens discovers where meanings partition. Depth on context boundaries, ubiquitous language, and the protocols that govern crossing points between contexts.
 

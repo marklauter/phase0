@@ -1,4 +1,4 @@
-# Preserving discoveries
+# Durable capture
 
 The preservation contract for durable capture during design work. Every discovery — refinement, new artifact, loose observation, or actionable work item — is written to file in the turn it occurs.
 
@@ -18,9 +18,9 @@ Every turn that produces a discovery produces a file write. The agent determines
 
 1. **Refinement to the current artifact** — update the working file. The artifact under consideration is a living document, not a deliverable produced at the end. Each turn's progress is written immediately.
 
-2. **New artifact surfaces** — write a stub file. Use the matching structuring contract to create a minimal file with a best-guess title and TODO placeholders for each section. The artifact exists in the queue even if skeletal. Title and content will be revised later.
+2. **New artifact surfaces** — write a stub file. Use the matching `writing-*` skill to create a minimal file with a best-guess title and TODO placeholders for each section. The artifact exists in the queue even if skeletal. Title and content will be revised later.
 
-3. **Loose observation, question, or tangent** — write a note using the `writing-notes` contract. Capture enough context to map the discovery back to the model.
+3. **Loose observation, question, or tangent** — write a note using the `writing-notes` skill. Capture enough context to map the discovery back to the model.
 
 4. **Actionable work item** — write a todo. When a discovery implies concrete follow-up work — stub an actor, revise a scenario, reconcile a glossary term — capture it to `todos/{slug}.md`. The todo is ephemeral; it disappears when the work is done.
 
