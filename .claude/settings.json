@@ -7,8 +7,7 @@
       "Bash(git -C:*)",
       "Bash(wc:*)",
       "Bash(ls:*)",
-      "Bash(gh issue list:*)",
-      "Bash(gh issue create:*)"
+      "Bash(bash .claude/scripts/*)"
     ]
   }
 }
