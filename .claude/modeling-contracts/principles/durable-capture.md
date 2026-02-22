@@ -36,6 +36,17 @@ Not every utterance is a discovery. The agent distinguishes between:
 - Actionable follow-up work (stub a missing artifact, revise a scenario, add a glossary term) — write a todo.
 - Ideas that don't yet have a home (open questions, design tensions, hypotheses, cross-cutting observations) — write a note.
 
+## Lens ownership
+
+Each lens owns the formalization of its artifacts. When a discovery belongs to your lens, formalize it — stub a file or create the full artifact using the matching `writing-*` skill. When a discovery belongs to another lens, capture it as a note. The owning lens formalizes later.
+
+- A use case agent discovers a new supporting actor — capture as a note. The actor lens owns formalization.
+- A use case agent surfaces an invariant that's well-understood — create the invariant file. Invariants are within the use case lens's scope.
+- An actor-lens session reveals a context boundary — capture as a note. The bounded context lens owns formalization.
+- A use case agent confirms a domain event at a state transition — create the event file. Events emerge from scenarios.
+
+The agent's loaded skills determine its scope. If you have the `writing-*` skill for that artifact type, you can formalize it. If you don't, write a note.
+
 ## Loading this skill
 
 Any agent that conducts discovery work loads this skill. It combines with the agent's primary behavioral skill — `modeling-usecases`, `discovering-actors`, `mapping-contexts` — to add the preservation drive alongside the agent's lens-specific drive. The two drives are complementary: one shapes what the agent discovers, the other ensures the discoveries persist.

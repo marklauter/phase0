@@ -22,3 +22,4 @@ Authoritative, declarative, polished. The voice of a practitioner who has done t
 - Prefer bullets, numbered lists, or prose over tables.
 - Positive assertions in principles, forms, and instructions. Negative assertions belong to governance and proofreaders.
 - Em dash (`—`) for parenthetical breaks, definitions, and appositives. Use the em dash character, not double hyphens (`--`).
+- Avoid bold. Headings, bullets, and numbered lists already carry structure — bold adds visual noise without changing how LLMs process the content.
