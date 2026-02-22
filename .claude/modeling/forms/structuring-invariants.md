@@ -2,7 +2,7 @@
 
 Structural contract for invariant documents. Defines the artifact shape for both reading and writing invariant files. Load when writing or reviewing invariant documents.
 
-An invariant is a domain rule that holds continuously -- before, during, and after execution. Each shared invariant gets its own file. An invariant that appears in only one use case stays local to that use case. An invariant that appears in multiple use cases is shared and gets its own file.
+An invariant is a domain rule that holds continuously — before, during, and after execution. Each shared invariant gets its own file. An invariant that appears in only one use case stays local to that use case. An invariant that appears in multiple use cases is shared and gets its own file.
 
 Invariant files live at `invariants/{nn}-{slug}.md` within the model directory. `{nn}` is a zero-padded number (e.g., `01`, `02`) that provides stable ordering.
 
@@ -70,7 +70,7 @@ A complex invariant clusters related sub-rules under a single architectural conc
 
 ## Statement
 
-Each project gets its own isolated workspace. Workspaces are independent -- each workspace operates in isolation.
+Each project gets its own isolated workspace. Workspaces are independent — each workspace operates in isolation.
 
 - Each workspace contains a source clone, a wiki clone, and a config file.
 - Workspace identity is defined by the existence of `workspace/artifacts/{owner}/{repo}/workspace.config.md`.

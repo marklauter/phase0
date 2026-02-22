@@ -21,7 +21,7 @@ The glossary lives at `GLOSSARY.md` in the model root.
 Each entry is a single line:
 
 1. **Term** — bolded, followed by an em dash (`—`)
-2. **Definition** -- one sentence, present tense, declarative
+2. **Definition** — one sentence, present tense, declarative
 
 If a term needs a paragraph, it belongs in a principle or its own artifact.
 
@@ -30,7 +30,7 @@ If a term needs a paragraph, it belongs in a principle or its own artifact.
 When a term has been renamed, add a "Formerly:" annotation. This prevents newcomers from reviving retired vocabulary.
 
 ```markdown
-**Editorial lens** -- A distinct editorial discipline applied to wiki content during review. Formerly: pass.
+**Editorial lens** — A distinct editorial discipline applied to wiki content during review. Formerly: pass.
 ```
 
 ## Ordering
@@ -39,4 +39,4 @@ Entries are alphabetical by term.
 
 ## Scope boundaries
 
-Terms defined in a bounded context's ubiquitous language section stay there. A term appears in the glossary when it spans the model -- when multiple contexts or artifacts rely on its meaning.
+Terms defined in a bounded context's ubiquitous language section stay there. A term appears in the glossary when it spans the model — when multiple contexts or artifacts rely on its meaning.

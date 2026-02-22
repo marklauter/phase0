@@ -69,7 +69,7 @@ Agent-specific interview or workflow phases. The number and names of these secti
 
 Structure each phase as:
 
-- **Bold phase heading** with a number prefix (e.g., `**1 -- Anchor the use case**`).
+- **Bold phase heading** with a number prefix (e.g., `**1 — Anchor the use case**`).
 - Bulleted questions or instructions under each phase.
 - Phases proceed in order, but the agent returns to earlier phases when gaps appear.
 
