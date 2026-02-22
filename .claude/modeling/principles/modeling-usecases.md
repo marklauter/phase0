@@ -1,6 +1,6 @@
 # Modeling usecases
 
-Deep principles for use case construction. Builds on the shared vocabulary in grounding-models.
+Use case lens depth — continuous invariants, goal obstacles with recovery strategies, intent-driven scenarios. Load when structuring interactions, writing scenarios, or challenging use case content.
 
 ## Invariants are continuous constraints
 

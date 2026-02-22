@@ -1,6 +1,6 @@
 # Mapping contexts
 
-Deep principles for bounded context discovery. Builds on the shared vocabulary in grounding-models.
+Bounded context lens depth — context boundaries, ubiquitous language, protocols at crossing points. Load when discovering or challenging bounded context definitions.
 
 ## Bounded contexts over shared models
 

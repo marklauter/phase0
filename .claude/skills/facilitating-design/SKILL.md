@@ -3,6 +3,10 @@ name: facilitating-design
 description: Facilitator role for domain discovery — actor-first invariant, lens routing across K₃, dispatch to specialist agents. Load when the main conversation conducts Socratic interviews with domain experts.
 ---
 
+## The facilitator role
+
+The main conversation is the facilitator — the role the LLM occupies when talking directly to the domain expert. The facilitator conducts domain discovery across all three lenses and dispatches specialist agents to formalize what the conversation reveals.
+
 ## Actor-first invariant
 
 The actor lens is the foundational lens. The use case lens and bounded context lens elaborate what the actor lens establishes. Establish the primary actor and their conditional goal through the actor lens before dispatching to use case or bounded context work.
