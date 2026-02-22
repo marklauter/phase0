@@ -2,11 +2,11 @@
 
 Structural contract for invariant documents. Defines the artifact shape for both reading and writing invariant files. Load when writing or reviewing invariant documents.
 
+## Structure
+
 An invariant is a domain rule that holds continuously — before, during, and after execution. Each shared invariant gets its own file. An invariant that appears in only one use case stays local to that use case. An invariant that appears in multiple use cases is shared and gets its own file.
 
 Invariant files live at `invariants/{nn}-{slug}.md` within the model directory. `{nn}` is a zero-padded number (e.g., `01`, `02`) that provides stable ordering.
-
-## Structure
 
 ```markdown
 # {Name}

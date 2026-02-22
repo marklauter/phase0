@@ -3,11 +3,9 @@ name: structuring-catalogs
 description: Structural contract for catalog documents — index format, entry layout, cross-references, and ordering. Defines the artifact shape for both reading and writing catalogs. Load when writing or reviewing catalog files.
 ---
 
-# Structuring catalogs
+## Location
 
 A catalog is an index of artifacts that share a type. Each topic folder in the model has a matching catalog file under `catalogs/`. The catalog gives agents enough context to select which full artifacts to read.
-
-## Location
 
 ```
 models/{owner}/{repo}/catalogs/{topic}.md

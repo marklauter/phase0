@@ -3,10 +3,6 @@ name: discovering-actors
 description: Actor lens depth — conditional goals, value conditions, the derivation chain, tensions, actor genealogy, single responsibility. Load when discovering or challenging actors, goals, and drives.
 ---
 
-# Discovering actors
-
-Deep principles for actor discovery. Builds on the shared vocabulary in grounding-models.
-
 ## Goals and drives — examples
 
 Consider an elevator system. The Passenger is the primary actor. Their goal is to be on a different floor — safely, promptly, comfortably, with full physical integrity. The system exists to serve that goal. The desired state is *being there* — presence on the target floor. The conditions on the goal (safely, promptly, intact) are where system design comes from.

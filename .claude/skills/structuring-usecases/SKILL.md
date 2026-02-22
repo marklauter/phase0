@@ -3,13 +3,9 @@ name: structuring-usecases
 description: Structural contract for use case documents. Defines the artifact shape for both reading and writing use cases. Load when writing or reviewing use case documents.
 ---
 
-# Structuring use cases
-
-Structural contract for use case documents. Defines the artifact shape for both reading and writing use cases. Load when writing or reviewing use case documents.
+## Structure
 
 Use case files live at `use-cases/{nn}-{slug}.md` within the model directory. `{nn}` is a zero-padded number (e.g., `01`, `02`) that provides stable ordering.
-
-## Structure
 
 ```markdown
 # {nn} — {Title}

@@ -3,13 +3,9 @@ name: structuring-contexts
 description: Structural contract for bounded context documents. Defines the artifact shape for both reading and writing context files. Load when writing or reviewing bounded context documents.
 ---
 
-# Structuring contexts
-
-Structural contract for bounded context documents. Defines the artifact shape for both reading and writing context files. Load when writing or reviewing bounded context documents.
+## Structure
 
 Context files live at `contexts/{nn}-{slug}.md` within the model directory. `{nn}` is a zero-padded number (e.g., `01`, `02`) that provides stable ordering. One file per bounded context.
-
-## Structure
 
 ```markdown
 # {Title}

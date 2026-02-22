@@ -3,10 +3,6 @@ name: modeling-usecases
 description: Use case lens depth — continuous invariants, goal obstacles with recovery strategies, intent-driven scenarios. Load when structuring interactions, writing scenarios, or challenging use case content.
 ---
 
-# Modeling usecases
-
-Deep principles for use case construction. Builds on the shared vocabulary in grounding-models.
-
 ## Invariants are continuous constraints
 
 Domain rules must hold continuously — before, during, and after execution. An actor that violates an invariant mid-scenario has failed, even if the final output looks correct.

@@ -3,15 +3,9 @@ name: structuring-agents
 description: Structural contract for agent definition files. Defines the artifact shape for both reading and writing agent definitions. Load when writing or reviewing agent definitions.
 ---
 
-# Structuring agents
-
-Structural contract for agent definition files. Defines the artifact shape for both reading and writing agent definitions. Load when writing or reviewing agent definitions.
-
-An agent definition is a markdown file that tells a specialist agent how to behave — what it reads, how it interviews, what it writes, and how it validates its output. Agent definitions live at `.claude/agents/{name}.md`.
-
-Every agent definition follows these sections in this order.
-
 ## YAML frontmatter
+
+An agent definition is a markdown file that tells a specialist agent how to behave — what it reads, how it interviews, what it writes, and how it validates its output. Agent definitions live at `.claude/agents/{name}.md`. Every agent definition follows these sections in this order.
 
 Every agent definition begins with YAML frontmatter enclosed in `---` fences.
 

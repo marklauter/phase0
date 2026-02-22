@@ -2,9 +2,9 @@
 
 Structural contract for domain event documents. Defines the artifact shape for both reading and writing event files. Load when writing or reviewing domain event documents.
 
-Event files live at `events/{nn}-{slug}.md` within the model directory. `{nn}` is a zero-padded number (e.g., `01`, `02`) that provides stable ordering. One file per event. Events are named in PastTense (e.g., WikiPopulated, FindingFiled).
-
 ## Structure
+
+Event files live at `events/{nn}-{slug}.md` within the model directory. `{nn}` is a zero-padded number (e.g., `01`, `02`) that provides stable ordering. One file per event. Events are named in PastTense (e.g., WikiPopulated, FindingFiled).
 
 ```markdown
 # {EventName}

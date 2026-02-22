@@ -2,9 +2,9 @@
 
 Structural contract for actor documents. Defines the artifact shape for both reading and writing actor files. Load when writing or reviewing actor documents.
 
-Actor files live at `actors/{nn}-{slug}.md` within the model directory. `{nn}` is a zero-padded number (e.g., `01`, `02`) that provides stable ordering. One file per actor. The form handles three categories — primary actors, supporting actors, and sub-systems — with category-specific sections.
-
 ## Structure
+
+Actor files live at `actors/{nn}-{slug}.md` within the model directory. `{nn}` is a zero-padded number (e.g., `01`, `02`) that provides stable ordering. One file per actor. The form handles three categories — primary actors, supporting actors, and sub-systems — with category-specific sections.
 
 ```markdown
 # {Name}

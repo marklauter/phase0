@@ -3,10 +3,6 @@ name: writing-documentation
 description: Writing principles, tone, and style guidelines for all project documentation. Load when writing or reviewing any prose output.
 ---
 
-# Writing documentation
-
-Writing principles, tone, and style guidelines for all project documentation. Load when writing or reviewing any prose output.
-
 ## Writing principles
 
 - Lead with what the reader needs.

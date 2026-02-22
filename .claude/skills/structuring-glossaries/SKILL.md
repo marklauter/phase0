@@ -3,15 +3,9 @@ name: structuring-glossaries
 description: Structural contract for glossary documents. Defines the artifact shape for both reading and writing glossary files. Load when writing or reviewing glossary documents.
 ---
 
-# Structuring glossaries
-
-Structural contract for glossary documents. Defines the artifact shape for both reading and writing glossary files. Load when writing or reviewing glossary documents.
-
-The glossary is a single file that defines every term with precise meaning within the model. Bounded contexts have their own ubiquitous language; the glossary captures terms that span the model. Terms defined in a bounded context's ubiquitous language section belong there, and appear in the glossary only when they span multiple contexts.
-
-The glossary lives at `GLOSSARY.md` in the model root.
-
 ## Structure
+
+The glossary is a single file that defines every term with precise meaning within the model. The glossary lives at `GLOSSARY.md` in the model root.
 
 ```markdown
 # Glossary
