@@ -20,7 +20,7 @@ An actor's drive becomes its system prompt — not a job description, but a beha
 
 Traditional design produces specs that developers interpret. Phase0 produces a model that *is* the agent architecture — the actors are the agents, the drives are the prompts, the events are the wire protocol. No translation step.
 
-See [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/modeling/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) for the full mapping from domain model to agent system.
+See [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/modeling-contracts/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) for the full mapping from domain model to agent system.
 
 ## How it works
 
@@ -48,7 +48,7 @@ A use case model lives at `models/{owner}/{repo}/` and is organized into topic d
 - Each topic folder contains an **`index.md`** that indexes its artifacts. Gives agents enough context to select which full artifacts to read.
 - **`GLOSSARY.md`** — canonical vocabulary for the model.
 
-Each artifact type has a structural contract in `.claude/modeling/forms/`.
+Each artifact type has a structural contract in `.claude/modeling-contracts/forms/`.
 
 ## Key ideas
 
@@ -58,7 +58,7 @@ Each artifact type has a structural contract in `.claude/modeling/forms/`.
 - **Intent over mechanics.** Scenario steps say what is accomplished, not how.
 - **Extract, don't invent.** The user knows the domain. The agent knows how to structure it.
 
-See the modeling principles: [grounding-models.md](.claude/modeling/principles/grounding-models.md) (shared vocabulary), [discovering-actors.md](.claude/modeling/principles/discovering-actors.md) (actor lens), [modeling-usecases.md](.claude/modeling/principles/modeling-usecases.md) (use case lens), [mapping-contexts.md](.claude/modeling/principles/mapping-contexts.md) (bounded context lens).
+See the modeling principles: [grounding-models.md](.claude/modeling-contracts/principles/grounding-models.md) (shared vocabulary), [discovering-actors.md](.claude/modeling-contracts/principles/discovering-actors.md) (actor lens), [modeling-usecases.md](.claude/modeling-contracts/principles/modeling-usecases.md) (use case lens), [mapping-contexts.md](.claude/modeling-contracts/principles/mapping-contexts.md) (bounded context lens).
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ See the modeling principles: [grounding-models.md](.claude/modeling/principles/g
 
 3. **Start designing.** Tell the agent about a system you want to model. It will begin the interview process and guide you through each phase.
 
-The agent loads [grounding-models.md](.claude/modeling/principles/grounding-models.md), [modeling-usecases.md](.claude/modeling/principles/modeling-usecases.md), [structuring-usecases.md](.claude/modeling/forms/structuring-usecases.md), and [writing-documentation.md](.claude/modeling/principles/writing-documentation.md) before every session to maintain consistency across use cases.
+The agent loads [grounding-models.md](.claude/modeling-contracts/principles/grounding-models.md), [modeling-usecases.md](.claude/modeling-contracts/principles/modeling-usecases.md), [structuring-usecases.md](.claude/modeling-contracts/forms/structuring-usecases.md), and [writing-documentation.md](.claude/modeling-contracts/principles/writing-documentation.md) before every session to maintain consistency across use cases.
 
 ## Sample model
 
@@ -97,31 +97,31 @@ The model is built in phases — sequential in tendency, not in practice. Discov
 4. **Model the domain** — Formalize bounded contexts and domain events
 5. **Refine** — Remove implementation leaks, verify cross-references, reconcile with reality
 
-See [SYSTEM-DESIGN-PHASES.md](.claude/modeling/SYSTEM-DESIGN-PHASES.md) for the full process guide.
+See [SYSTEM-DESIGN-PHASES.md](.claude/modeling-contracts/SYSTEM-DESIGN-PHASES.md) for the full process guide.
 
 ## Guidance documents
 
 **Principles** — core beliefs that guide modeling decisions:
 
-- [grounding-models.md](.claude/modeling/principles/grounding-models.md) — shared modeling vocabulary (Cooper + Evans)
-- [discovering-actors.md](.claude/modeling/principles/discovering-actors.md) — actor lens: conditional goals, derivation chain
-- [modeling-usecases.md](.claude/modeling/principles/modeling-usecases.md) — use case lens: invariants, obstacles, scenarios
-- [mapping-contexts.md](.claude/modeling/principles/mapping-contexts.md) — bounded context lens: boundaries, domain events
-- [writing-documentation.md](.claude/modeling/principles/writing-documentation.md) — tone, style, and editorial guidance
-- [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/modeling/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) — how domain models become agentic systems
+- [grounding-models.md](.claude/modeling-contracts/principles/grounding-models.md) — shared modeling vocabulary (Cooper + Evans)
+- [discovering-actors.md](.claude/modeling-contracts/principles/discovering-actors.md) — actor lens: conditional goals, derivation chain
+- [modeling-usecases.md](.claude/modeling-contracts/principles/modeling-usecases.md) — use case lens: invariants, obstacles, scenarios
+- [mapping-contexts.md](.claude/modeling-contracts/principles/mapping-contexts.md) — bounded context lens: boundaries, domain events
+- [writing-documentation.md](.claude/modeling-contracts/principles/writing-documentation.md) — tone, style, and editorial guidance
+- [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](.claude/modeling-contracts/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) — how domain models become agentic systems
 
 **Forms** — structural contracts for artifact types:
 
-- [structuring-actors.md](.claude/modeling/forms/structuring-actors.md) — actor documents
-- [structuring-usecases.md](.claude/modeling/forms/structuring-usecases.md) — use case documents
-- [structuring-contexts.md](.claude/modeling/forms/structuring-contexts.md) — bounded context documents
-- [structuring-events.md](.claude/modeling/forms/structuring-events.md) — domain event documents
-- [structuring-invariants.md](.claude/modeling/forms/structuring-invariants.md) — invariant documents
-- [structuring-catalogs.md](.claude/modeling/forms/structuring-catalogs.md) — index documents
-- [structuring-glossaries.md](.claude/modeling/forms/structuring-glossaries.md) — glossary documents
-- [structuring-notes.md](.claude/modeling/forms/structuring-notes.md) — note documents
-- [structuring-todos.md](.claude/modeling/forms/structuring-todos.md) — todo documents
+- [structuring-actors.md](.claude/modeling-contracts/forms/structuring-actors.md) — actor documents
+- [structuring-usecases.md](.claude/modeling-contracts/forms/structuring-usecases.md) — use case documents
+- [structuring-contexts.md](.claude/modeling-contracts/forms/structuring-contexts.md) — bounded context documents
+- [structuring-events.md](.claude/modeling-contracts/forms/structuring-events.md) — domain event documents
+- [structuring-invariants.md](.claude/modeling-contracts/forms/structuring-invariants.md) — invariant documents
+- [structuring-catalogs.md](.claude/modeling-contracts/forms/structuring-catalogs.md) — index documents
+- [structuring-glossaries.md](.claude/modeling-contracts/forms/structuring-glossaries.md) — glossary documents
+- [structuring-notes.md](.claude/modeling-contracts/forms/structuring-notes.md) — note documents
+- [structuring-todos.md](.claude/modeling-contracts/forms/structuring-todos.md) — todo documents
 
 **Process:**
 
-- [SYSTEM-DESIGN-PHASES.md](.claude/modeling/SYSTEM-DESIGN-PHASES.md) — how the design process unfolds
+- [SYSTEM-DESIGN-PHASES.md](.claude/modeling-contracts/SYSTEM-DESIGN-PHASES.md) — how the design process unfolds

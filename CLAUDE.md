@@ -8,7 +8,7 @@ All durable output requested by the user is written as markdown files unless oth
 
 ## Modeling
 
-`.claude/modeling/` contains the instruction set for domain modeling.
+`.claude/modeling-contracts/` contains the instruction set for domain modeling.
 
 - **`principles/`** — core beliefs and philosophical prose that creators follow when producing content
 - **`governance/`** — verification rules that reviewers follow when checking content
@@ -16,13 +16,13 @@ All durable output requested by the user is written as markdown files unless oth
 - **`../scripts/`** — deterministic helper scripts that agents call via Bash. Judgment stays in the agent; mechanics stay in the script. Always use relative paths (e.g., `bash .claude/scripts/create-note.sh`) to match permission patterns in `settings.json`.
 - Process documents at the root describe the design workflow.
 
-Read the matching form before writing any artifact. The form is the structural authority — same sections, same ordering. When a new artifact type is introduced, create a form in `.claude/modeling/forms/` and a corresponding structuring skill in `.claude/skills/`.
+Read the matching form before writing any artifact. The form is the structural authority — same sections, same ordering. When a new artifact type is introduced, create a form in `.claude/modeling-contracts/forms/` and a corresponding structuring skill in `.claude/skills/`.
 
-Read before writing reference documentation: `.claude/modeling/principles/writing-documentation.md`
+Read before writing reference documentation: `.claude/modeling-contracts/principles/writing-documentation.md`
 
 ## Facilitation
 
-@.claude/modeling/principles/facilitating-design.md
+@.claude/modeling-contracts/principles/facilitating-design.md
 
 ## Agents
 
@@ -53,7 +53,7 @@ Read before writing reference documentation: `.claude/modeling/principles/writin
 
 A **contract** is the atomic unit of modeling knowledge. Each contract has two expressions that share the same name:
 
-- The **modeling file** in `.claude/modeling/` (a principle, a form, or a governance rule) is the structural contract — it defines what to produce or what to verify, and carries the authoritative prose.
+- The **modeling file** in `.claude/modeling-contracts/` (a principle, a form, or a governance rule) is the structural contract — it defines what to produce or what to verify, and carries the authoritative prose.
 - The **skill file** in `.claude/skills/` is the behavioral contract — it defines who the agent becomes when it loads the skill. The skill's YAML `description` is optimized for skill triggering and is the source of truth for the opening paragraph.
 
 Both files carry the same body. The modeling file has an H1 title and an opening description paragraph that matches the skill's YAML `description` exactly.
