@@ -1,6 +1,6 @@
 ---
 name: structuring-todos
-description: Structural contract for todo documents. Defines the artifact shape for both reading and writing todo files. Load when writing or reviewing todo items captured during design sessions.
+description: This skill should be used when the user asks to "create a todo", "add a work item", "write a todo file", "review a todo", or when an agent needs the structural contract for todo documents. Defines the artifact shape — sections, ordering, and placeholder guidance — for ephemeral todo files.
 ---
 
 ## Structure

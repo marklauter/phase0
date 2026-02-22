@@ -1,6 +1,6 @@
 ---
 name: structuring-catalogs
-description: Structural contract for catalog documents — index format, entry layout, cross-references, and ordering. Defines the artifact shape for both reading and writing catalogs. Load when writing or reviewing catalog files.
+description: This skill should be used when the user asks to "write an index", "create a catalog", "update the index file", "review the index format", or when an agent needs the structural contract for catalog documents. Defines the artifact shape — index format, entry layout, cross-references, and ordering — for index.md files.
 ---
 
 ## Location

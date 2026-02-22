@@ -119,7 +119,6 @@ See [SYSTEM-DESIGN-PHASES.md](.claude/modeling/SYSTEM-DESIGN-PHASES.md) for the 
 - [structuring-invariants.md](.claude/modeling/forms/structuring-invariants.md) — invariant documents
 - [structuring-catalogs.md](.claude/modeling/forms/structuring-catalogs.md) — index documents
 - [structuring-glossaries.md](.claude/modeling/forms/structuring-glossaries.md) — glossary documents
-- [structuring-agents.md](.claude/modeling/forms/structuring-agents.md) — agent definition files
 - [structuring-notes.md](.claude/modeling/forms/structuring-notes.md) — note documents
 - [structuring-todos.md](.claude/modeling/forms/structuring-todos.md) — todo documents
 

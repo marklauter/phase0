@@ -1,6 +1,6 @@
 # Structuring actors
 
-Structural contract for actor documents. Defines the artifact shape for both reading and writing actor files. Load when writing or reviewing actor documents.
+This skill should be used when the user asks to "write an actor file", "create a new actor", "structure the actor document", "review the actor format", or when an agent needs the structural contract for actor documents. Defines the artifact shape — sections, ordering, and placeholder guidance — for primary actors, supporting actors, and sub-systems.
 
 ## Structure
 
@@ -57,7 +57,7 @@ The sections below vary by category. Include the sections that match this actor'
 
 {If this actor inherits from an abstract type, link to the parent. Omit for abstract types and actors with no parent.}
 
-actors/{nn}-{slug}
+{nn}-{slug}
 
 ## Agent type
 
@@ -71,7 +71,7 @@ actors/{nn}-{slug}
 
 {For abstract types only. List concrete actors that inherit this type. Omit for concrete actors.}
 
-- actors/{nn}-{slug} — {drive}
+- {nn}-{slug} — {drive}
 ```
 
 ### Sub-system sections
@@ -87,13 +87,13 @@ actors/{nn}-{slug}
 ### Common sections (all categories)
 
 ```markdown
-## Appears in
+## Appears in / Used by
 
-{Use cases this actor participates in. Primary and supporting actors use "appears in." Sub-systems use "used by."}
+{Use cases this actor participates in. Use "Appears in" for primary and supporting actors. Use "Used by" for sub-systems.}
 
 - use-cases/{nn}-{slug}
 
-## Notes
+## Notes (optional)
 
-- {Design decisions, open questions, cross-references to other actors or bounded contexts}
+- {Design decisions, open questions, cross-references to other actors or bounded contexts. Omit this section when empty.}
 ```

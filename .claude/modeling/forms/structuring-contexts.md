@@ -1,6 +1,6 @@
 # Structuring contexts
 
-Structural contract for bounded context documents. Defines the artifact shape for both reading and writing context files. Load when writing or reviewing bounded context documents.
+This skill should be used when the user asks to "write a bounded context", "create a context file", "structure the context document", "review the context format", or when an agent needs the structural contract for bounded context documents. Defines the artifact shape — sections, ordering, and placeholder guidance — for context files.
 
 ## Structure
 

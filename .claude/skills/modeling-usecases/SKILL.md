@@ -1,6 +1,6 @@
 ---
 name: modeling-usecases
-description: Use case lens depth — continuous invariants, goal obstacles with recovery strategies, intent-driven scenarios. Load when structuring interactions, writing scenarios, or challenging use case content.
+description: This skill should be used when the user asks to "design a use case", "write a scenario", "identify goal obstacles", "structure an interaction", or when an agent needs use case lens depth — continuous invariants, goal obstacles with recovery strategies, and intent-driven scenarios.
 ---
 
 ## Invariants are continuous constraints

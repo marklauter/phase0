@@ -1,6 +1,6 @@
 # Structuring events
 
-Structural contract for domain event documents. Defines the artifact shape for both reading and writing event files. Load when writing or reviewing domain event documents.
+This skill should be used when the user asks to "write a domain event", "create an event file", "structure the event document", "review the event format", or when an agent needs the structural contract for domain event documents. Defines the artifact shape — sections, ordering, and placeholder guidance — for event files.
 
 ## Structure
 

@@ -1,6 +1,6 @@
 ---
 name: structuring-invariants
-description: Structural contract for invariant documents. Defines the artifact shape for both reading and writing invariant files. Load when writing or reviewing invariant documents.
+description: This skill should be used when the user asks to "write an invariant", "create an invariant file", "structure the invariant document", "review the invariant format", or when an agent needs the structural contract for invariant documents. Defines the artifact shape — sections, ordering, and placeholder guidance — for invariant files.
 ---
 
 ## Structure
