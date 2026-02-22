@@ -65,6 +65,8 @@ The modeling file is the only place to edit contract content. The skill's YAML `
 
 The form is the single source of truth for structure. The skills add operational knowledge — one for consumption, one for production. Three files, no duplication.
 
+Each layer has one job: principles teach rules, agents declare scope, skills inject content. Say it once, in the right place.
+
 ## Renaming and refactoring
 
 When renaming or moving files, always search the entire project for references to the old name/path and update them. Verify with a final grep that zero stale references remain before reporting the task complete.
