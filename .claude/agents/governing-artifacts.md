@@ -49,7 +49,7 @@ For each artifact under review, execute these checks in order:
 - Are cross-references consistent in naming? (e.g., not calling an actor "Developer" in one place and "Engineer" in another)
 
 ### 4. Editorial standards
-- Does the prose follow the writing principles in `writing-documentation.md`?
+- Does the prose follow the editorial principles in `writing-documentation.md`?
 - Is the tone consistent with the project voice?
 - Are tables avoided in favor of sections, bullets, numbered lists, or prose? (per CLAUDE.md convention)
 - Is language positive and direct? (Negative assertions are acceptable only in governance rules.)

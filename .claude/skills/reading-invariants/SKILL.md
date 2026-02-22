@@ -3,7 +3,7 @@ name: reading-invariants
 description: This skill should be used when the user asks to "read an invariant", "review an invariant", "check what rules apply", "understand the constraints", or when an agent needs to understand the structure of invariant files. Loads the structural contract for invariant documents.
 ---
 
-!`cat .claude/modeling-contracts/forms/invariant.md`
+Read the form at `.claude/modeling-contracts/forms/invariant.md` when you need to verify structure.
 
 ## Reading invariants
 

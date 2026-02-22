@@ -3,7 +3,7 @@ name: reading-contexts
 description: This skill should be used when the user asks to "read a bounded context", "review a context", "check context boundaries", "understand the integration points", or when an agent needs to understand the structure of bounded context files. Loads the structural contract for context documents.
 ---
 
-!`cat .claude/modeling-contracts/forms/context.md`
+Read the form at `.claude/modeling-contracts/forms/context.md` when you need to verify structure.
 
 ## Reading contexts
 

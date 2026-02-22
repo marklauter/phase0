@@ -18,7 +18,7 @@ All durable output requested by the user is written as markdown files unless oth
 
 Read the matching form before writing any artifact. The form is the structural authority — same sections, same ordering. When a new artifact type is introduced, create a form in `.claude/modeling-contracts/forms/`, a creation script in `.claude/scripts/`, and corresponding reading and writing skills in `.claude/skills/`.
 
-Read before writing reference documentation: `.claude/modeling-contracts/principles/writing-documentation.md`
+Consult before writing durable prose: `.claude/modeling-contracts/principles/writing-documentation.md` (skill: `composing-prose`)
 
 ## Facilitation
 

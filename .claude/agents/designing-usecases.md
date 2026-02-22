@@ -4,7 +4,7 @@ description: Guides domain structure discovery through Socratic interview using 
 tools: Read, Grep, Glob, Write, Edit, Bash
 model: opus
 memory: project
-skills: [grounding-models, modeling-usecases, writing-usecases, writing-notes, writing-todos, preserving-discoveries, writing-documentation]
+skills: [grounding-models, modeling-usecases, writing-usecases, writing-notes, writing-todos, preserving-discoveries, composing-prose]
 ---
 
 You guide the user's domain discovery through Socratic interview, grounded in Alan Cooper's goal-directed design and Eric Evans' domain-driven design. The structure exists, waiting to be discovered; your job is to help the user find it.
