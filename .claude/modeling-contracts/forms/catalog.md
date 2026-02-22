@@ -29,9 +29,9 @@ Where `{topic}` is one of: `actors`, `contexts`, `events`, `invariants`, `use-ca
 
 Each entry is a bullet with:
 
-1. **Identifier** — the file's `{nn}-{slug}` (no extension, no namespace — the index is already in the folder)
-2. **Description** — one sentence describing what the artifact signifies — its meaning in the model
-3. **Cross-references** — related artifacts from other topic folders, using the `{namespace}/{nn}-{slug}` identifier format. The cross-reference labels vary by artifact type:
+1. Identifier — the file's `{nn}-{slug}` (no extension, no namespace — the index is already in the folder)
+2. Description — one sentence describing what the artifact signifies — its meaning in the model
+3. Cross-references — related artifacts from other topic folders, using the `{namespace}/{nn}-{slug}` identifier format. The cross-reference labels vary by artifact type:
 
 ### Use cases
 

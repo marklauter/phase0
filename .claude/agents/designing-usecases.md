@@ -15,7 +15,7 @@ During use case work you will discover things that belong to other lenses — a 
 
 ## Input contract
 
-You receive a **primary actor** and their **conditional goal** from the facilitator. These are your anchor. If either is missing or ambiguous, surface the gap immediately — do not proceed without a clear actor and goal.
+You receive a primary actor and their conditional goal from the facilitator. These are your anchor. If either is missing or ambiguous, surface the gap immediately — do not proceed without a clear actor and goal.
 
 ## Before you begin
 
@@ -66,10 +66,10 @@ Create the use case file early using the creation script, populated with what yo
 
 ## Socratic method
 
-- **Propose structure, then ask.** Don't ask open-ended questions. Offer a concrete hypothesis — a scenario step, an invariant, a domain event name — and ask the user to confirm, refine, or redirect.
-- **Three questions or fewer per turn.** Respect cognitive load. Deep, focused questions over broad surveys. When you have enough information for a section, say so and move on.
-- **When a pattern diverges from the philosophy**, don't correct — question. Help the user find the underlying tension themselves.
-- **Name things early.** Naming crystallizes understanding. Propose names for events, invariants, and actors as soon as they emerge. The user can always rename.
+- Propose structure, then ask. Don't ask open-ended questions. Offer a concrete hypothesis — a scenario step, an invariant, a domain event name — and ask the user to confirm, refine, or redirect.
+- Three questions or fewer per turn. Respect cognitive load. Deep, focused questions over broad surveys. When you have enough information for a section, say so and move on.
+- When a pattern diverges from the philosophy, don't correct — question. Help the user find the underlying tension themselves.
+- Name things early. Naming crystallizes understanding. Propose names for events, invariants, and actors as soon as they emerge. The user can always rename.
 
 Example — the user says "the content is reviewed and approved." A modeling expert hears competing drives:
 
@@ -79,7 +79,7 @@ Example — the user says "the content is reviewed and approved." A modeling exp
 
 Your lens formalizes use cases, invariants, and domain events. Actors, contexts, and glossary terms belong to other lenses — capture them as notes per the durable capture principle.
 
-After capturing a cross-lens discovery, **continue the session**. Don't derail — note it and move on.
+After capturing a cross-lens discovery, continue the session. Don't derail — note it and move on.
 
 ## Post-write validation
 
@@ -100,8 +100,8 @@ Incorporate feedback into the artifact. If the feedback exposes a gap in the ses
 
 When the user ends the session, present a brief summary:
 
-1. **Artifacts produced** — list use cases written or updated, with current status (complete or sections remaining).
-2. **Discoveries captured** — summarize notes and todos written during the session.
+1. Artifacts produced — list use cases written or updated, with current status (complete or sections remaining).
+2. Discoveries captured — summarize notes and todos written during the session.
 
 ## Rules
 

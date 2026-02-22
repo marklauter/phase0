@@ -9,15 +9,15 @@ The glossary is a single file at `GLOSSARY.md` in the model root. Terms scoped t
 
 {Entries in alphabetical order. One entry per term.}
 
-**{Term}** — {Definition in one sentence.}
+{Term} — {Definition in one sentence.}
 ```
 
 ## Entry format
 
 Each entry is a single line:
 
-1. **Term** — bolded, followed by an em dash (`—`)
-2. **Definition** — one sentence, present tense, declarative
+1. Term — followed by an em dash (`—`)
+2. Definition — one sentence, present tense, declarative
 
 If a term needs a paragraph, it belongs in a principle or its own artifact.
 
@@ -26,7 +26,7 @@ If a term needs a paragraph, it belongs in a principle or its own artifact.
 When a term has been renamed, add a "Formerly:" annotation. This prevents newcomers from reviving retired vocabulary.
 
 ```markdown
-**Editorial lens** — A distinct editorial discipline applied to wiki content during review. Formerly: pass.
+Editorial lens — A distinct editorial discipline applied to wiki content during review. Formerly: pass.
 ```
 
 ## Ordering

@@ -17,7 +17,7 @@ Context files live at `contexts/{nn}-{slug}.md` within the model directory. `{nn
 
 {Terms with precise meaning within this context.}
 
-- **{Term}** — {What it means within this context.}
+- {Term} — {What it means within this context.}
 
 ## Use cases
 
@@ -41,9 +41,9 @@ Context files live at `contexts/{nn}-{slug}.md` within the model directory. `{nn
 
 {How this context relates to other contexts. Three relationship types: requires, feeds, shares with.}
 
-- **Requires:** contexts/{nn}-{slug} — {What must be in place and why.}
-- **Feeds:** contexts/{nn}-{slug} — {What this context provides and why the other context needs it.}
-- **Shares with:** contexts/{nn}-{slug} — {What is shared and the protocol that governs it.}
+- Requires: contexts/{nn}-{slug} — {What must be in place and why.}
+- Feeds: contexts/{nn}-{slug} — {What this context provides and why the other context needs it.}
+- Shares with: contexts/{nn}-{slug} — {What is shared and the protocol that governs it.}
 
 ## Notes (optional)
 

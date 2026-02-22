@@ -11,10 +11,10 @@ Event files live at `events/{nn}-{slug}.md` within the model directory. `{nn}` i
 
 ## Context
 
-- **Bounded context:** contexts/{nn}-{slug}
-- **Producer:** use-cases/{nn}-{slug}
-- **Consumers:** {namespace}/{nn}-{slug} ({why this consumer cares})
-- **Materialization:** {How the event becomes observable — file on disk, API response, summary presented to user, issue created}
+- Bounded context: contexts/{nn}-{slug}
+- Producer: use-cases/{nn}-{slug}
+- Consumers: {namespace}/{nn}-{slug} ({why this consumer cares})
+- Materialization: {How the event becomes observable — file on disk, API response, summary presented to user, issue created}
 
 ## Description
 

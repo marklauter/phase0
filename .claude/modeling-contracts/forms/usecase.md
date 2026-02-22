@@ -15,14 +15,14 @@ Use case files live at `use-cases/{nn}-{slug}.md` within the model directory. `{
 
 ## Context
 
-- **Bounded context:** contexts/{nn}-{slug}
-- **Primary actor:** actors/{nn}-{slug}
-- **Supporting actors:** actors/{nn}-{slug}, actors/{nn}-{slug}
-- **Trigger:** {What prompts the actor to pursue this goal}
+- Bounded context: contexts/{nn}-{slug}
+- Primary actor: actors/{nn}-{slug}
+- Supporting actors: actors/{nn}-{slug}, actors/{nn}-{slug}
+- Trigger: {What prompts the actor to pursue this goal}
 
 ## Actor responsibilities
 
-- **{actor-name}** — {what it owns, what it produces, what it consumes}
+- {actor-name} — {what it owns, what it produces, what it consumes}
 
 ## Invariants
 
@@ -38,27 +38,27 @@ Use case files live at `use-cases/{nn}-{slug}.md` within the model directory. `{
 
 ## Scenario
 
-1. **{Actor}** — {intent}
+1. {Actor} — {intent}
    --> {DomainEvent}
-2. **{Actor}** — {intent}
-3. **{Actor}** — {intent}
+2. {Actor} — {intent}
+3. {Actor} — {intent}
 
 ## Goal obstacles
 
 ### Step {n}a — {threat}
 
-1. **{Actor}** — {response}
-2. **{Actor}** — {recovery}
+1. {Actor} — {response}
+2. {Actor} — {recovery}
 
 ## Domain events
 
 ### Published
 
-- **{EventName}** (events/{nn}-{slug}) — {significance}
+- {EventName} (events/{nn}-{slug}) — {significance}
 
 ### Internal
 
-- **{EventName}** — {significance}
+- {EventName} — {significance}
 
 ## Notes (optional)
 

@@ -8,15 +8,15 @@ This vocabulary is grounded in Alan Cooper's goal-directed design and Eric Evans
 
 ## Primary actors have goals; supporting actors have drives
 
-A **primary actor** has a *goal* — a desired end state the system exists to serve. The system is built for them. Their goals always have conditions.
+A primary actor has a *goal* — a desired end state the system exists to serve. The system is built for them. Their goals always have conditions.
 
-A **supporting actor** has a *drive* — a reason to participate. Drives explain why supporting actors exist at all. They are born from tensions between primary actor goals and the forces of reality.
+A supporting actor has a *drive* — a reason to participate. Drives explain why supporting actors exist at all. They are born from tensions between primary actor goals and the forces of reality.
 
 Goals and drives both make actors predictable in a modeling sense. You know what a primary actor wants to achieve, and you know what a supporting actor will optimize for — and therefore where it will fall short. An actor makes decisions shaped by what it cares about.
 
 ## Goals are conditional
 
-A primary actor's goal is a **conditional goal**: a desired end state plus the values the actor holds about how they exist in that state. A conditional goal is a **value statement** — it expresses both *where* the actor wants to be and *what they value* about being there.
+A primary actor's goal is a conditional goal: a desired end state plus the values the actor holds about how they exist in that state. A conditional goal is a value statement — it expresses both *where* the actor wants to be and *what they value* about being there.
 
 ## Domain events are the published language
 
@@ -32,9 +32,9 @@ This is a deliberate choice. A system whose integration points are optimized for
 
 ## Nouns, verbs, and objects
 
-- **Actors** are nouns. Proofreader, Creator, Corrector, Commissioning orchestrator. They're *who*.
-- **Use cases** are verbs. Populate New Wiki, Review Wiki Quality, Sync Wiki with Source Changes. They're *what happens*.
-- **Events** are nouns — past participles used as nouns. WikiPopulated, FindingFiled, WikiSynced. They're *what was produced*, the fact that something happened.
+- Actors are nouns. Proofreader, Creator, Corrector, Commissioning orchestrator. They're *who*.
+- Use cases are verbs. Populate New Wiki, Review Wiki Quality, Sync Wiki with Source Changes. They're *what happens*.
+- Events are nouns — past participles used as nouns. WikiPopulated, FindingFiled, WikiSynced. They're *what was produced*, the fact that something happened.
 
 ## Extract what the expert knows
 

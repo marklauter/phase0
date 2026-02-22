@@ -12,7 +12,7 @@ Now consider this system. The User is the primary actor with a goal. The Creator
 
 ## Goal conditions create tensions; tensions spawn supporting actors
 
-It is the **conditions** on a primary actor's goal that create tensions. The Passenger wants to be on a different floor *safely*, *promptly*, *with comfort and dignity*. Each condition meets reality and produces a tension. "Safely" collides with the Owner's economic drive to minimize cost. "Promptly" collides with building capacity and demand patterns. Each tension spawns supporting actors with drives that address the gap.
+It is the conditions on a primary actor's goal that create tensions. The Passenger wants to be on a different floor *safely*, *promptly*, *with comfort and dignity*. Each condition meets reality and produces a tension. "Safely" collides with the Owner's economic drive to minimize cost. "Promptly" collides with building capacity and demand patterns. Each tension spawns supporting actors with drives that address the gap.
 
 The Passenger's safety condition demands a drive beyond the Owner's cost-minimization — so the Inspector exists, with a drive born from the state's interest in public welfare. Accuracy demands a drive beyond the Creator's production orientation — so the Proofreader exists, with a drive toward critique.
 
@@ -40,7 +40,7 @@ Apply the gift test: "I want to have a guitar" is a goal — the desired state i
 
 ### The conditions are values
 
-"Be on the 5th floor" is the desired state, and the conditions complete it. The Passenger also values their physical integrity. They value their time. They value their psychological comfort. The conditional goal is: be on the 5th floor, safely, promptly, comfortably, with full physical integrity. These conditions are expressions of what the actor **values**. They *are* the goal — a conditional goal includes them.
+"Be on the 5th floor" is the desired state, and the conditions complete it. The Passenger also values their physical integrity. They value their time. They value their psychological comfort. The conditional goal is: be on the 5th floor, safely, promptly, comfortably, with full physical integrity. These conditions are expressions of what the actor values. They *are* the goal — a conditional goal includes them.
 
 A Passenger who reaches the 5th floor having lost an arm has failed the conditional goal — physical integrity is part of what they valued, integral to the goal itself.
 
@@ -48,10 +48,10 @@ A Passenger who reaches the 5th floor having lost an arm has failed the conditio
 
 The value conditions shape the system more than the destination does:
 
-- **"Safely"** collides with the Owner's economic drive → spawns the Inspector
-- **"Promptly"** collides with building capacity → produces elevator scheduling (why hotels bias upper floors in the morning and offices bias lower)
-- **"Comfortably"** demands maintenance standards, emergency protocols, communication during delays
-- **"With freedom of movement"** demands redundancy, monitoring, rescue procedures
+- "Safely" collides with the Owner's economic drive → spawns the Inspector
+- "Promptly" collides with building capacity → produces elevator scheduling (why hotels bias upper floors in the morning and offices bias lower)
+- "Comfortably" demands maintenance standards, emergency protocols, communication during delays
+- "With freedom of movement" demands redundancy, monitoring, rescue procedures
 
 A value says "I want to retain my physical integrity." A spec says "the elevator decelerates within tolerance." The spec is one implementation of the value. Values keep the solution space open — they can be satisfied in ways a single spec may anticipate only partially. Design from values.
 

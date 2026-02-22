@@ -58,13 +58,13 @@ Each obstacle names the step it threatens, using a letter-suffix convention: Ste
 
 Each obstacle includes a recovery strategy — not a branch to a different path, but a way to protect the goal or degrade gracefully when it cannot be fully achieved. The question is not "where does the flow go?" but "what can still be salvaged?" Recovery strategies fall into patterns:
 
-- **Stop and report.** The goal cannot be satisfied from this state. Tell the user what happened and what to do. "Reports that no workspace exists and directs the user to run `/up` first." The actor stops. No partial output is produced.
+- Stop and report. The goal cannot be satisfied from this state. Tell the user what happened and what to do. "Reports that no workspace exists and directs the user to run `/up` first." The actor stops. No partial output is produced.
 
-- **Degrade gracefully.** Part of the work can proceed. "Proceeds with the reports that succeeded. The gaps are visible to the user during plan approval, where they can account for missing coverage by adjusting the plan." The goal is partially satisfied and the user knows what is missing.
+- Degrade gracefully. Part of the work can proceed. "Proceeds with the reports that succeeded. The gaps are visible to the user during plan approval, where they can account for missing coverage by adjusting the plan." The goal is partially satisfied and the user knows what is missing.
 
-- **Retry then fallback.** Try again, and if that fails, fall to a different output path. "Retries the failed proofreader once. If the retry fails, records the failure. Findings from other proofreaders proceed through the pipeline." The system tries to self-heal, then degrades gracefully.
+- Retry then fallback. Try again, and if that fails, fall to a different output path. "Retries the failed proofreader once. If the retry fails, records the failure. Findings from other proofreaders proceed through the pipeline." The system tries to self-heal, then degrades gracefully.
 
-- **Alternative path.** Route to a different mechanism that satisfies the same goal. "Writes all findings as local fallback files, one file per finding, using the issue frontmatter format." The durable output still exists — just in a different location.
+- Alternative path. Route to a different mechanism that satisfies the same goal. "Writes all findings as local fallback files, one file per finding, using the issue frontmatter format." The durable output still exists — just in a different location.
 
 The recovery strategy tells the next actor in the chain what to expect. If a researcher fails and the orchestrator degrades gracefully, the downstream editor receives incomplete input and must be told what is missing.
 
@@ -88,7 +88,7 @@ Step ordering is a design decision, not a chronological accident. When two steps
 
 ### Actor attribution
 
-Every step names the actor responsible. "**actors/03-commissioning-orchestrator** — Dispatches researchers to comprehend the source code from distinct angles." The actor attribution makes the produce/consume chain visible. When you read a scenario, you can trace who produces what and who consumes it.
+Every step names the actor responsible. "actors/03-commissioning-orchestrator — Dispatches researchers to comprehend the source code from distinct angles." The actor attribution makes the produce/consume chain visible. When you read a scenario, you can trace who produces what and who consumes it.
 
 ### Domain events mark transitions
 
