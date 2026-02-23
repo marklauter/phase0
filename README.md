@@ -12,9 +12,15 @@ A Socratic facilitator guides you from the empty whiteboard to an implementation
 
 Built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Grounded in Alan Cooper's goal-directed design and Eric Evans' domain-driven design.
 
-## Why agentic systems need this
+## Agents are people too
 
-Every multi-agent system faces the same design questions: how many agents, what does each one care about, how do they communicate, and what keeps them honest. Phase0 answers all four — and the answers map directly to implementation.
+Humans are error-prone. They have conflicting interests, lack information, make guesses, and fill gaps with assumptions. Organizations cope with human fallibility through oversight — reviewers who check producers, auditors who verify claims, inspectors who enforce standards. Since overseers are also fallible, the production-evaluation loop never terminates. It becomes continuous improvement.
+
+Agent fallibility works the same way. Agents hallucinate, drift from intent, optimize for the wrong thing, and miss what they weren't told to look for. Treat them like people. Give each agent a drive that makes its behavior predictable. Separate production from evaluation. Add oversight agents whose drives conflict productively with the producers'. Design the feedback loop.
+
+Use case modeling, Alan Cooper's goal-directed design, and Eric Evans' domain-driven design each solve a piece of this problem. Goal-directed design tells you who the agents are and what they care about. Domain-driven design tells you where meanings partition and how agents communicate across boundaries. Use case modeling tells you what interactions the design demands. Phase0 brings the three together into a single method of discovery, capture, and implementation-independent agentic system specification.
+
+Every multi-agent system faces the same questions: how many agents, what does each one care about, how do they communicate, and what keeps them honest. Phase0 answers all four — and the answers map directly to implementation.
 
 An actor's drive becomes its system prompt — not a job description, but a behavioral orientation that makes the agent *want* what the drive demands. Tool restrictions enforce single responsibility: a researcher that can't write stays focused on research; a creator that can't judge stays focused on production. Invariants become hooks and guardrails enforced outside the LLM's reasoning loop — hard rules the model cannot override, negotiate with, or forget. Domain events become the structured messages agents exchange across bounded context boundaries. The orchestrator holds the primary actor's goal and dispatches supporting agents whose drives, taken together, satisfy the goal's value conditions.
 
