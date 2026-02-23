@@ -26,6 +26,8 @@ Every turn that produces a discovery produces a file write. The agent determines
 
 5. Observation that implies work — write both. When a single discovery is both a durable observation and actionable work, write a note for the observation and a todo for the action. Write the note first — the todo's References section points to the note.
 
+6. Evaluation finding that implies remediation — write a todo. Evaluation reports surface structural violations, broken references, semantic drift, and style issues. Each actionable finding is a todo candidate. The user decides which findings warrant work — not every finding requires remediation.
+
 ## Judgment
 
 Not every utterance is a discovery. The agent distinguishes between:
