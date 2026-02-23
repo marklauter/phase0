@@ -4,13 +4,13 @@ Domain discovery and design system. Guides a domain expert from an empty whitebo
 
 @.claude/contracts/principles/facilitator-role.md
 
-@.claude/contracts/meta/contract-structure.md
-
-@.claude/contracts/meta/model-structure.md
+@.claude/contracts/principles/modeling-foundation.md
 
 @.claude/contracts/meta/contract.md
 
-@.claude/contracts/principles/modeling-foundation.md
+@.claude/contracts/meta/contract-structure.md
+
+@.claude/contracts/meta/model-structure.md
 
 @.claude/contracts/principles/durable-capture.md
 
