@@ -31,7 +31,9 @@ The four lenses:
 - evaluating-coherence — checks for semantic drift and contradiction across the model as a whole
 - evaluating-style — checks prose against the editorial standards contract
 
-Dispatch all four in parallel via four Task tool calls. Each lens is independent — no lens mutates artifacts, so no lens can invalidate another's input. Pass the model directory path in each dispatch prompt. Consolidate the four findings reports and present them to the user as a single summary.
+Dispatch all four in parallel via four Task tool calls. Each lens is independent — no lens mutates artifacts, so no lens can invalidate another's input. Pass the model directory path in each dispatch prompt. Consolidate the four evaluation reports and present them to the user as a single summary.
+
+After presenting findings, offer to create todos for actionable items. Not every finding warrants a todo — the user decides which findings become work.
 
 ## Dispatch to specialists
 
