@@ -3,7 +3,7 @@ name: writing-events
 description: This skill should be used when the user asks to "write a domain event", "create an event file", "structure an event", or when an agent needs to create domain event files during design work. Loads the structural contract and the creation script.
 ---
 
-!`cat .claude/modeling-contracts/forms/event.md`
+!`cat .claude/contracts/forms/event.md`
 
 ## Creating events
 

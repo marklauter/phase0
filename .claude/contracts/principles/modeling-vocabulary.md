@@ -1,6 +1,6 @@
 ## Modeling vocabulary
 
-The shared vocabulary for domain modeling — goals, drives, tensions, conditional goals, invariants, and domain events. Grounded in Alan Cooper's goal-directed design and Eric Evans' domain-driven design. Lens-specific depth lives in actor-lens, usecase-lens, and context-lens.
+The shared vocabulary for domain modeling — goals, drives, tensions, conflicts of interest, environmental constraints, conditional goals, invariants, and domain events. Grounded in Alan Cooper's goal-directed design and Eric Evans' domain-driven design. Lens-specific depth lives in actor-lens, usecase-lens, and context-lens.
 
 ## Foundations
 
@@ -10,13 +10,22 @@ This vocabulary is grounded in Alan Cooper's goal-directed design and Eric Evans
 
 A primary actor has a *goal* — a desired end state the system exists to serve. The system is built for them. Their goals always have conditions.
 
-A supporting actor has a *drive* — a reason to participate. Drives explain why supporting actors exist at all. They are born from tensions between primary actor goals and the forces of reality.
+A supporting actor has a *drive* — a reason to participate. Drives explain why supporting actors exist at all. They are born from tensions — gaps between what primary actors value and what can be delivered.
 
 Goals and drives both make actors predictable in a modeling sense. You know what a primary actor wants to achieve, and you know what a supporting actor will optimize for — and therefore where it will fall short. An actor makes decisions shaped by what it cares about.
 
 ## Goals are conditional
 
 A primary actor's goal is a conditional goal: a desired end state plus the values the actor holds about how they exist in that state. A conditional goal is a value statement — it expresses both *where* the actor wants to be and *what they value* about being there.
+
+## Tensions have causes
+
+A tension is a force — the named gap between what a primary actor values and what can be delivered. Tensions arise from multiple sources:
+
+- A *conflict of interest* — a supporting actor's drive obstructs achievement of a primary actor's goal condition. The Owner's cost-minimization drive obstructs the Passenger's safety condition. The conflict is the cause; the tension is the force it produces.
+- An *environmental constraint* — a physical, systemic, or situational limit that obstructs a primary actor's goal condition. Building capacity obstructs the Passenger's "promptly" condition. No actor controls it — it is a feature of reality.
+
+Both sources produce tensions. Unresolved tensions spawn supporting actors with drives that address the gap.
 
 ## Domain events are the published language
 

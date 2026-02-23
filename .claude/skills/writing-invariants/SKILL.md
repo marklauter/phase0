@@ -3,7 +3,7 @@ name: writing-invariants
 description: This skill should be used when the user asks to "write an invariant", "create an invariant file", "structure an invariant", or when an agent needs to create invariant files during design work. Loads the structural contract and the creation script.
 ---
 
-!`cat .claude/modeling-contracts/forms/invariant.md`
+!`cat .claude/contracts/forms/invariant.md`
 
 ## Creating invariants
 

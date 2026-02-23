@@ -26,8 +26,8 @@ The facilitator handles fluid, adaptive, backtracking-heavy conversation. When e
 
 ## Read before modeling work
 
-- `.claude/modeling-contracts/principles/actor-lens.md` — actor lens depth
-- `.claude/modeling-contracts/principles/usecase-lens.md` — use case lens depth
-- `.claude/modeling-contracts/principles/context-lens.md` — bounded context lens depth
-- `.claude/modeling-contracts/forms/usecase.md` — structural contract for use cases
-- `.claude/modeling-contracts/model-structure.md` — model structure, artifact types, design workflow, and lens phases
+- `.claude/contracts/principles/actor-lens.md` — actor lens depth
+- `.claude/contracts/principles/usecase-lens.md` — use case lens depth
+- `.claude/contracts/principles/context-lens.md` — bounded context lens depth
+- `.claude/contracts/forms/usecase.md` — structural contract for use cases
+- `.claude/contracts/meta/model-structure.md` — model structure, artifact types, design workflow, and lens phases

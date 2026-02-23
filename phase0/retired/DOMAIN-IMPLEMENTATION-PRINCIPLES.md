@@ -33,7 +33,7 @@ The orchestrator's "prompt" is the command file — the skill or slash command t
 Three categories, each with a distinct role:
 
 - **Agents** embody drives. They are supporting actors — their identity comes from the system prompt, which expresses a drive born from a tension on the primary actor's goal. An agent *is* an actor.
-- **Reference material** informs agents. Editorial guidance is rules ("prefer active voice"). Wiki instructions are a map ("the sidebar lives here, pages follow this naming convention"). Project conventions are constraints. None of these are capabilities — they are context an agent reads to do its work. Reference material lives in `.claude/modeling-contracts/` and is injected into agents via skills that use the `!`cat`` directive.
+- **Reference material** informs agents. Editorial guidance is rules ("prefer active voice"). Wiki instructions are a map ("the sidebar lives here, pages follow this naming convention"). Project conventions are constraints. None of these are capabilities — they are context an agent reads to do its work. Reference material lives in `.claude/contracts/` and is injected into agents via skills that use the `!`cat`` directive.
 - **Skills** are injection loaders and user-invocable workflows. Each skill's YAML front matter defines when it triggers. The body uses `!`cat`` to inject content from the modeling contracts at activation time. Skills carry no duplicated content — the modeling file is the single source of truth.
 
 Two agents can share the same reference material and produce different outputs because their drives differ. The creator reading editorial guidance produces pages. The proofreader reading the same guidance produces findings. The material is the same. The drive determines what happens.
@@ -94,7 +94,7 @@ The distinction matters: process events are prompt context passed through the or
 
 A **contract** is the atomic unit of modeling knowledge. Each contract has two expressions that share the same name:
 
-- The **modeling file** in `.claude/modeling-contracts/` (a principle, a form, or a governance rule) is the single source of truth — it defines what to produce or what to verify, and carries the authoritative prose.
+- The **modeling file** in `.claude/contracts/` (a principle, a form, or a governance rule) is the single source of truth — it defines what to produce or what to verify, and carries the authoritative prose.
 - The **skill file** in `.claude/skills/` is a thin loader — YAML front matter for triggering, plus a `!`cat`` directive that injects the modeling file's content at activation time. Skills carry no duplicated body content.
 
 The modeling file is the only place to edit contract content. The skill's YAML `description` is the source of truth for triggering language. Agents receive contract content by listing skills in their `skills:` array — the skill injects the modeling file when the agent loads.
@@ -109,7 +109,7 @@ An agent writing a use case needs both: the behavioral principle to make good mo
 
 The designing-usecases agent loads `writing-usecases` (the form — what a use case file looks like) and `modeling-usecases` (the behavioral principle — how to think about use cases). One shapes the output. The other shapes the judgment.
 
-Every structured artifact the system produces has a canonical form in `.claude/modeling-contracts/forms/`. The form defines the shape. Agents consume the form through skill injection. Adding a field to an artifact is a one-line change to the form — every agent that loads the skill gets the update automatically.
+Every structured artifact the system produces has a canonical form in `.claude/contracts/forms/`. The form defines the shape. Agents consume the form through skill injection. Adding a field to an artifact is a one-line change to the form — every agent that loads the skill gets the update automatically.
 
 ## Actors map to skills
 

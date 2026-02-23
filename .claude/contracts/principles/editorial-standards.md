@@ -28,3 +28,7 @@ All durable output is written as markdown files unless otherwise specified.
 - Em dash (`—`) for parenthetical breaks, definitions, and appositives. Use the em dash character, not double hyphens (`--`).
 - Avoid bold. Headings, bullets, and numbered lists already carry structure — bold adds visual noise without changing how LLMs process the content.
 - Capitalize actor role names in prose (User, Orchestrator).
+
+## Renaming and refactoring
+
+When renaming or moving files, search the entire project for references to the old name/path and update them. Verify with a final grep that zero stale references remain before reporting the task complete.

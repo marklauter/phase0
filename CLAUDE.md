@@ -2,43 +2,23 @@
 
 Domain discovery and design system. Guides a domain expert from an empty whiteboard to an implementation-ready system model through goal-directed Socratic dialogue. Three lenses — actor, use case, bounded context — form a complete graph (K₃) across which discoveries flow freely. Grounded in Alan Cooper's goal-directed design and Eric Evans' domain-driven design. The main conversation is the facilitator; specialist agents formalize what the conversation reveals.
 
-@.claude/modeling-contracts/principles/facilitator-role.md
+@.claude/contracts/principles/facilitator-role.md
 
-@.claude/modeling-contracts/contract-structure.md
+@.claude/contracts/meta/contract-structure.md
 
-@.claude/modeling-contracts/model-structure.md
+@.claude/contracts/meta/model-structure.md
 
-@.claude/modeling-contracts/principles/modeling-vocabulary.md
+@.claude/contracts/meta/contract.md
 
-@.claude/modeling-contracts/principles/durable-capture.md
+@.claude/contracts/principles/modeling-vocabulary.md
 
-@.claude/modeling-contracts/principles/editorial-standards.md
+@.claude/contracts/principles/durable-capture.md
+
+@.claude/contracts/principles/editorial-standards.md
 
 ## Sample model
 
 `models/marklauter/github-wiki-agent/` contains a complete reference model (GitHub wiki management system) demonstrating all artifact types. Use it as a guide for structure, voice, and level of detail.
-
-## Contracts
-
-A contract is the atomic unit of modeling knowledge. Each contract has two expressions that share the same name:
-
-- The modeling file in `.claude/modeling-contracts/` (a principle or a form) is the single source of truth — it defines what to produce or what to verify, and carries the authoritative prose.
-- The skill file in `.claude/skills/` is a thin loader — YAML front matter for triggering, plus a `!`cat`` directive that injects the modeling file's content at activation time. Skills carry no duplicated body content.
-
-The modeling file is the only place to edit contract content. The skill's YAML `description` is the source of truth for triggering language. Agents receive contract content by listing skills in their `skills:` array — the skill injects the modeling file when the agent loads.
-
-Form contracts map to a pair of skills:
-
-- `reading-*` — `!cat` to the form + discovery and navigation exposition. How to find and interpret artifacts of this type.
-- `writing-*` — `!cat` to the form + creation machinery (scripts, guidance). How to produce artifacts of this type.
-
-The form is the single source of truth for structure. The skills add operational knowledge — one for consumption, one for production. Three files, no duplication.
-
-Each layer has one job: principles teach rules, agents declare scope, skills inject content. Say it once, in the right place.
-
-## Renaming and refactoring
-
-When renaming or moving files, always search the entire project for references to the old name/path and update them. Verify with a final grep that zero stale references remain before reporting the task complete.
 
 ## Multi-agent orchestration
 

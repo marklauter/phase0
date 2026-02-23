@@ -6,13 +6,18 @@ The actor lens discovers who the system serves and why each participant exists. 
 
 Consider an elevator system. The Passenger is the primary actor. Their goal is to be on a different floor — safely, promptly, comfortably, with full physical integrity. The system exists to serve that goal. The desired state is *being there* — presence on the target floor. The conditions on the goal (safely, promptly, intact) are where system design comes from.
 
-The building Owner is a supporting actor — elevators cost money, so someone must own and maintain them. The Owner's drive is economic: minimize maintenance cost. The government Inspector is also a supporting actor, spawned by the conflict between the Owner's economic drive and the Passenger's safety condition. The Inspector's drive is public safety, born from the state's interest in public welfare.
+The building Owner is a supporting actor — elevators cost money, so someone must own and maintain them. The Owner's drive is economic: minimize maintenance cost. The government Inspector is also a supporting actor, spawned by the conflict of interest between the Owner's economic drive and the Passenger's safety condition. The Inspector's drive is public safety, born from the state's interest in public welfare.
 
 Now consider this system. The User is the primary actor with a goal. The Creator is a supporting actor whose drive is production — fill pages with content. The Proofreader is a supporting actor whose drive is critique — verify accuracy and consistency. The Proofreader exists because accuracy demands a drive beyond the Creator's production orientation.
 
 ## Goal conditions create tensions; tensions spawn supporting actors
 
-It is the conditions on a primary actor's goal that create tensions. The Passenger wants to be on a different floor *safely*, *promptly*, *with comfort and dignity*. Each condition meets reality and produces a tension. "Safely" collides with the Owner's economic drive to minimize cost. "Promptly" collides with building capacity and demand patterns. Each tension spawns supporting actors with drives that address the gap.
+It is the conditions on a primary actor's goal that create tensions. A tension is a force — the named gap between what the actor values and what can be delivered. Tensions arise from two sources:
+
+- A conflict of interest — a supporting actor's drive obstructs a primary actor's goal condition. "Safely" collides with the Owner's economic drive to minimize cost. The Owner optimizes for cost in good faith, but that drive obstructs the Passenger's safety condition.
+- An environmental constraint — a physical, systemic, or situational limit that obstructs a goal condition. "Promptly" collides with building capacity and demand patterns. No actor controls building physics.
+
+Both sources produce tensions. Each unresolved tension spawns supporting actors with drives that address the gap.
 
 The Passenger's safety condition demands a drive beyond the Owner's cost-minimization — so the Inspector exists, with a drive born from the state's interest in public welfare. Accuracy demands a drive beyond the Creator's production orientation — so the Proofreader exists, with a drive toward critique.
 
@@ -22,11 +27,11 @@ Every supporting actor has a genealogy — you can trace *why* they exist back t
 
 Ask "what tension demands this actor, and what drive resolves it?"
 
-## Goal conflicts spawn actors
+## Conflicts of interest spawn actors
 
-Supporting actors emerge from tensions between a primary actor's goal and the drives of existing actors.
+Supporting actors emerge from conflicts of interest — when existing actors' drives obstruct a primary actor's goal conditions.
 
-The Inspector exists because the Passenger's safety condition demands a drive beyond the Owner's economic optimization. The Proofreader exists because accuracy demands a drive beyond the Creator's production orientation. In each case, the supporting actor is born from a specific, nameable conflict.
+The Inspector exists because the Passenger's safety condition demands a drive beyond the Owner's economic optimization. The Proofreader exists because accuracy demands a drive beyond the Creator's production orientation. In each case, the supporting actor is born from a specific, nameable conflict of interest.
 
 A new actor earns its place by resolving a tension — a gap between what existing actors optimize for and what the primary actor's goal requires.
 
@@ -48,8 +53,8 @@ A Passenger who reaches the 5th floor having lost an arm has failed the conditio
 
 The value conditions shape the system more than the destination does:
 
-- "Safely" collides with the Owner's economic drive → spawns the Inspector
-- "Promptly" collides with building capacity → produces elevator scheduling (why hotels bias upper floors in the morning and offices bias lower)
+- "Safely" collides with the Owner's economic drive (conflict of interest) → spawns the Inspector
+- "Promptly" collides with building capacity (environmental constraint) → produces elevator scheduling (why hotels bias upper floors in the morning and offices bias lower)
 - "Comfortably" demands maintenance standards, emergency protocols, communication during delays
 - "With freedom of movement" demands redundancy, monitoring, rescue procedures
 
@@ -62,9 +67,10 @@ Everything in the system traces back to conditional goals:
 ```
 Primary actor
   → conditional goal (desired state + value conditions)
-    → value conditions meet reality → tensions
-      → tensions spawn supporting actors (each with a drive)
-        → system design (invariants, use cases, bounded contexts)
+    → value conditions meet reality → conflicts of interest / environmental constraints
+      → tensions (named gaps)
+        → tensions spawn supporting actors (each with a drive)
+          → system design (invariants, use cases, bounded contexts)
 ```
 
 Ask "what state of the world does the actor want to be in, and what do they value about being in that state?"

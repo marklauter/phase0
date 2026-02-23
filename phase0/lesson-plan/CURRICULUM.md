@@ -105,13 +105,13 @@ The curriculum draws from these documents in the repository:
 
 | Document | What it provides |
 |----------|-----------------|
-| [modeling-vocabulary.md](../.claude/modeling-contracts/principles/modeling-vocabulary.md) | Shared vocabulary — goals, drives, tensions, domain events |
-| [actor-lens.md](../.claude/modeling-contracts/principles/actor-lens.md) | Actor lens — conditional goals, derivation chain, actor genealogy |
-| [usecase-lens.md](../.claude/modeling-contracts/principles/usecase-lens.md) | Use case lens — invariants, obstacles, intent-driven scenarios |
-| [context-lens.md](../.claude/modeling-contracts/principles/context-lens.md) | Bounded context lens — boundaries, protocols |
-| [usecase.md](../.claude/modeling-contracts/forms/usecase.md) | Structural contract for use cases |
-| [DOMAIN-MODEL-ARTIFACTS.md](../.claude/modeling-contracts/DOMAIN-MODEL-ARTIFACTS.md) | What artifacts to produce and when |
+| [modeling-vocabulary.md](../.claude/contracts/principles/modeling-vocabulary.md) | Shared vocabulary — goals, drives, tensions, domain events |
+| [actor-lens.md](../.claude/contracts/principles/actor-lens.md) | Actor lens — conditional goals, derivation chain, actor genealogy |
+| [usecase-lens.md](../.claude/contracts/principles/usecase-lens.md) | Use case lens — invariants, obstacles, intent-driven scenarios |
+| [context-lens.md](../.claude/contracts/principles/context-lens.md) | Bounded context lens — boundaries, protocols |
+| [usecase.md](../.claude/contracts/forms/usecase.md) | Structural contract for use cases |
+| [DOMAIN-MODEL-ARTIFACTS.md](../.claude/contracts/DOMAIN-MODEL-ARTIFACTS.md) | What artifacts to produce and when |
 | [design-cycle.md](../vision/design-cycle.md) | How the design process unfolds |
-| [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](../.claude/modeling-contracts/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) | How domain models become agentic systems |
+| [DOMAIN-IMPLEMENTATION-PRINCIPLES.md](../.claude/contracts/principles/DOMAIN-IMPLEMENTATION-PRINCIPLES.md) | How domain models become agentic systems |
 | [VISION.md](../phase0/VISION.md) | Phase0 domain discovery vision |
 | [models/marklauter/github-wiki-manager/](../models/marklauter/github-wiki-manager/) | Complete reference model |

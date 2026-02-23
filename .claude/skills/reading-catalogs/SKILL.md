@@ -3,7 +3,7 @@ name: reading-catalogs
 description: This skill should be used when the user asks to "read an index", "review the catalog", "browse artifacts", "check what exists", or when an agent needs to understand the structure of index files. Loads the structural contract for catalog documents.
 ---
 
-Read the form at `.claude/modeling-contracts/forms/catalog.md` when you need to verify structure.
+Read the form at `.claude/contracts/forms/catalog.md` when you need to verify structure.
 
 ## Reading catalogs
 

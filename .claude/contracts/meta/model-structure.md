@@ -14,7 +14,7 @@ Primary actors with conditional goals. Supporting actors with drives. Sub-system
 
 - File naming: `{nn}-{slug}.md` (e.g., `01-user.md`)
 - Catalog: `actors/index.md`
-- Form: `.claude/modeling-contracts/forms/actor.md`
+- Form: `.claude/contracts/forms/actor.md`
 
 ### use-cases/
 
@@ -22,7 +22,7 @@ One file per use case. Each describes one goal pursued by one primary actor — 
 
 - File naming: `{nn}-{slug}.md` (e.g., `01-populate-new-wiki.md`)
 - Catalog: `use-cases/index.md`
-- Form: `.claude/modeling-contracts/forms/usecase.md`
+- Form: `.claude/contracts/forms/usecase.md`
 
 ### contexts/
 
@@ -30,7 +30,7 @@ Bounded context definitions. Each file describes one semantic region — its pur
 
 - File naming: `{nn}-{slug}.md` (e.g., `01-wiki-creation.md`)
 - Catalog: `contexts/index.md`
-- Form: `.claude/modeling-contracts/forms/context.md`
+- Form: `.claude/contracts/forms/context.md`
 
 ### events/
 
@@ -39,7 +39,7 @@ Published domain events — durable facts that cross bounded context boundaries.
 - File naming: `{nn}-{slug}.md` (e.g., `01-wiki-populated.md`)
 - Event names: PastTense (e.g., WikiPopulated, FindingFiled)
 - Catalog: `events/index.md`
-- Form: `.claude/modeling-contracts/forms/event.md`
+- Form: `.claude/contracts/forms/event.md`
 
 ### invariants/
 
@@ -47,21 +47,21 @@ Shared invariants — continuous constraints that hold across multiple use cases
 
 - File naming: `{nn}-{slug}.md` (e.g., `01-source-repo-readonly.md`)
 - Catalog: `invariants/index.md`
-- Form: `.claude/modeling-contracts/forms/invariant.md`
+- Form: `.claude/contracts/forms/invariant.md`
 
 ### notes/
 
 Timestamped discovery captures. A note records an observation, question, or proposal that emerged during a session. Notes are durable — they persist as a record of how the model evolved.
 
 - File naming: `{ISO-datetime}-{slug}.md` (e.g., `2026-02-22T0332-actor-to-skill-mapping.md`)
-- Form: `.claude/modeling-contracts/forms/note.md`
+- Form: `.claude/contracts/forms/note.md`
 
 ### todos/
 
 Ephemeral work items. A todo describes a concrete action to be taken. Todos are deleted when completed — they do not accumulate.
 
 - File naming: `{slug}.md` (e.g., `bootstrap-phase0-model.md`)
-- Form: `.claude/modeling-contracts/forms/todo.md`
+- Form: `.claude/contracts/forms/todo.md`
 
 ## Cross-cutting artifacts
 
@@ -69,13 +69,13 @@ Ephemeral work items. A todo describes a concrete action to be taken. Todos are 
 
 A single file at the model root. Alphabetical entries, one term per entry, one-sentence definition. Terms emerge through all three lenses and crystallize as the model matures. When a term carries different meanings in different bounded contexts, the glossary records the canonical definition; each context's ubiquitous language section records what the term means there.
 
-- Form: `.claude/modeling-contracts/forms/glossary.md`
+- Form: `.claude/contracts/forms/glossary.md`
 
 ### Catalogs (index.md)
 
 Each artifact directory except notes/ and todos/ contains an `index.md` catalog. One-sentence entries with cross-references. The catalog is the entry point for navigating that artifact type.
 
-- Form: `.claude/modeling-contracts/forms/catalog.md`
+- Form: `.claude/contracts/forms/catalog.md`
 
 ---
 
@@ -97,7 +97,7 @@ Phases:
 
 1. Identify primary actors. Refine sloppy nouns into standalone names with singular goals. "Customer" becomes Sender, Recipient, Complainant — each carrying its own meaning.
 2. Extract conditional goals. Each primary actor has a desired end state coupled with value conditions. The value conditions are where system design comes from.
-3. Expose tensions. Value conditions collide with reality. Supporting actor drives are insufficient to protect all values. Both sources produce named gaps between what is valued and what existing actors can deliver.
+3. Expose tensions. Value conditions meet reality and produce tensions — the named gaps between what is valued and what can be delivered. Conflicts of interest (a supporting actor's drive obstructs a goal condition) and environmental constraints (physical, systemic, or situational limits) are the sources.
 4. Derive supporting actors. Each unresolved tension spawns a new actor with a drive that addresses the gap. Every supporting actor has a genealogy traceable to a primary actor's value conditions.
 
 Produces: actor catalog, system boundary.

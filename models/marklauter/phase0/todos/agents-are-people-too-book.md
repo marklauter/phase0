@@ -10,4 +10,4 @@ The book captures the philosophical and practical journey behind Phase0. Getting
 
 ## References
 
-vision/, modeling-contracts/, models/marklauter/phase0/notes/
+vision/, contracts/, models/marklauter/phase0/notes/

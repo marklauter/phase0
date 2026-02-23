@@ -10,4 +10,4 @@ The book is titled "Agents are People Too — the story behind Phase0." It tells
 
 ## References
 
-Phase0 project, vision/ directory, modeling-contracts/
+Phase0 project, vision/ directory, contracts/
