@@ -8,10 +8,6 @@ The internal structure of the instruction set — `.claude/modeling-contracts/` 
 
 Core beliefs and philosophical prose that creators follow when producing content. Each file teaches one concept — a lens, a role, a vocabulary, a standard. Principles shape how agents think and what they value during design work.
 
-### governance/
-
-Verification rules that reviewers follow when checking content. Governance owns the negative assertions — what to flag, what violates a contract, what to reject.
-
 ### forms/
 
 Structural contracts for artifacts. Each form defines the sections, ordering, and placeholder guidance for one artifact type. Forms are pure structure — no philosophy, no creation mechanics. They serve both reading and writing. One form per artifact type defined in model-structure.md.
@@ -23,3 +19,7 @@ Structure documents that describe folder layouts and naming patterns. model-stru
 ## scripts/
 
 Deterministic helper scripts that agents call via Bash. One creation script per artifact type. Judgment stays in the agent; mechanics stay in the script. Always use relative paths (e.g., `bash .claude/scripts/create-note.sh`) to match permission patterns in `settings.json`.
+
+## Extending the system
+
+Read the matching form before writing any artifact. The form is the structural authority — same sections, same ordering. When a new artifact type is introduced, create a form in `.claude/modeling-contracts/forms/`, a creation script in `.claude/scripts/`, and corresponding reading and writing skills in `.claude/skills/`.

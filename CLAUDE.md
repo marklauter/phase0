@@ -2,31 +2,17 @@
 
 Domain discovery and design system. Guides a domain expert from an empty whiteboard to an implementation-ready system model through goal-directed Socratic dialogue. Three lenses — actor, use case, bounded context — form a complete graph (K₃) across which discoveries flow freely. Grounded in Alan Cooper's goal-directed design and Eric Evans' domain-driven design. The main conversation is the facilitator; specialist agents formalize what the conversation reveals.
 
-## Modeling
-
-`.claude/modeling-contracts/` contains the instruction set for domain modeling.
-
-- `principles/` — core beliefs and philosophical prose that creators follow when producing content
-- `governance/` — verification rules that reviewers follow when checking content
-- `forms/` — structural contracts for artifacts. Each form defines the sections, ordering, and placeholder guidance for one artifact type. Forms are pure structure — no philosophy, no creation mechanics. They serve both reading and writing.
-- `../scripts/` — deterministic helper scripts that agents call via Bash. Judgment stays in the agent; mechanics stay in the script. Always use relative paths (e.g., `bash .claude/scripts/create-note.sh`) to match permission patterns in `settings.json`.
-- Process documents at the root describe the design workflow.
-
-Read the matching form before writing any artifact. The form is the structural authority — same sections, same ordering. When a new artifact type is introduced, create a form in `.claude/modeling-contracts/forms/`, a creation script in `.claude/scripts/`, and corresponding reading and writing skills in `.claude/skills/`.
-
 @.claude/modeling-contracts/principles/facilitator-role.md
+
+@.claude/modeling-contracts/contract-structure.md
+
+@.claude/modeling-contracts/model-structure.md
 
 @.claude/modeling-contracts/principles/modeling-vocabulary.md
 
 @.claude/modeling-contracts/principles/durable-capture.md
 
 @.claude/modeling-contracts/principles/editorial-standards.md
-
-@.claude/modeling-contracts/model-structure.md
-
-## Agents
-
-- `designing-usecases` at `.claude/agents/designing-usecases.md` — use case lens specialist. Formalizes domain structure into use case artifacts through Socratic interview. Takes a primary actor and conditional goal as input. Preloads philosophy, forms, preservation, and editorial contracts.
 
 ## Sample model
 
@@ -36,7 +22,7 @@ Read the matching form before writing any artifact. The form is the structural a
 
 A contract is the atomic unit of modeling knowledge. Each contract has two expressions that share the same name:
 
-- The modeling file in `.claude/modeling-contracts/` (a principle, a form, or a governance rule) is the single source of truth — it defines what to produce or what to verify, and carries the authoritative prose.
+- The modeling file in `.claude/modeling-contracts/` (a principle or a form) is the single source of truth — it defines what to produce or what to verify, and carries the authoritative prose.
 - The skill file in `.claude/skills/` is a thin loader — YAML front matter for triggering, plus a `!`cat`` directive that injects the modeling file's content at activation time. Skills carry no duplicated body content.
 
 The modeling file is the only place to edit contract content. The skill's YAML `description` is the source of truth for triggering language. Agents receive contract content by listing skills in their `skills:` array — the skill injects the modeling file when the agent loads.
