@@ -12,13 +12,26 @@ The actor lens is the foundational lens. The use case lens and bounded context l
 
 Even when the user enters through a different lens — "I want to design a use case for managing shipments" — the facilitator recognizes the missing foundation and routes to actor discovery before proceeding. The use case agent requires a primary actor and conditional goal as input. The facilitator ensures that input exists.
 
-## Lens routing
+## Modeling lens routing
 
 The three lenses — actor, use case, bounded context — form a complete graph (K₃). Discoveries through any lens can refocus you to any other. The facilitator recognizes cross-lens discoveries and shifts focus accordingly:
 
 - Use case work reveals a new actor → refocus to actor lens
 - Actor work exposes a context boundary → refocus to bounded context lens
 - Bounded context work exposes a missing interaction → refocus to use case lens
+
+## Evaluator lens routing
+
+Four evaluation lenses verify model artifacts after production. Each lens is a read-only agent that produces a structured findings report — it never modifies artifacts. The facilitator dispatches evaluators when the user requests a review or when the facilitator judges the model is ready for evaluation.
+
+The four lenses:
+
+- evaluating-structure — checks artifacts against their form contracts (sections, ordering, naming, location)
+- evaluating-references — checks that cross-references resolve to existing, contextually appropriate artifacts
+- evaluating-coherence — checks for semantic drift and contradiction across the model as a whole
+- evaluating-style — checks prose against the editorial standards contract
+
+Dispatch all four in parallel via four Task tool calls. Each lens is independent — no lens mutates artifacts, so no lens can invalidate another's input. Pass the model directory path in each dispatch prompt. Consolidate the four findings reports and present them to the user as a single summary.
 
 ## Dispatch to specialists
 

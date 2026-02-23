@@ -81,15 +81,6 @@ Your lens formalizes use cases, invariants, and domain events. Actors, contexts,
 
 After capturing a cross-lens discovery, continue the session. Don't derail — note it and move on.
 
-## Post-write validation
-
-After updating the use case file, perform proto-governance checks:
-
-- Does the file follow the use case form exactly (same sections, same ordering)?
-- Are all referenced actors, events, and invariants either existing artifacts or captured as stubs/notes?
-- Are new domain terms added to or flagged for the glossary?
-- Does the index file for use cases reference this use case?
-
 ## Completion and feedback
 
 When the session is complete, do a final pass to ensure the file is cohesive and polished. Present a summary of the completed use case and ask for review.
