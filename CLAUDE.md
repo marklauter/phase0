@@ -20,9 +20,6 @@ Domain discovery and design system. Guides a domain expert from an empty whitebo
 
 `models/marklauter/github-wiki-agent/` contains a complete reference model (GitHub wiki management system) demonstrating all artifact types. Use it as a guide for structure, voice, and level of detail.
 
-## Mnulti-agent orchestratio
+## Multi-agent orchestration
 
-When spawning sub-agents via the Task tool, keep role boundaries clear:
-- The orchestrator dispatches work and merges results. It does not apply editorial judgment.
-- Editorial personas, judgment rules, and review standards belong in the sub-agent prompts, not the orchestrator.
-- Verify sub-agents have the tool permissions they need (especially Write and Edit) before delegating file-writing tasks.
+When spawning sub-agents via the Task tool, keep role boundaries clear. The orchestrator dispatches work and merges results — it does not apply editorial judgment. Editorial personas, judgment rules, and review standards belong in the sub-agent prompts, not the orchestrator.
