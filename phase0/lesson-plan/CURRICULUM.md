@@ -105,7 +105,7 @@ The curriculum draws from these documents in the repository:
 
 | Document | What it provides |
 |----------|-----------------|
-| [modeling-vocabulary.md](../.claude/contracts/principles/modeling-vocabulary.md) | Shared vocabulary — goals, drives, tensions, domain events |
+| [modeling-foundation.md](../.claude/contracts/principles/modeling-foundation.md) | Shared vocabulary — goals, drives, tensions, domain events |
 | [actor-lens.md](../.claude/contracts/principles/actor-lens.md) | Actor lens — conditional goals, derivation chain, actor genealogy |
 | [usecase-lens.md](../.claude/contracts/principles/usecase-lens.md) | Use case lens — invariants, obstacles, intent-driven scenarios |
 | [context-lens.md](../.claude/contracts/principles/context-lens.md) | Bounded context lens — boundaries, protocols |

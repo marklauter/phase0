@@ -40,7 +40,7 @@ Case study: the wiki-agent model (6 use cases, 6 bounded contexts, 7 domain even
 ### Source material
 
 - `.claude/contracts/principles/context-lens.md` -- bounded contexts over shared models, protocols at crossing points
-- `.claude/contracts/principles/modeling-vocabulary.md` -- domain events
+- `.claude/contracts/principles/modeling-foundation.md` -- domain events
 - `models/marklauter/github-wiki-manager/domains/` -- all 6 domain context files (DC-01 through DC-06)
 - `models/marklauter/github-wiki-manager/domains/DOMAIN-EVENTS.md` -- the 7 published events
 - `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- bounded contexts table

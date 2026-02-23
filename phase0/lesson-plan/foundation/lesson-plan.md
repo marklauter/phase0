@@ -62,7 +62,7 @@ Four lessons shared across all tracks. These build the conceptual vocabulary tha
 
 ### Source material
 
-- modeling-vocabulary.md, "Primary actors have goals; supporting actors have drives"
+- modeling-foundation.md, "Primary actors have goals; supporting actors have drives"
 - actor-lens.md, "Goal conditions create tensions; tensions spawn supporting actors" through "Goal conflicts spawn actors"
 - VISION.md, "The Entry Point: Actors and Goals, From First Principles" (includes the full elevator derivation table)
 
@@ -97,7 +97,7 @@ Four lessons shared across all tracks. These build the conceptual vocabulary tha
 
 - VISION.md, "The Natural Group Process" section (all four rounds)
 - VISION.md, "Why Socratic Extraction Works"
-- modeling-vocabulary.md, "Extract, don't invent"
+- modeling-foundation.md, "Extract, don't invent"
 
 ---
 

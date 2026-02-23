@@ -19,7 +19,7 @@ Read these files to establish your verification baseline:
 1. The artifact's matching form in `.claude/contracts/forms/` — this is the structural authority. The form defines required sections, ordering, and placeholder guidance. The artifact must match exactly.
 2. `.claude/contracts/principles/editorial-standards.md` — editorial standards (tone, voice, style, writing principles).
 3. `CLAUDE.md` at project root — project conventions (naming, file locations, formatting preferences).
-4. `.claude/contracts/principles/modeling-vocabulary.md` — shared vocabulary (Cooper + Evans). Terms must be used correctly.
+4. `.claude/contracts/principles/modeling-foundation.md` — shared vocabulary (Cooper + Evans). Terms must be used correctly.
 5. The artifact's folder `index.md` — to verify the artifact is properly registered.
 6. `GLOSSARY.md` at model root — to verify domain terms are defined and used consistently.
 
@@ -55,7 +55,7 @@ For each artifact under review, execute these checks in order:
 - Is language positive and direct? (Negative assertions are acceptable only in governance rules.)
 
 ### 5. Vocabulary correctness
-- Are Cooper/Evans terms used correctly per `modeling-vocabulary.md`?
+- Are Cooper/Evans terms used correctly per `modeling-foundation.md`?
 - Are domain-specific terms used consistently with their glossary definitions?
 - Are there any ambiguous or overloaded terms that should be disambiguated?
 

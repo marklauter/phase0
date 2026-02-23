@@ -64,7 +64,7 @@ Ask yourself: which crossing points have no protocol defined yet? That is where 
 ### Further reading
 
 - `.claude/contracts/principles/context-lens.md` -- bounded contexts and protocols at crossing points
-- `.claude/contracts/principles/modeling-vocabulary.md` -- domain events
+- `.claude/contracts/principles/modeling-foundation.md` -- domain events
 - `models/marklauter/github-wiki-manager/domains/` -- DC-01 through DC-06
 - `models/marklauter/github-wiki-manager/domains/DOMAIN-EVENTS.md` -- all 7 published events
 - `models/marklauter/github-wiki-manager/USE-CASE-CATALOG.md` -- the bounded contexts table

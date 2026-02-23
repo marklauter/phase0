@@ -107,5 +107,5 @@ Running example: an elevator system. Case study: the wiki-agent model at `models
 ### Source material
 
 - `phase0/VISION.md` -- "The Natural Group Process" (all four rounds), "Who Holds the Threads?" (the historian role), "The Agentic Architecture," "Why Socratic Extraction Works"
-- `modeling-vocabulary.md` -- "Extract, don't invent"
+- `modeling-foundation.md` -- "Extract, don't invent"
 - `design-cycle.md` -- "On backtracking"

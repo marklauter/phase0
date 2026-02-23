@@ -37,7 +37,7 @@ Students already know how to build software. This track teaches them domain-driv
 ### Source material
 
 - `usecase-lens.md` -- invariants as continuous constraints, scenario steps express intent
-- `modeling-vocabulary.md` -- domain events, markdown as wire format
+- `modeling-foundation.md` -- domain events, markdown as wire format
 - `context-lens.md` -- bounded contexts over shared models
 - `DOMAIN-MODEL-ARTIFACTS.md` -- artifact types and when they emerge
 - `models/marklauter/github-wiki-manager/domains/` -- DC-01 through DC-06, DOMAIN-EVENTS.md

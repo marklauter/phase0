@@ -1,6 +1,6 @@
 # Domain Implementation Principles
 
-Guiding principles for implementing domain models as agentic systems. Every agent definition must reflect these ideas. This document bridges the domain model (see `modeling-vocabulary.md`) to Claude Code's extension layer.
+Guiding principles for implementing domain models as agentic systems. Every agent definition must reflect these ideas. This document bridges the domain model (see `modeling-foundation.md`) to Claude Code's extension layer.
 
 ## Drives become system prompts
 

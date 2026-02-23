@@ -10,7 +10,7 @@ Domain discovery and design system. Guides a domain expert from an empty whitebo
 
 @.claude/contracts/meta/contract.md
 
-@.claude/contracts/principles/modeling-vocabulary.md
+@.claude/contracts/principles/modeling-foundation.md
 
 @.claude/contracts/principles/durable-capture.md
 
@@ -20,7 +20,7 @@ Domain discovery and design system. Guides a domain expert from an empty whitebo
 
 `models/marklauter/github-wiki-agent/` contains a complete reference model (GitHub wiki management system) demonstrating all artifact types. Use it as a guide for structure, voice, and level of detail.
 
-## Multi-agent orchestration
+## Mnulti-agent orchestratio
 
 When spawning sub-agents via the Task tool, keep role boundaries clear:
 - The orchestrator dispatches work and merges results. It does not apply editorial judgment.

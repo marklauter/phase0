@@ -288,5 +288,5 @@ Count what you surfaced: how many primary actors? How many value conditions? How
 ### Further reading
 
 - `phase0/VISION.md` -- "The Natural Group Process" (all four rounds), "Who Holds the Threads?" (the historian role), "Why Socratic Extraction Works"
-- `.claude/contracts/principles/modeling-vocabulary.md` -- "Extract, don't invent"
+- `.claude/contracts/principles/modeling-foundation.md` -- "Extract, don't invent"
 - `design-cycle.md` -- "On backtracking"

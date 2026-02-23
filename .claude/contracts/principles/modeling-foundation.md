@@ -1,6 +1,6 @@
-## Modeling vocabulary
+## Modeling foundation
 
-The shared vocabulary for domain modeling — goals, drives, tensions, conflicts of interest, environmental constraints, conditional goals, invariants, and domain events. Grounded in Alan Cooper's goal-directed design and Eric Evans' domain-driven design. Lens-specific depth lives in actor-lens, usecase-lens, and context-lens.
+The shared vocabulary and conceptual foundation for domain modeling — goals, drives, tensions, conflicts of interest, environmental constraints, competing values, conditional goals, invariants, and domain events. Grounded in Alan Cooper's goal-directed design and Eric Evans' domain-driven design. Lens-specific depth lives in actor-lens, usecase-lens, and context-lens.
 
 ## Foundations
 
@@ -24,8 +24,9 @@ A tension is a force — the named gap between what a primary actor values and w
 
 - A *conflict of interest* — a supporting actor's drive obstructs achievement of a primary actor's goal condition. The Owner's cost-minimization drive obstructs the Passenger's safety condition. The conflict is the cause; the tension is the force it produces.
 - An *environmental constraint* — a physical, systemic, or situational limit that obstructs a primary actor's goal condition. Building capacity obstructs the Passenger's "promptly" condition. No actor controls it — it is a feature of reality.
+- *Competing values* — two value conditions on the same primary actor's goal resist simultaneous satisfaction. "Safely" and "promptly" pull in opposite directions. Competing values force the primary actor to make trade-off decisions — prioritization, not delegation.
 
-Both sources produce tensions. Unresolved tensions spawn supporting actors with drives that address the gap.
+Tensions produce system design. Supporting actors, use cases, invariants, and trade-off decisions all emerge from tensions. Conflicts of interest and environmental constraints typically spawn supporting actors. Competing values force the primary actor to make trade-off decisions. Any tension can surface a use case or an invariant.
 
 ## Domain events are the published language
 

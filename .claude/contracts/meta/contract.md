@@ -1,25 +1,15 @@
 ## Contract
 
-What a contract is, how the layers relate, and where to edit.
+The organizing principle behind the instruction set — what makes a contract different from other knowledge in the system.
 
-## The atomic unit
+## Binding knowledge
 
-A contract is the atomic unit of modeling knowledge. Each contract has two expressions that share the same name:
+A contract is a binding piece of knowledge. It constrains how agents think or what they produce. The system carries many kinds of knowledge — conversation history, domain expert input, model artifacts — but a contract is distinct because it *binds* rather than *informs*. An agent can rephrase a domain expert's input. An agent cannot ignore a form section or violate a principle.
 
-- The modeling file in `.claude/contracts/` (a principle or a form) is the single source of truth — it defines what to produce or what to verify, and carries the authoritative prose.
-- The skill file in `.claude/skills/` is a thin loader — YAML front matter for triggering, plus a `!`cat`` directive that injects the modeling file's content at activation time. Skills carry no duplicated body content.
+Principles bind how agents think. The actor-lens contract binds the discovering-actors agent to think in terms of conditional goals and derivation chains. Forms bind what agents produce. The use case form binds the designing-usecases agent to produce specific sections in a specific order. Meta contracts bind how the system itself is organized.
 
-The modeling file is the only place to edit contract content. The skill's YAML `description` is the source of truth for triggering language. Agents receive contract content by listing skills in their `skills:` array — the skill injects the modeling file when the agent loads.
+## Composition
 
-## Form contracts and skill pairs
+Contracts compose. An agent loads a stack of contracts through its skills, and the stack has dependencies. The modeling-foundation contract is the base of the stack — it defines what an invariant is, what a domain event is, what "conditional goal" means. The lens contracts build on the foundation — the usecase-lens says "surface invariants" and "name domain events at meaningful state transitions," phrases that are meaningless without the foundation beneath them. Forms constrain what the lens produces. Editorial standards constrain how everything reads.
 
-Form contracts map to a pair of skills:
-
-- `reading-*` — `!cat` to the form + discovery and navigation exposition. How to find and interpret artifacts of this type.
-- `writing-*` — `!cat` to the form + creation machinery (scripts, guidance). How to produce artifacts of this type.
-
-The form is the single source of truth for structure. The skills add operational knowledge — one for consumption, one for production. Three files, no duplication.
-
-## Layering
-
-Each layer has one job: principles teach rules, agents declare scope, skills inject content. Say it once, in the right place.
+Some contracts assume other contracts are present. The system works because agents load the full stack they need, and each contract in the stack can rely on the contracts beneath it.

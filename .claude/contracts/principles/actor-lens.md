@@ -16,8 +16,9 @@ It is the conditions on a primary actor's goal that create tensions. A tension i
 
 - A conflict of interest — a supporting actor's drive obstructs a primary actor's goal condition. "Safely" collides with the Owner's economic drive to minimize cost. The Owner optimizes for cost in good faith, but that drive obstructs the Passenger's safety condition.
 - An environmental constraint — a physical, systemic, or situational limit that obstructs a goal condition. "Promptly" collides with building capacity and demand patterns. No actor controls building physics.
+- Competing values — two value conditions on the same goal resist simultaneous satisfaction. "Safely" and "promptly" pull in opposite directions. The Passenger values both, but fully satisfying one works against the other.
 
-Both sources produce tensions. Each unresolved tension spawns supporting actors with drives that address the gap.
+All three produce tensions. Tensions produce system design — supporting actors, use cases, invariants, and trade-off decisions. Conflicts of interest and environmental constraints typically spawn supporting actors. Competing values force the primary actor to make trade-off decisions. Any tension can surface a use case or an invariant.
 
 The Passenger's safety condition demands a drive beyond the Owner's cost-minimization — so the Inspector exists, with a drive born from the state's interest in public welfare. Accuracy demands a drive beyond the Creator's production orientation — so the Proofreader exists, with a drive toward critique.
 
@@ -67,10 +68,10 @@ Everything in the system traces back to conditional goals:
 ```
 Primary actor
   → conditional goal (desired state + value conditions)
-    → value conditions meet reality → conflicts of interest / environmental constraints
+    → value conditions meet reality → conflicts of interest / environmental constraints / competing values
       → tensions (named gaps)
-        → tensions spawn supporting actors (each with a drive)
-          → system design (invariants, use cases, bounded contexts)
+        → supporting actors, use cases, invariants, trade-off decisions
+          → system design
 ```
 
 Ask "what state of the world does the actor want to be in, and what do they value about being in that state?"

@@ -139,7 +139,7 @@ Test each with: "What tension demands this actor, and what drive resolves it?"
 
 ### Further reading
 
-- modeling-vocabulary.md, "Primary actors have goals; supporting actors have drives" — the shared vocabulary for goals and drives.
+- modeling-foundation.md, "Primary actors have goals; supporting actors have drives" — the shared vocabulary for goals and drives.
 - actor-lens.md, "Goal conditions create tensions; tensions spawn supporting actors" through "Goal conflicts spawn actors" — tension-to-actor genealogy.
 - VISION.md, "The Entry Point: Actors and Goals, From First Principles" — includes the complete elevator derivation table and chain.
 
@@ -228,7 +228,7 @@ Rules for the interviewer:
 
 - VISION.md, "The Natural Group Process" — the four rounds described in full with examples.
 - VISION.md, "Why Socratic Extraction Works" — four reasons the method outperforms top-down declaration.
-- modeling-vocabulary.md, "Extract, don't invent" — the Socratic principle in modeling terms.
+- modeling-foundation.md, "Extract, don't invent" — the Socratic principle in modeling terms.
 
 ---
 

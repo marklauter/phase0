@@ -97,8 +97,8 @@ Phases:
 
 1. Identify primary actors. Refine sloppy nouns into standalone names with singular goals. "Customer" becomes Sender, Recipient, Complainant — each carrying its own meaning.
 2. Extract conditional goals. Each primary actor has a desired end state coupled with value conditions. The value conditions are where system design comes from.
-3. Expose tensions. Value conditions meet reality and produce tensions — the named gaps between what is valued and what can be delivered. Conflicts of interest (a supporting actor's drive obstructs a goal condition) and environmental constraints (physical, systemic, or situational limits) are the sources.
-4. Derive supporting actors. Each unresolved tension spawns a new actor with a drive that addresses the gap. Every supporting actor has a genealogy traceable to a primary actor's value conditions.
+3. Expose tensions. Value conditions meet reality and produce tensions — the named gaps between what is valued and what can be delivered. Three sources: conflicts of interest (a supporting actor's drive obstructs a goal condition), environmental constraints (physical, systemic, or situational limits), and competing values (two value conditions on the same goal resist simultaneous satisfaction).
+4. Derive system design from tensions. Tensions produce supporting actors, use cases, invariants, and trade-off decisions. Conflicts of interest and environmental constraints typically spawn supporting actors. Competing values force the primary actor to make trade-off decisions. Any tension can surface a use case or an invariant. Every supporting actor has a genealogy traceable to a primary actor's value conditions.
 
 Produces: actor catalog, system boundary.
 
