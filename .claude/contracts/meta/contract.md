@@ -1,4 +1,4 @@
-## Contract
+# Contract
 
 The organizing principle behind the instruction set — what makes a contract different from other knowledge in the system.
 

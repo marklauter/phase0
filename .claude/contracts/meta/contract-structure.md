@@ -1,4 +1,4 @@
-## Contract structure
+# Contract structure
 
 The internal structure of the instruction set — `.claude/contracts/` and `.claude/scripts/`.
 
@@ -10,7 +10,7 @@ Core beliefs and philosophical prose that creators follow when producing content
 
 ### forms/
 
-Structural contracts for artifacts. Each form defines the sections, ordering, and placeholder guidance for one artifact type. Forms are pure structure — no philosophy, no creation mechanics. They serve both reading and writing. One form per artifact type defined in model-structure.md.
+Structural contracts for artifacts. Each form defines the sections, ordering, and placeholder guidance for one artifact type. Forms are pure structure — no philosophy, no creation mechanics. They serve both reading and writing.
 
 ### meta/
 

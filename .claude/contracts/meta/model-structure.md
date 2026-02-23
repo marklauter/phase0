@@ -1,4 +1,4 @@
-## Model structure
+# Model structure
 
 The single source of truth for what a Phase0 model contains, where each artifact lives, and the design workflow that produces it.
 

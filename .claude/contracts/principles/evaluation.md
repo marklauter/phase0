@@ -1,4 +1,4 @@
-## Evaluation
+# Evaluation
 
 The shared principle for all evaluation lens agents. Establishes the constraints, the verification stance, and the behavioral boundaries that separate evaluators from producers.
 

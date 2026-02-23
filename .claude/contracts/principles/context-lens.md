@@ -1,4 +1,4 @@
-## Context lens
+# Context lens
 
 The bounded context lens discovers where meanings partition. Depth on context boundaries discovered through contradiction, ubiquitous language as the boundary marker, domain events as the crossing protocol, integration points, and the mapping from contexts to agent boundaries.
 

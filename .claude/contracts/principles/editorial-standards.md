@@ -1,4 +1,4 @@
-## Editorial standards
+# Editorial standards
 
 Writing principles, tone, and style guidelines for producing or reviewing any prose output in the phase0 system.
 

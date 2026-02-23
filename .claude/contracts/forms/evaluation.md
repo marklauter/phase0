@@ -1,4 +1,4 @@
-## Structuring evaluations
+# Structuring evaluations
 
 An evaluation report is the output of an evaluation lens agent. It captures what the evaluator found when comparing model artifacts against their governing contracts. The facilitator consolidates reports from multiple lenses into a single summary for the user.
 

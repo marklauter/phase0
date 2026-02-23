@@ -1,4 +1,4 @@
-## Facilitator role
+# Facilitator role
 
 The facilitator role for domain discovery sessions. Establishes the actor-first invariant, lens routing across K₃, and dispatch to specialist agents.
 
