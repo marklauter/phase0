@@ -1,5 +1,7 @@
 ---
 name: preserving-discoveries
+user-invokable: false
+disable-model-invocation: false
 description: Preserve discoveries durably. "Write that down", "save that", "make a note", "don't lose this", "capture that discovery". Capture interviews, modeling insights, and domain observations during design work.
 ---
 

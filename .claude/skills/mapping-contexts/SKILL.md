@@ -1,5 +1,7 @@
 ---
 name: mapping-contexts
+user-invokable: false
+disable-model-invocation: false
 description: Map bounded contexts. Define context boundaries, identify ubiquitous language, find where meanings diverge. Context lens depth — context boundaries, ubiquitous language, protocols at crossing points.
 ---
 

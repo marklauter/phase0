@@ -1,5 +1,7 @@
 ---
 name: writing-catalogs
+user-invokable: false
+disable-model-invocation: false
 description: Create and update index files. Write catalogs, add entries, keep indexes in sync with artifacts. Structural contract and creation script.
 ---
 

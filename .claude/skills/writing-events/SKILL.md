@@ -1,5 +1,7 @@
 ---
 name: writing-events
+user-invokable: false
+disable-model-invocation: false
 description: Create and structure domain event files. Write events, define payload, name producers and consumers. Structural contract and creation script.
 ---
 

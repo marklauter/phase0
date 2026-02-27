@@ -1,5 +1,7 @@
 ---
 name: writing-invariants
+user-invokable: false
+disable-model-invocation: false
 description: Create and structure invariant files. Write shared invariants, define scope, rationale, and origin. Structural contract and creation script.
 ---
 

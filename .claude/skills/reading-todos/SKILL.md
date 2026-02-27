@@ -1,5 +1,7 @@
 ---
 name: reading-todos
+user-invokable: false
+disable-model-invocation: false
 description: Read and review todo files. Check pending work, see open work items, understand what needs doing. Structural contract for todo documents.
 ---
 

@@ -1,5 +1,7 @@
 ---
 name: reading-catalogs
+user-invokable: false
+disable-model-invocation: false
 description: Read and review index files. Browse artifacts, check what exists in the model, review the catalog. Structural contract for catalog documents.
 ---
 

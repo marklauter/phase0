@@ -1,5 +1,7 @@
 ---
 name: reading-glossaries
+user-invokable: false
+disable-model-invocation: false
 description: Read the glossary. Look up a term, check the vocabulary, find a definition. Structural contract for GLOSSARY.md files.
 ---
 

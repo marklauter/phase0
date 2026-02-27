@@ -1,5 +1,7 @@
 ---
 name: composing-prose
+user-invokable: false
+disable-model-invocation: false
 description: Writing prose, proofreading, reviewing tone, editing for style, improving clarity. Loads editorial principles, tone, and style guidelines for producing or reviewing any prose output.
 ---
 

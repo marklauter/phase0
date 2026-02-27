@@ -1,5 +1,7 @@
 ---
 name: writing-todos
+user-invokable: false
+disable-model-invocation: false
 description: Create todo items. Add work items, capture action items, track pending design work. Structural contract and creation script.
 ---
 

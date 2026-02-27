@@ -1,5 +1,7 @@
 ---
 name: reading-events
+user-invokable: false
+disable-model-invocation: false
 description: Read and review domain event files. Check event format, understand what happened, inspect payload and consumers. Structural contract for event documents.
 ---
 

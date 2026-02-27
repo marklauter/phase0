@@ -1,5 +1,7 @@
 ---
 name: reading-notes
+user-invokable: false
+disable-model-invocation: false
 description: Read and review note files. Check what was captured during design sessions, scan by topic or date. Structural contract for note documents.
 ---
 

@@ -1,5 +1,7 @@
 ---
 name: reading-actors
+user-invokable: false
+disable-model-invocation: false
 description: Read and review actor files. Check actor format, understand who participates in the system, inspect goals and drives. Structural contract for actor documents.
 ---
 

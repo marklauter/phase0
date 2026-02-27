@@ -1,5 +1,7 @@
 ---
 name: writing-notes
+user-invokable: false
+disable-model-invocation: false
 description: Create design notes. Capture observations, record decisions, document discoveries from modeling sessions. Structural contract and creation script.
 ---
 

@@ -1,5 +1,7 @@
 ---
 name: reading-invariants
+user-invokable: false
+disable-model-invocation: false
 description: Read and review invariant files. Check what rules apply, understand constraints, inspect scope and origin. Structural contract for invariant documents.
 ---
 

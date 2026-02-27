@@ -1,5 +1,7 @@
 ---
 name: writing-actors
+user-invokable: false
+disable-model-invocation: false
 description: Create and structure actor files. Write new actors, scaffold primary/supporting/sub-system categories during design work. Structural contract and creation script.
 ---
 

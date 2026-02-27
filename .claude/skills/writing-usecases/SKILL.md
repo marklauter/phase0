@@ -1,5 +1,7 @@
 ---
 name: writing-usecases
+user-invokable: false
+disable-model-invocation: false
 description: Create and structure use case files. Write use cases, scaffold scenarios, obstacles, and domain events. Structural contract and creation script.
 ---
 

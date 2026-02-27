@@ -1,5 +1,7 @@
 ---
 name: reading-contexts
+user-invokable: false
+disable-model-invocation: false
 description: Read and review bounded context files. Check context boundaries, understand integration points, inspect ubiquitous language. Structural contract for context documents.
 ---
 

@@ -1,5 +1,7 @@
 ---
 name: writing-glossaries
+user-invokable: false
+disable-model-invocation: false
 description: Add glossary entries. Define a term, update the glossary, maintain alphabetical order. Structural contract and creation script.
 ---
 
