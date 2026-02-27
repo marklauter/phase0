@@ -2,7 +2,7 @@
 name: composing-prose
 user-invokable: false
 disable-model-invocation: false
-description: Writing prose, proofreading, reviewing tone, editing for style, improving clarity. Loads editorial principles, tone, and style guidelines for producing or reviewing any prose output.
+description: Write, proofread, review, and edit prose — tone, voice, style, clarity, formatting. Editorial principles and guidelines for any durable written output.
 ---
 
 !`cat .claude/contracts/principles/editorial-standards.md`

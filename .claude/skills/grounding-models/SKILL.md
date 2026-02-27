@@ -2,7 +2,7 @@
 name: grounding-models
 user-invokable: false
 disable-model-invocation: false
-description: Model a domain. Discover actors, goals, drives, tensions, conditional goals, invariants, domain events, use cases, bounded contexts. Shared vocabulary and principles for domain modeling (Cooper + Evans). Lens-specific depth lives in discovering-actors, modeling-usecases, and mapping-contexts.
+description: Ground domain modeling work in shared vocabulary — goals, drives, tensions, conditional goals, invariants, domain events, actors, bounded contexts. Cooper and Evans foundations for the design cycle.
 ---
 
 !`cat .claude/contracts/principles/modeling-foundation.md`

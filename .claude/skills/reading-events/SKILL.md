@@ -2,7 +2,7 @@
 name: reading-events
 user-invokable: false
 disable-model-invocation: false
-description: Read and review domain event files. Check event format, understand what happened, inspect payload and consumers. Structural contract for event documents.
+description: Read, review, or inspect domain event files — producers, consumers, payloads, materialization, state transitions. Loads the event form contract and reading guidance.
 ---
 
 Read the form at `.claude/contracts/forms/event.md` when you need to verify structure.

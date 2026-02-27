@@ -2,7 +2,7 @@
 name: getting-started
 user-invokable: false
 disable-model-invocation: false
-description: Orient the user to the Phase0 process. "What do we do first?", "how does this work?", "where do we start?" Explain the discovery process, how facilitation works, and what the journey looks like.
+description: Get started with Phase0 — what to do first, how the process works, where to begin. Explains the discovery journey, facilitation, and the path from empty whiteboard to model.
 ---
 
 !`cat .claude/contracts/principles/onboarding.md`

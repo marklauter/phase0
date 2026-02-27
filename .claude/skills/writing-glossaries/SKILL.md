@@ -2,7 +2,7 @@
 name: writing-glossaries
 user-invokable: false
 disable-model-invocation: false
-description: Add glossary entries. Define a term, update the glossary, maintain alphabetical order. Structural contract and creation script.
+description: Add, define, or update glossary entries — new terms, revised definitions, alphabetical ordering. Loads the glossary form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/glossary.md`

@@ -2,7 +2,7 @@
 name: reading-usecases
 user-invokable: false
 disable-model-invocation: false
-description: Read and review use case files. Check scenarios, understand actor-system interactions, inspect obstacles and domain events. Structural contract for use case documents.
+description: Read, review, or inspect use case files — scenarios, actors, invariants, domain events, goal obstacles. Loads the use case form contract and reading guidance.
 ---
 
 Read the form at `.claude/contracts/forms/usecase.md` when you need to verify structure.

@@ -2,7 +2,7 @@
 name: navigating-models
 user-invokable: false
 disable-model-invocation: false
-description: Navigate and orient within a model. Folder layout, artifact types, naming patterns, design workflow, lens phases. Find where artifacts live, understand model structure.
+description: Navigate and orient within a Phase0 model — folder layout, artifact types, naming conventions, file locations, design workflow, lens phases. Find where things live.
 ---
 
 !`cat .claude/contracts/meta/model-structure.md`
