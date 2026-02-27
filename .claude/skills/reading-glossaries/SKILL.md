@@ -1,6 +1,6 @@
 ---
 name: reading-glossaries
-description: This skill should be used when the user asks to "read the glossary", "look up a term", "check the vocabulary", "find a definition", or when an agent needs to understand the structure of glossary documents. Loads the structural contract for GLOSSARY.md files.
+description: Read the glossary. Look up a term, check the vocabulary, find a definition. Structural contract for GLOSSARY.md files.
 ---
 
 Read the form at `.claude/contracts/forms/glossary.md` when you need to verify structure.

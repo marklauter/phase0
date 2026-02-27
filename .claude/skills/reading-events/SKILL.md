@@ -1,6 +1,6 @@
 ---
 name: reading-events
-description: This skill should be used when the user asks to "read a domain event", "review an event", "check the event format", "understand what happened", or when an agent needs to understand the structure of domain event files. Loads the structural contract for event documents.
+description: Read and review domain event files. Check event format, understand what happened, inspect payload and consumers. Structural contract for event documents.
 ---
 
 Read the form at `.claude/contracts/forms/event.md` when you need to verify structure.

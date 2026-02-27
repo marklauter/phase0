@@ -1,6 +1,6 @@
 ---
 name: evaluating-artifacts
-description: This skill should be used when the user asks to "evaluate artifacts", "check model quality", "run an evaluation", "verify the model", or when an agent needs the shared evaluation stance — read-only verification, evidence-based findings, and the behavioral boundaries that separate evaluators from producers.
+description: Evaluate artifacts and check model quality. Run evaluations, verify the model. Evaluation stance — read-only verification, evidence-based findings, behavioral boundaries separating evaluators from producers.
 ---
 
 !`cat .claude/contracts/principles/evaluation.md`

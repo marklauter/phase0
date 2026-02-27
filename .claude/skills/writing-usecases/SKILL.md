@@ -1,6 +1,6 @@
 ---
 name: writing-usecases
-description: This skill should be used when the user asks to "write a use case", "create a use case file", "structure a use case", or when an agent needs to create use case files during design work. Loads the structural contract and the creation script.
+description: Create and structure use case files. Write use cases, scaffold scenarios, obstacles, and domain events. Structural contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/usecase.md`

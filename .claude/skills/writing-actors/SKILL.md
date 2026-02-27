@@ -1,6 +1,6 @@
 ---
 name: writing-actors
-description: This skill should be used when the user asks to "write an actor file", "create a new actor", "structure an actor", or when an agent needs to create actor files during design work. Loads the structural contract and the creation script.
+description: Create and structure actor files. Write new actors, scaffold primary/supporting/sub-system categories during design work. Structural contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/actor.md`

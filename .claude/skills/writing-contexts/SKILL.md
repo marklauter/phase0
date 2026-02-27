@@ -1,6 +1,6 @@
 ---
 name: writing-contexts
-description: This skill should be used when the user asks to "write a bounded context", "create a context file", "structure a context", or when an agent needs to create bounded context files during design work. Loads the structural contract and the creation script.
+description: Create and structure bounded context files. Write contexts, define ubiquitous language, map integration points. Structural contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/context.md`

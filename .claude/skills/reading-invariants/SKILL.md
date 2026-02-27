@@ -1,6 +1,6 @@
 ---
 name: reading-invariants
-description: This skill should be used when the user asks to "read an invariant", "review an invariant", "check what rules apply", "understand the constraints", or when an agent needs to understand the structure of invariant files. Loads the structural contract for invariant documents.
+description: Read and review invariant files. Check what rules apply, understand constraints, inspect scope and origin. Structural contract for invariant documents.
 ---
 
 Read the form at `.claude/contracts/forms/invariant.md` when you need to verify structure.

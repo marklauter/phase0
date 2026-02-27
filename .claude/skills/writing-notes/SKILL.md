@@ -1,6 +1,6 @@
 ---
 name: writing-notes
-description: This skill should be used when the user asks to "write a note", "capture an observation", "create a design note", or when an agent needs to create note files during design work. Loads the structural contract and the creation script.
+description: Create design notes. Capture observations, record decisions, document discoveries from modeling sessions. Structural contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/note.md`
