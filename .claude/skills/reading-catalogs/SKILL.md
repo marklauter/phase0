@@ -2,7 +2,7 @@
 name: reading-catalogs
 user-invokable: false
 disable-model-invocation: false
-description: Read and review index files. Browse artifacts, check what exists in the model, review the catalog. Structural contract for catalog documents.
+description: Read, browse, or review index catalogs — artifact listings, cross-references, what exists in the model. Loads the catalog form contract and reading guidance.
 ---
 
 Read the form at `.claude/contracts/forms/catalog.md` when you need to verify structure.

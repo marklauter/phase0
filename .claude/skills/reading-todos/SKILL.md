@@ -2,7 +2,7 @@
 name: reading-todos
 user-invokable: false
 disable-model-invocation: false
-description: Read and review todo files. Check pending work, see open work items, understand what needs doing. Structural contract for todo documents.
+description: Read, review, or list todos — pending work items, open tasks, what needs doing. Loads the todo form contract and reading guidance.
 ---
 
 Read the form at `.claude/contracts/forms/todo.md` when you need to verify structure.

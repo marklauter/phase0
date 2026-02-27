@@ -2,7 +2,7 @@
 name: discovering-actors
 user-invokable: false
 disable-model-invocation: false
-description: Discover actors and their goals. Identify who the system serves, challenge an actor's goal, trace derivation chains. Actor lens depth — conditional goals, value conditions, tensions, actor genealogy, single responsibility.
+description: Discover, identify, and challenge actors — who the system serves, their conditional goals, value conditions, tensions, drives, derivation chains, genealogy, and single responsibility. Actor lens depth.
 ---
 
 !`cat .claude/contracts/principles/actor-lens.md`

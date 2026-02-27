@@ -2,7 +2,7 @@
 name: mapping-contexts
 user-invokable: false
 disable-model-invocation: false
-description: Map bounded contexts. Define context boundaries, identify ubiquitous language, find where meanings diverge. Context lens depth — context boundaries, ubiquitous language, protocols at crossing points.
+description: Discover, map, and analyze bounded contexts — boundaries, ubiquitous language, term conflicts, integration points, protocols, events produced and consumed. Context lens depth.
 ---
 
 !`cat .claude/contracts/principles/context-lens.md`

@@ -2,7 +2,7 @@
 name: writing-contexts
 user-invokable: false
 disable-model-invocation: false
-description: Create and structure bounded context files. Write contexts, define ubiquitous language, map integration points. Structural contract and creation script.
+description: Create, write, or scaffold bounded context files — purpose, ubiquitous language, integration points. Loads the context form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/context.md`
