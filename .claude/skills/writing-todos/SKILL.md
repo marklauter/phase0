@@ -2,7 +2,7 @@
 name: writing-todos
 user-invokable: false
 disable-model-invocation: false
-description: Create todos — actionable work items, follow-up tasks, remediation from evaluation findings. Loads the todo form contract and creation script.
+description: Write todos — actionable work items, follow-up tasks, remediation from evaluation findings. Loads the todo form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/todo.md`

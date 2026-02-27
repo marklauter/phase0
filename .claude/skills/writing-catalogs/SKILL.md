@@ -2,7 +2,7 @@
 name: writing-catalogs
 user-invokable: false
 disable-model-invocation: false
-description: Create, update, or sync index catalogs — add entries, scaffold new catalogs, keep indexes current. Loads the catalog form contract and creation script.
+description: Write or update index catalogs — add entries, scaffold new catalogs, keep indexes current. Loads the catalog form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/catalog.md`

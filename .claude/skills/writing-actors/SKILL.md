@@ -2,7 +2,7 @@
 name: writing-actors
 user-invokable: false
 disable-model-invocation: false
-description: Create, write, or scaffold actor files — primary, supporting, or sub-system with category-specific sections. Loads the actor form contract and creation script.
+description: Write actor files — primary, supporting, or sub-system with category-specific sections. Loads the actor form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/actor.md`
