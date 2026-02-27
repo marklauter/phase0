@@ -2,7 +2,7 @@
 name: preserving-discoveries
 user-invokable: false
 disable-model-invocation: false
-description: Preserve discoveries durably. "Write that down", "save that", "make a note", "don't lose this", "capture that discovery". Capture interviews, modeling insights, and domain observations during design work.
+description: Capture and preserve discoveries durably — observations, ideas, notes, findings, decisions. Write every discovery to file in the turn it occurs. Essential for any agent conducting interviews or modeling work.
 ---
 
 !`cat .claude/contracts/principles/durable-capture.md`

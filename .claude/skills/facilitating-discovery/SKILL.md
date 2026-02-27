@@ -2,7 +2,7 @@
 name: facilitating-discovery
 user-invokable: false
 disable-model-invocation: false
-description: Facilitate domain discovery. Orient the user, guide the process from empty whiteboard to model, determine what comes next. Actor-first invariant, lens routing, dispatch readiness, when to shift focus. The operational spine of a facilitated session.
+description: Facilitate and guide domain discovery sessions — orient the conversation, determine what comes next, route between lenses, enforce actor-first invariant, judge dispatch readiness. Operational spine of facilitated sessions.
 ---
 
 !`cat .claude/contracts/principles/facilitation-guidance.md`

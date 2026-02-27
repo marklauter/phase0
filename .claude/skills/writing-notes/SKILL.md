@@ -2,7 +2,7 @@
 name: writing-notes
 user-invokable: false
 disable-model-invocation: false
-description: Create design notes. Capture observations, record decisions, document discoveries from modeling sessions. Structural contract and creation script.
+description: Create design notes — capture observations, record decisions, document discoveries. Loads the note form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/note.md`

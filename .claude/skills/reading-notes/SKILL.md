@@ -2,7 +2,7 @@
 name: reading-notes
 user-invokable: false
 disable-model-invocation: false
-description: Read and review note files. Check what was captured during design sessions, scan by topic or date. Structural contract for note documents.
+description: Read, review, or scan design notes — captured observations, questions, discoveries, session history. Loads the note form contract and reading guidance.
 ---
 
 Read the form at `.claude/contracts/forms/note.md` when you need to verify structure.

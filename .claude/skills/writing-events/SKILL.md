@@ -2,7 +2,7 @@
 name: writing-events
 user-invokable: false
 disable-model-invocation: false
-description: Create and structure domain event files. Write events, define payload, name producers and consumers. Structural contract and creation script.
+description: Create, write, or scaffold domain event files — PastTense-named state transitions with producers, consumers, payloads. Loads the event form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/event.md`

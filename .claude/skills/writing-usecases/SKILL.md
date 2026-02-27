@@ -2,7 +2,7 @@
 name: writing-usecases
 user-invokable: false
 disable-model-invocation: false
-description: Create and structure use case files. Write use cases, scaffold scenarios, obstacles, and domain events. Structural contract and creation script.
+description: Create, write, or scaffold use case files — scenarios, goals, invariants, obstacles, domain events. Loads the use case form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/usecase.md`
