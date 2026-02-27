@@ -1,6 +1,6 @@
 ---
 name: reading-usecases
-description: This skill should be used when the user asks to "read a use case", "review a use case", "check the scenario", "understand the interaction", or when an agent needs to understand the structure of use case files. Loads the structural contract for use case documents.
+description: Read, review, show, or examine use case files — scenario structure, invariants, domain events, goal obstacles, actor interactions. Loads the use case form contract.
 ---
 
 Read the form at `.claude/contracts/forms/usecase.md` when you need to verify structure.

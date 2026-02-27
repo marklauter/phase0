@@ -1,6 +1,6 @@
 ---
 name: reading-actors
-description: This skill should be used when the user asks to "read an actor", "review an actor", "check the actor format", "understand who participates", or when an agent needs to understand the structure of actor files. Loads the structural contract for actor documents.
+description: Read, review, show, or examine actor files — structure, categories, goals, drives, cross-references, who participates. Loads the actor form contract.
 ---
 
 Read the form at `.claude/contracts/forms/actor.md` when you need to verify structure.

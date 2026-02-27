@@ -1,6 +1,6 @@
 ---
 name: writing-catalogs
-description: This skill should be used when the user asks to "write an index", "create a catalog", "update the index file", or when an agent needs to create or update index files during design work. Loads the structural contract and the creation script.
+description: Create, update, or maintain index catalogs — add entries, sync artifact listings, scaffold new catalogs. Loads the catalog form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/catalog.md`

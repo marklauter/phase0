@@ -1,6 +1,6 @@
 ---
 name: discovering-actors
-description: This skill should be used when the user asks to "discover actors", "identify who the system serves", "challenge an actor's goal", "trace the derivation chain", or when an agent needs actor lens depth — conditional goals, value conditions, tensions, actor genealogy, and single responsibility.
+description: Discover, identify, challenge, and analyze actors — who the system serves, their roles, conditional goals, drives, tensions, and relationships. Actor lens depth: value conditions, derivation chains, genealogy, single responsibility, competing values, environmental constraints, conflicts of interest.
 ---
 
 !`cat .claude/contracts/principles/actor-lens.md`

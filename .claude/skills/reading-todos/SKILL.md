@@ -1,6 +1,6 @@
 ---
 name: reading-todos
-description: This skill should be used when the user asks to "read a todo", "review todos", "check what work is pending", "see open work items", or when an agent needs to understand the structure of todo files. Loads the structural contract for todo documents.
+description: Read, review, or examine todos — pending work items, action items, open tasks, what needs to be done. Loads the todo form contract.
 ---
 
 Read the form at `.claude/contracts/forms/todo.md` when you need to verify structure.

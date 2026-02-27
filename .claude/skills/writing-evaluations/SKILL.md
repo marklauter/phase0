@@ -1,6 +1,6 @@
 ---
 name: writing-evaluations
-description: This skill should be used when the user asks to "write an evaluation", "produce a report", "structure evaluation output", or when an agent needs to produce evaluation reports during review work. Loads the structural contract for evaluation documents.
+description: Create evaluation reports to document findings, severity, evidence, and remediation recommendations. Loads the evaluation form contract.
 ---
 
 !`cat .claude/contracts/forms/evaluation.md`

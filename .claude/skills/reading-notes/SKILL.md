@@ -1,6 +1,6 @@
 ---
 name: reading-notes
-description: This skill should be used when the user asks to "read a note", "review notes", "check what was captured", or when an agent needs to understand the structure of note files. Loads the structural contract for note documents.
+description: Read, review, or examine notes — captured observations, questions, design decisions, session history. Loads the note form contract.
 ---
 
 Read the form at `.claude/contracts/forms/note.md` when you need to verify structure.

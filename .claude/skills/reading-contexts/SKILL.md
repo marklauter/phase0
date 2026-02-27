@@ -1,6 +1,6 @@
 ---
 name: reading-contexts
-description: This skill should be used when the user asks to "read a bounded context", "review a context", "check context boundaries", "understand the integration points", or when an agent needs to understand the structure of bounded context files. Loads the structural contract for context documents.
+description: Read, review, show, or examine bounded context files — boundaries, ubiquitous language, integration points, events produced and consumed. Loads the context form contract.
 ---
 
 Read the form at `.claude/contracts/forms/context.md` when you need to verify structure.

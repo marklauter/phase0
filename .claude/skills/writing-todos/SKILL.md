@@ -1,6 +1,6 @@
 ---
 name: writing-todos
-description: This skill should be used when the user asks to "create a todo", "add a work item", "capture an action item", or when an agent needs to create todo files during design work. Loads the structural contract and the creation script.
+description: Create todos for actionable work items, follow-up tasks, and remediation from evaluation findings. Loads the todo form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/todo.md`

@@ -1,6 +1,6 @@
 ---
 name: navigating-models
-description: This skill should be used when the user asks to "navigate a model", "understand the model structure", "find where artifacts live", "orient within a model", or when an agent needs to understand the folder layout, artifact types, naming patterns, design workflow, or lens phases of a Phase0 model.
+description: Navigate and orient within a Phase0 model — folder layout, artifact types, naming conventions, file locations, design workflow, lens phases, what goes where. Model structure reference.
 ---
 
 !`cat .claude/contracts/meta/model-structure.md`

@@ -1,6 +1,6 @@
 ---
 name: writing-events
-description: This skill should be used when the user asks to "write a domain event", "create an event file", "structure an event", or when an agent needs to create domain event files during design work. Loads the structural contract and the creation script.
+description: Create, write, stub, or scaffold domain event files — PastTense-named state transitions with producers, consumers, and payloads. Loads the event form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/event.md`

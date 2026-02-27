@@ -1,6 +1,6 @@
 ---
 name: writing-glossaries
-description: This skill should be used when the user asks to "add a glossary entry", "define a term", "update the glossary", or when an agent needs to write glossary entries during design work. Loads the structural contract and the creation script.
+description: Add, define, or update glossary entries — new terms, revised definitions, domain vocabulary. Loads the glossary form contract and creation script.
 ---
 
 !`cat .claude/contracts/forms/glossary.md`
