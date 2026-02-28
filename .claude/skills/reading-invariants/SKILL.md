@@ -2,7 +2,7 @@
 name: reading-invariants
 user-invokable: false
 disable-model-invocation: false
-description: Read, review, or inspect invariant files — rules, constraints, scope, rationale, origin. Loads the invariant form contract and reading guidance.
+description: Read, review, or inspect invariant files — rules, constraints, scope, rationale, origin, what must always be true.
 ---
 
 Read the form at `.claude/contracts/forms/invariant.md` when you need to verify structure.

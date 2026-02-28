@@ -2,7 +2,7 @@
 name: writing-usecases
 user-invokable: false
 disable-model-invocation: false
-description: Write use case files — scenarios, goals, invariants, obstacles, domain events. Loads the use case form contract and creation script.
+description: Write use case files — scenarios, goals, invariants, obstacles, domain events, triggers, supporting actor responsibilities.
 ---
 
 !`cat .claude/contracts/forms/usecase.md`

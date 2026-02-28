@@ -2,7 +2,7 @@
 name: writing-glossaries
 user-invokable: false
 disable-model-invocation: false
-description: Write glossary entries — new terms, revised definitions, alphabetical ordering. Loads the glossary form contract and creation script.
+description: Write glossary entries — new terms, revised definitions, alphabetical ordering, domain vocabulary.
 ---
 
 !`cat .claude/contracts/forms/glossary.md`

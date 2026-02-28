@@ -2,7 +2,7 @@
 name: writing-contexts
 user-invokable: false
 disable-model-invocation: false
-description: Write bounded context files — purpose, ubiquitous language, integration points. Loads the context form contract and creation script.
+description: Write bounded context files — purpose, ubiquitous language, integration points, term ownership, events produced and consumed.
 ---
 
 !`cat .claude/contracts/forms/context.md`

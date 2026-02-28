@@ -2,7 +2,7 @@
 name: reading-contexts
 user-invokable: false
 disable-model-invocation: false
-description: Read, review, or inspect bounded context files — boundaries, ubiquitous language, integration points, events produced and consumed. Loads the context form contract and reading guidance.
+description: Read, review, or inspect bounded context files — boundaries, ubiquitous language, integration points, events produced and consumed, term conflicts.
 ---
 
 Read the form at `.claude/contracts/forms/context.md` when you need to verify structure.

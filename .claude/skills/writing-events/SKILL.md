@@ -2,7 +2,7 @@
 name: writing-events
 user-invokable: false
 disable-model-invocation: false
-description: Write domain event files — PastTense-named state transitions with producers, consumers, payloads. Loads the event form contract and creation script.
+description: Write domain event files — PastTense-named state transitions with producers, consumers, payloads, materialization triggers.
 ---
 
 !`cat .claude/contracts/forms/event.md`

@@ -2,7 +2,7 @@
 name: writing-invariants
 user-invokable: false
 disable-model-invocation: false
-description: Write invariant files — rules, constraints, scope, rationale, origin. Loads the invariant form contract and creation script.
+description: Write invariant files — rules, constraints, scope, rationale, origin, cross-use-case enforcement.
 ---
 
 !`cat .claude/contracts/forms/invariant.md`

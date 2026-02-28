@@ -2,7 +2,7 @@
 name: writing-notes
 user-invokable: false
 disable-model-invocation: false
-description: Write notes — capture observations, record decisions, document discoveries. Loads the note form contract and creation script.
+description: Write notes — capture observations, record decisions, document discoveries, session findings, design rationale.
 ---
 
 !`cat .claude/contracts/forms/note.md`

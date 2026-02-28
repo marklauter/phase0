@@ -2,7 +2,7 @@
 name: reading-glossaries
 user-invokable: false
 disable-model-invocation: false
-description: Look up, read, or review glossary terms — definitions, domain vocabulary, renamed terms, context-specific meanings. Loads the glossary form contract and reading guidance.
+description: Look up, read, or review glossary terms — definitions, domain vocabulary, renamed terms, context-specific meanings, ubiquitous language.
 ---
 
 Read the form at `.claude/contracts/forms/glossary.md` when you need to verify structure.

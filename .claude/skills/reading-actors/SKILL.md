@@ -2,7 +2,7 @@
 name: reading-actors
 user-invokable: false
 disable-model-invocation: false
-description: Read, review, or inspect actor files — categories, goals, drives, cross-references, who participates. Loads the actor form contract and reading guidance.
+description: Read, review, or inspect actor files — categories, conditional goals, drives, cross-references, who participates, value conditions.
 ---
 
 Read the form at `.claude/contracts/forms/actor.md` when you need to verify structure.
